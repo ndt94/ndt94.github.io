@@ -1,0 +1,17 @@
+text-align: Căn vị trí text(căn trái, căn phải, căn giữa, căn đều 2 bên)
+
+text-transform: Chuyển chữ sang dạng viết hoa, viết thường hoặc viết hoa chữ cái đầu tiên
+
+text-decoration: Thêm dấu gạch ngang, gạch chân,...
+text-indent: Căn lề 
+
+Đơn vị trong CSS
+px: Pixels (Điểm ảnh trên màn hình)
+em: Tương đương với kích thước của font hiện dùng(nếu font-size hiện dùng là 16px thì 1em = 16px)
+
+Chú ý:
+Để quy định kích thước font chữ ta dùng thuộc tính font-size, để quy định chiều cao của 1 dòng ta dùng thuộc tính line-height. 
+
+- Thay đổi hướng chữ bằng thuộc tính direction, ví dụ direction:rtl
+
+- Trang web sau http://www.pearsonified.com/typography/ & https://grtcalculator.com/ sẽ giúp chúng ta chọn ra kích thước font chữ và khoảng cách giữa các dòng một cách phù hợp so với chiều rộng nội dung và mật độ chữ

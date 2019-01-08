@@ -1,0 +1,10 @@
+Pseudo Element tương tác với nội dung của element chứ không phải là trạng thái element như Pseudo class
+Cấu trúc Pseudo Element: selector::pseudo-element {content: "string"}
+
+Tham khảo các Pseudo Element: http://www.w3schools.com/css/css_pseudo_elements.asp
+
+Chú ý
+
+Pseudo Element cũng có thể chỉ cần dùng 1 dấu " : " cũng chạy được (chuẩn CSS1 và CSS2). Tuy nhiên chúng ta nên viết là " :: " theo đúng chuẩn của CSS3  để phân biệt giữa pseudo-class và pseudo-element.
+
+Để chèn ảnh vào 1 văn bản ngoài cách dùng thẻ <img>, ta cũng có thể dùng pseudo-element với thuộc tính content

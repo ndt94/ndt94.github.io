@@ -1,0 +1,25 @@
+img {
+    max-width: 500px;
+    border: 2px solid green;
+}
+img:hover {
+    border-radius: 50%;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color:purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color:orange;
+}
+a:active {
+    color:green;
+}
+p {
+    color:blue;
+    font-size: 20px;
+}

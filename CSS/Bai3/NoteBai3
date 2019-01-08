@@ -1,0 +1,36 @@
+Có 3 loại CSS selector chính
++) Element selector
++) ID selector
++) Class selector
+
+Element Selector: p sẽ chọn tất cả các đoạn paragraph trong 
+ID selector dùng cho 1 phần tử cho nên mỗi id chỉ nên xuất hiện 1 lần trong 1 trang html, ID dùng dấu #html
+Class selector dùng cho 1 nhóm phần tử nên class có thể xuất hiện nhiều lần, class dùng dấu .
+
+Chú ý
+
+- Khi đặt tên class và id, không được bắt đầu bởi 1 số và dùng tiếng Việt có dấu.
+
+- Mức độ ưu tiên của selector (khi style trùng nhau) theo thứ tự giảm dần: Inline style, ID selector, Class selector, Element selector. Ngoài ra nếu selector giống nhau thì cái viết sau sẽ đè lên cái trước và cái nào chi tiết hơn thì sẽ có mức ưu tiên cao hơn, ví dụ:
+
+p.paragraph {
+    color: blue;
+}
+
+.paragraph {
+    color: red;
+}
+
+/* Kết quả là đoạn văn có chữ màu xanh vì selector bên trên có độ ưu tiên cao hơn */
+
+- Có thể sử dụng thêm thuộc tính !important để đẩy mức ưu tiên của selector lên cao nhất, ví dụ: 
+
+.paragraph {
+    color: red !important;
+}
+
+p.paragraph {
+    color: blue;
+}
+
+/* Kết quả là đoạn văn có chữ màu đỏ */

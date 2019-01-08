@@ -1,0 +1,13 @@
+<a>: Dùng để chèn link vào trang web
+
+Các attribute của <a>:
+href: Link sẽ đi đến đâu
+target: Xác định mục tiêu sẽ hiển thị theo cách nào(chuyển sang trang, hay dùng tab mới)
+rel: Mối quan hệ giữa trang hiện tại và link được liên kết
+title: Tiêu đề link
+
+Link tham khảo thông tin về thẻ <a> cũng như các attributes của nó: http://www.w3schools.com/tags/tag_a.asp
+
+Chú ý
+
+Với thuộc tính rel của thẻ <a>: Giá trị là nofollow được sử dụng bởi Google để đánh dấu rằng google sẽ không đọc theo và đánh index các link đó. Với các link mà bạn không muốn hoặc không rõ trang được liên kết đến thì nên đặt thuộc tính này (vi du như link đến trang đăng nhập, đăng ký, hay link do người dùng post lên ở các phần comment, …)

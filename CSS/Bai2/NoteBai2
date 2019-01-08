@@ -1,0 +1,17 @@
+Xác định màu trong CSS 
+http://www.w3schools.com/cssref/css_colors_legal.asp
+
+Nếu có 2 thuộc tính giống nhau, thuộc tính đứng sau sẽ override thuộc tính đứng trước
+Nếu muốn thuộc tính đứng trước không bị override, dùng !important
+Ex: 
+h3 {
+            color: green !important;
+            background-color:yellow;
+            color: blue;
+        }
+
+3 cách xác định màu trong CSS
+C1: Color names
+C2: Hexadecimal colors
+C3: RGB colors
+Những thẻ h3 sẽ có màu là green chứ không phải là blue

@@ -1,0 +1,31 @@
+width, height: Chiều rộng, chiều dài của ảnh
+min-width, min-height: Chiều rộng, chiều dài tối thiểu của ảnh
+max-width, max-height: Chiều rộng, chiều dài tối đa của ảnh
+
+Có thể dùng % cho chiều rộng, chiều dài của ảnh để phù hợp với cả mobile browser
+Khi dùng % thì ảnh sẽ lấy theo phần tử cha của nó. Đây là kĩ thuật thiết kế responsive website
+
+Để trang trí khung viền, ta dùng các thuộc tính sau:
+border: Tạo khung viền
+border-radius: Bo góc
+
+Ex: border: 3px solid green;
+Đây là kiểu viết tắt của border
+Kiểu viết đầy đủ
+border-width: 3px;
+border-style: solid;
+border-color: green;
+
+Để tạo được ảnh tròn: Ta dùng border-radius 50% với ảnh png, jpg hoặc dùng ảnh png với background trong suốt
+Thuộc tính border, border-radius có thể áp dụng cho cả các thẻ khác ngoài thẻ <img>
+
+Tham khảo các loại style cho border tại đây: http://www.w3schools.com/cssref/pr_border-style.asp
+
+Chú ý
+
+- Thuộc tính border-radius cũng có thể viết tách ra thành:
+
+border-top-left-radius (góc trên bên trái)
+border-top-right-radius (góc trên bên phải)
+border-bottom-right-radius (góc dưới bên phải)
+border-bottom-left-radius (góc dưới bên trái)

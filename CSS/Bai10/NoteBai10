@@ -1,0 +1,36 @@
+4 trạng thái của link
+Link-Hover-Active-Visited
+
+Style mặc định của các đường link
+Link,Hover: Màu xanh
+Active: Màu đỏ
+Visited: Màu tím
+
+Pseudo Class dùng để định nghĩa các trạng thái của element, có thể dùng với các thẻ khác ngoài thẻ <a>
+Cấu trúc Pseudo Class : selector:pseudo-class {}
+CSS cũng đọc code từ trên xuống dưới, vì vậy chú ý thứ tự của các pseudo class
+
+Tham khảo các Pseudo Class: http://www.w3schools.com/css/css_pseudo_classes.asp
+
+ 
+
+Chú ý
+
+- Một số Pseudo Class hay dùng:
+:hover 	Chọn element ở trạng thái di chuột qua
+:first-child 	Chọn element mà là element con đầu tiên của 1 element khác
+:last-child 	Chọn element mà là element con cuối cùng của 1 element khác
+:nth-child(n) 	Chọn element mà là element con thứ n của 1 element khác
+:not(selector) 	Chọn element mà không phải là selector
+
+- Khi sử dụng thẻ <a> thường chỉ cần style 2 màu là màu khi hover và các màu còn lại
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: grey:
+}
+
+- Có thể vào trang http://www.0to255.com/ để lấy mã màu tương đồng khi sử dụng Pseudo Class :hover 

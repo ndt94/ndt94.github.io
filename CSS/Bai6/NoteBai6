@@ -1,0 +1,17 @@
+<img>: Tag chứa ảnh
+Các attribute của <img>
+src: Nguồn ảnh
+alt: Mô tả ảnh
+title: Tiêu đề ảnh
+width: Chiều rộng của ảnh
+height: Chiều cao của ảnh
+
+Chú ý
+
+- Link tham khảo thông tin về thẻ <img> cũng như các attributes của nó: http://www.w3schools.com/tags/tag_img.asp
+
+- Để tạo icon cho trang web (icon nhỏ xuất hiện ở trên tab của trình duyệt) ta dùng thẻ link như sau (ảnh icon thường có kich thước là 16x16 pixels hoặc 32x32 pixels, định dạng là PNG, GIF hoặc ICO)
+
+<link rel="icon" type="image/png" href="/favicon.png"/>
+
+- Nếu trong trang web sử dụng ảnh có dung lượng lớn thì có thể nén lại để giảm bớt dung lượng giúp tăng tốc độ load trang: https://tinypng.com/

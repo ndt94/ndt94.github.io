@@ -1,0 +1,7 @@
+Có 3 loại đường dẫn 
+Đường dẫn tuyệt đối
+Đường dẫn tương đối
+Đường dẫn gốc tương đối
+
+Để lùi về 1 cấp trong đường dẫn tương đối ta dùng ký hiệu ../
+Để lùi về 1 cấp trong đường dẫn tương đối ta dùng ký hiệu ../../
