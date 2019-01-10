@@ -1,0 +1,41 @@
+body, html{
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.gallery {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25%;
+}
+
+.img-gallery {
+    border: 1px solid white;
+    float: left;
+}
+
+.img-gallery:hover {
+    border: 1px solid red;
+}
+
+.main-banner {
+    width: 100%
+}
+
+.banner {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.nav {
+    padding: 0 10%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
