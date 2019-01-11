@@ -1,0 +1,26 @@
+Animation được tạo ra bằng cách thay đổi style của 1 phần tử theo thời gian
+Chú ý
+
+- Tham khảo các giá trị của thuộc tính animation tại đây: ​http://www.w3schools.com/css/css3_animations.asp
+
+- Animation demo:
+
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+
+h1 {
+	animation: title 5s ease infinite;
+}
+Trong đó:
+title là tên của animation đã tạo ở keyframe
+10s là thời gian của animation(animation-duration)
+ease là animation-timing-function ( tốc độ của animation)
+infinite là animation-iteration-count(dùng để xác định
+số lần chạy animation)
+
+- Trang web hỗ trợ tạo hiệu ứng animation https://matthewlein.com/ceaser/
