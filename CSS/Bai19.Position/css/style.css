@@ -1,0 +1,64 @@
+ html, body {
+    width: 100%;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.back2top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.wrap {
+    box-sizing: border-box;
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+}
+
+.con1 {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    height: 100%;
+    width: 100%;
+}
+
+.con2 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 400px;
+    height: 200px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    background-color: #f1f1f1;
+}
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.text {
+    margin: 10px;
+    padding: 10px;
+}
