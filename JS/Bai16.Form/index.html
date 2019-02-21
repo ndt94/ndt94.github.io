@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Đăng ký thành viên</h1>
+        <form action="success.html">
+            <input type="text" name="Name" placeholder="Họ tên" required/>
+            <p>Ngày sinh</p>
+            <select id="day" name="Birthday">
+                <script>
+                    for (var i = 1; i <= 30; i++) {
+                        document.write(`<option value="Ngày ${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select id="month" name="Month">
+                <script>
+                    for (var i = 1; i <= 12; i++) {
+                        document.write(`<option value="Tháng ${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select id="year" name="Year">
+                <script>
+                    for (var i = 1905; i <= 2019; i++) {
+                        document.write(`<option value="Năm ${i}">${i}</option>`);
+                    }
+                </script>
+            </select><br><br>
+            <p>Giới tính</p>
+            <input type="radio" name="Gender" id="male" value="Male"> <label for="Male">Nam</label>
+            <input type="radio" name="Gender" id="female" value="Female"> <label for="Female">Nữ</label><br><br>
+            <input type="text" name="Address" placeholder="Địa chỉ" /><br><br>
+            <input type="text" name="Phone" placeholder="Điện thoại" /><br><br>
+            <input type="email" name="Email" placeholder="Email" /><br><br>
+            <input type="password" name="Password" placeholder="Mật khẩu" /><br><br>
+            <input type="submit" value="Đăng ký" />
+        </form>
+    </div>
+</body>
+
+</html>

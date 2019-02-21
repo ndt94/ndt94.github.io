@@ -1,0 +1,10 @@
+Chú ý
+
+- Thẻ <form> có 2 thuộc tính khá quan trọng đó là:
+
+    action: Chỉ ra nơi xử lý dữ liệu form khi form được submit (thường là đường dẫn đến 1 trang nào đó, nếu để rỗng thì sẽ lấy mặc định là trang hiện tại)
+    method: Phương thức gửi dữ liệu. Có 2 giá trị là GET và POST. Phương thức GET gửi dữ liệu lên dưới dạng các cặp key/value và chúng ta có thể nhìn thấy trên URL (độ dài bị giới hạn), do đó phương thức GET dùng trong trường hợp mà dữ liệu gửi lên không cần bảo mật và không quá nhiều (ví dụ như search của Google). Phương thức POST thì gửi dữ liệu qua body mesage của HTTP request nên dữ liệu không nhìn thấy được qua URL, thích hợp để gửi các dữ liệu cần bảo mật hoặc nhiều dữ liệu như form đăng nhập, đăng ký.
+
+- Nếu trong form có sử dụng <input type="file"/> (cho phép người dùng upload file) thì form phải có thuộc tính enctype="multipart/form-data" và method="post".
+
+- Sử dụng jQuery để lấy giá trị của input, ta dùng phương thức .val(). Tương tự khi muốn set giá trị cho input.

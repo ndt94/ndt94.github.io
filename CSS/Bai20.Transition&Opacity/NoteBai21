@@ -1,0 +1,24 @@
+Opacity dùng để làm mờ 1 phần tử
+Opacity: 1 ~ 100% tức là bình thường
+Opacity: 0.5 ~ 50% trong suốt
+
+Transition làm cho 1 phần tử thay đổi thuộc tính của nó trong 1 thời gian xác định
+
+Ex:
+transition: opacity 0.5 linear
+Trong đó
+opacity là transition-property tức là thuộc tính sẽ chịu ảnh hưởng của transition
+0.5s là transition-duration tức là thời gian sẽ xảy ra hiệu ứng
+linear là transition-timing-function hàm tính thời gian của hiệu ứng, hay là tốc độ của hiệu ứng
+Ngoài ra transition-delay dùng để điều khiển thời gian trễ
+
+Để thay đổi nhiều thuộc tính với nhiều giá trị khác nhau, ta dùng dấu "," để ngăn cách giữa các property
+
+Tham khảo chi tiết thuộc tính transition tại đây: ​http://www.w3schools.com/css/css3_transitions.asp
+
+Chú ý:
+
+Thuộc tính opacity mang tính kế thừa, tức là nếu element cha có opacity là 0.8 thì element con sẽ có opacity mặc định là 0.8. Khi đó nếu lại set opacity của element con là 0.5 vậy opacity thực tế sẽ là 0.8 x 0.5 = 0.4
+
+Khi muốn một thẻ div có background trong suốt ta có thể dùng thuộc tính opacity hoặc dùng thuộc tính background với giá trị màu RGBA
+

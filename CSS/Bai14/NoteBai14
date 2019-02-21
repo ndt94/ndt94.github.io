@@ -1,0 +1,10 @@
+Reset CSS
+
+CSS vendor prefix(CSS browser prefix)
+Firefox: -moz-
+Chrome/Safari: -webkit-
+
+Những việc cần làm khi hỗ trợ compability giữa các trình duyệt
+1. Xác định những trình duyejt sẽ hỗ trợ
+2. Nếu gặp lỗi hãy thử sửa CSS trước, nếu không được thì hãy đổi cấu trúc HTML
+3. Sử dụng Javascript hỗ trợ

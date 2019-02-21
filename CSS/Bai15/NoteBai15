@@ -1,0 +1,27 @@
+Thẻ <div> thường được dùng để nhóm các phần tử với nhau
+Div dùng để style cho các khối có chiều rộng, chiều cao
+Span dùng để style cho text trong 1 đoạn văn
+Padding dùng để giãn cách nội dung với viền của element
+Margin dùng để giãn cách giữa các element với nhau
+Margin là khoảng cách của 1 phần tử so với phần tử bên ngoài
+
+Chú ý khi sử dụng float
+
+- Chỉ có thể float trái hoặc phải
+- Một phần tử float sẽ làm cho phần tử không float đằng sau nó chồng lên, có thể gây ra hiệu quả không mong muốn.
+
+- Để tránh hiện tượng trên, ta có thể áp dụng thuộc tính clear cho phần tử không float như sau:
+
+.no-float {
+    clear: both;
+}
+
+    Clear both ngăn không cho float cả 2 phía, nó cũng có thể nhận các giá trị như: left (chỉ ngăn không cho float bên trái) hay right (ngăn không cho float bên phải).
+    Thuộc tính này được dùng khá nhiều trong các trang web và thường được đặt trong 1 class chung (ví dụ như .clear, .clearfix,... ) để tiện sử dụng tại nhiều trang khác nhau.
+
+- Ngoài ra nếu 1 phần tử không float, nhưng toàn bộ phần tử con lại dùng float thì chiều cao của phần tử cha sẽ bằng 0, và các phần tử bên dưới sẽ chồng lên nó. Để khắc phục ta có thể dùng một trong các cách sau:
+
+    Chèn thêm 1 thẻ div rỗng vào cuối nội dung phần tử cha (hoặc sử dụng pseudo class ::after) và đặt thuộc tính clear.
+    Sử dụng thuộc tính display: table cho phần tử cha (cần đặt chiều rộng phù hợp).
+    Sử dụng thuộc tính overflow: auto cho phần tử cha.
+

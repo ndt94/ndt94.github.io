@@ -1,0 +1,17 @@
+Cross Browser compability
+Cùng 1 file html nhưng các browser khác nhau có thể hiển thị khác nhau vì các trình duyệt có thể có style mặc định cho các thẻ khác nhau hoặc là trình duyệt hỗ trợ các phiên bản html khác nhau
+Để khắc phục vấn đề chúng ta có thể dùng các cách sau
+C1: Khai báo DOCTYPE
+C2: Condition comment
+
+Khai báo DOCTYPE ở dòng đầu tiên của HTML
+<!DOCTYPE html>
+Đây là khai báo cho HTML5
+Các loại khác như XHTML có thể sẽ khác
+
+Chú ý
+Khi khai báo DOCTYPE thì không phân biệt hoa thường
+Phải viết trước thẻ <html>
+Không dùng bất kỳ kí tự non-space nào ở trước(kể cả comment)
+
+

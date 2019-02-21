@@ -1,0 +1,12 @@
+CSS Sizing
+
+Kích thước thật = Kích thước lý thuyết + padding + border
+
+Nên sử dụng box-sizing: border-box cho toàn bộ element trong trang để style cho dễ
+Ex:
+* {
+    box-sizing: border-box;
+}
+
+Element nào có property là box-sizing với value borderbox thì khi đó
+Kích thước thật = Kích thước lý thuyết

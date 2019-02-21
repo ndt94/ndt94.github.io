@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Đăng ký thành viên</h1>
+        <form action="success.html" id="form-register">
+            <input type="text" name="Name" id="name" placeholder="Họ tên">
+            <span class="error"></span><br>
+            <p>Ngày sinh</p>
+            <select id="day" name="Birthday">
+                <script>
+                    for (var i = 1; i <= 31; i++) {
+                        document.write(`<option value="Ngày ${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select id="month" name="Month">
+                <script>
+                    for (var i = 1; i <= 12; i++) {
+                        document.write(`<option value="Tháng ${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select id="year" name="Year">
+                <script>
+                    for (var i = 1905; i <= 2019; i++) {
+                        document.write(`<option value="Năm ${i}">${i}</option>`);
+                    }
+                </script>
+            </select><br><br>
+            <p>Giới tính</p>
+            <input type="radio" name="Gender" id="male" value="Male"> <label for="Male">Nam</label>
+            <input type="radio" name="Gender" id="female" value="Female"> <label for="Female">Nữ</label><br><br>
+            <input type="text" name="Address" id="address" placeholder="Địa chỉ" />
+            <span class="error"></span><br><br>
+            <input type="text" name="Phone" id="phone" placeholder="Điện thoại" />
+            <span class="error"></span><br><br>
+            <input type="text" name="Facebook" id="facebook" placeholder="Facebook" />
+            <span class="error"></span><br><br>
+            <input type="text" name="Email" id="email" placeholder="Email" />
+            <span class="error"></span><br><br>
+            <input type="password" name="Password" id="password" placeholder="Mật khẩu" />
+            <span class="error"></span><br><br>
+            <input type="submit" value="Đăng ký" />
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $('#form-register').on('submit', function() {
+            isValid = true;
+
+            if ($('#name').val().trim() == '') {
+                $('#name').next('span').text('Name is empty');
+                isValid = false;
+            } else {
+                $('#name').next('span').text('');
+            }
+
+            if ($('#address').val().trim() == '') {
+                $('#address').next('span').text('Address is empty');
+                isValid = false;
+            } else {
+                $('#address').next('span').text('');
+            }
+
+            if ($('#phone').val().trim() == '') {
+                $('#phone').next('span').text('Phone is empty');
+                isValid = false;
+            } else {
+                $('#phone').next('span').text('');
+            }
+
+            if ($('#facebook').val().trim() == '') {
+                $('#facebook').next('span').text('Facebook is empty');
+                isValid = false;
+            } else {
+                $('#facebook').next('span').text('');
+            }
+
+            if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+                $('#email').next('span').text('Email is invalid');
+                isValid = false;
+            } else {
+                $('#email').next('span').text('');
+            }
+
+            if ($('#password').val().trim() == '') {
+                $('#password').next('span').text('Password is empty');
+                isValid = false;
+            } else {
+                $('#password').next('span').text('');
+            }
+
+            return isValid;
+        });
+    </script> 
+</body>
+
+</html>

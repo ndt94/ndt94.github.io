@@ -1,0 +1,3 @@
+Để thay đổi list item markers trong unordered list ta dùng thuộc tính nào ?
+list-style, list-style-type, list-style-image
+<li>, <ul> đều là block element

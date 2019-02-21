@@ -1,0 +1,17 @@
+Chú ý
+
+- Danh sách các event trong DOM: http://www.w3schools.com/jsref/dom_obj_event.asp
+
+- Một cách khác để tạo event trên 1 element là sử dụng phương thức addEventListener() trên 1 element. Ví dụ: 
+
+document.getElementById("myButton").addEventListener("click", function(){
+    // Code xử lý khi sự kiện xảy ra
+});
+
+   Chú ý: 1 element có thể add nhiều event cùng loại và khi element bị xóa thì toàn bộ event trên element đó cũng bị xóa theo   
+
+- Tham khảo đối tượng Math và function eval() giúp thực hiện các hàm tính toán
+
+- Thẻ input có attribute là value, nên để set value cho ô input chúng ta làm như sau: 
+
+document.getElementById("input_id").value = "new value here"

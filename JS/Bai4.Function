@@ -1,0 +1,16 @@
+Chú ý
+
+- Demo trong video viết trực tiếp thẻ <script> vào trong tài liệu HTML chỉ để giúp các bạn tập trung được vào code javascript. Trên thực tế phải viết đầy đủ các thẻ html, head, body như thường lệ.
+
+- Lệnh return dùng để trả về kết quả và sau khi đã return thì các lệnh nằm sau nó sẽ không được thực hiện nữa.
+
+- Từ khóa this dùng để trỏ tới chính object mà gọi 1 hàm nào đó. Ví dụ object hero có phương thức say() thì khi gọi hero.say(), this nằm trong hàm say() sẽ tương đương với chính object hero. Chúng ta sử dụng this để tránh lặp lại tên object hoặc trong trường hợp với các object mà chúng ta không rõ tên.
+
+- Sử dụng hàm document.write() với tham số là 1 chuỗi HTML để thay đổi nội dung của trang HTML hiện tại. Ví dụ: 
+
+document.write("<h1>Bài tập</h1>");
+
+- Sử dụng console.log() với tham số bất kỳ để lấy ra giá trị của nó (xem ở phần Console của trình duyệt). Ví dụ: 
+
+x = 5 + 4;
+console.log(x);

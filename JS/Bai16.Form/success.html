@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Success Form</title>
+</head>
+
+<body>
+    <h1>Chúc mừng bạn đã đăng ký thành công</h1>
+    <script>
+        function test() {
+            url_dec = decodeURIComponent(window.location.href);
+            start = url_dec.indexOf('?');
+            document.write(url_dec.replace(url_dec.substr(0, start+1), '').replace(/\+/g, ' ').replace(/&/g, '<br>'));
+        }
+        test();
+    </script>
+</body>
+
+</html>

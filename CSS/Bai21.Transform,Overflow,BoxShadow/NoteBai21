@@ -1,0 +1,33 @@
+Transform, Overflow, BoxShadow
+
+Tham khảo các giá trị của thuộc tính transform: http://www.w3schools.com/cssref/css3_pr_transform.asp​
+
+overflow: http://www.w3schools.com/cssref/pr_pos_overflow.asp
+
+và box-shadow: http://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+
+ 
+
+Các bạn cũng có thể dùng trang này để tạo ra các hiệu ứng box-shadow bằng giao diện rồi copy code CSS về xài: http://css3gen.com/box-shadow/
+
+ 
+
+Chú ý: Các thuộc tính dạy trong phần này khá mới, nên sử dụng CSS vendor prefix.
+
+translate(x, y) 
+Trong đó:
+x là chiều ngang
+y là chiều dọc
+
+box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+
+Có thể hình dung box-shadow là bản sao của phần tử và nằm bên dưới phần tử
+Trong đó
+0px: h-shadow là vị trí của bóng theo chiều ngang
+5px: v-shadow là vị trí của bóng theo chiều dọc
+5px: blur là khoảng mờ
+0px: spread là kích thước của bóng, nếu kích thước = 0px tức là bóng có kích thước bằng phần tử
+rgba(0, 0, 0, 0.2) : màu sắc của bóng
+
+scale có tác dụng thay đổi kích thước của phần tử so n lần so với kích thước gốc
+overflow: hidden dùng để ẩn phần bị tràn ra ngoài khi scale element

@@ -7,39 +7,136 @@
 		.top_menu {
 			position: relative;
 			box-sizing: border-box;
-			height: 102px;
+			height: 18%;
 			width: 100%;
-			background-color:black;
+			background-color: black;
 			color: white;
 			text-align: center;
 		}
 
-		ul li:nth-child(1) {
+		menu > ul li:nth-child(1) {
 			width: 30%;
 		}
 
-		li {
+		#menu li {
 			list-style-type: none;
-			padding: 15px;
+			padding: 40px;
 			margin: 15px;
 		}
 
-		#menu > li {
+		#menu>li {
 			float: left;
 		}
 
-		li a:hover {
-	    	background-color:  white;
-	    	color: blue;
+		#menu>li a:hover {
+			color: black;
+			background-color: blue;
+			text-decoration: none;
+
+		}
+
+		#menu>li a {
+			text-decoration: none;
+		}
+
+		#menu>li a:visited {
+			color: white;
+			text-decoration: none;
+		}
+
+		#menu>li a:active {
+			color: blue;
+			text-decoration: none;
 		}
 
 		html, body {
-		    width: 100%;
+			width: 100%;
 		}
 
 		* {
 			margin: 0;
 			padding: 0;
+		}
+
+		#side_menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: grey;
+		}
+
+		#side_menu li a {
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #555;
+			color: white;
+		}
+
+		li {
+			list-style-type: none;
+		}
+
+		#side_menu>li>ul {
+			list-style-type: none;
+			display: none;
+		}
+
+		#side_menu>li:hover>ul {
+			display: block;
+			margin-left: 30px;
+		}
+
+		/* Other */
+		.container {
+			position: relative;
+			box-sizing: border-box;
+			height: 100%;
+			width: 100%;
+			/* margin: auto; */
+		}
+
+		.content {
+			position: relative;
+			/* top: 10px; */
+			/* left: 20%; */
+			height: 100%;
+			width: 75%;
+			float: left;
+			margin: 20px;
+		}
+
+		.sidebar_menu {
+			position: sticky;
+			top: 25px;
+			width: 15%;
+			float: left;
+			margin: 20px;
+		}
+
+		.menu_item_image {
+			float: left;
+			width: 25%;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		.menu_item_image img {
+			width: 100%;
+		}
+
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		h2 {
+			margin-left: 20px;
 		}
 	</style>
 </head>
@@ -47,12 +144,14 @@
 <body>
 
 	<div class="top_menu">
-		<div class="content">
+		<div class="content_top">
 			<ul id="menu">
-				<li><h1>The Coffe House</h1></li>
+				<li>
+					<h1>The Coffe House</h1>
+				</li>
 				<li>Câu chuyện thương hiệu</li>
 				<li>Chuyện cafe</li>
-				<li><a href="home.html">Menu</a></li>
+				<li><a href="index.html#side_menu">Menu</a></li>
 				<li>Ưu đãi thành viên</li>
 				<li>Blog</li>
 				<li>Tuyển dụng</li>
@@ -62,7 +161,146 @@
 	</div>
 
 	<div class="w3-content">
-		<img class="mySlides" src="img/banner.jpg" alt="custom_html_banner1" style="width:100%" height="90%">
+		<img class="mySlides" src="img/banner.jpg" alt="custom_html_banner1" width="100%">
+	</div>
+
+	<div class="container">
+		<div class="sidebar_menu">
+			<ul id="side_menu">
+				<li>
+					<a href="home.html">DRINKS</a>
+					<ul>
+						<li><a class="menu_scroll_link" href="index.html#mon_noi_bat">MÓN NỔI BẬT</a></li>
+						<li><a class="menu_scroll_link" href="index.html#cafe">CÀ PHÊ</a></li>
+						<li><a class="menu_scroll_link" href="index.html#trai_cay">THỨC UỐNG TRÁI CÂY</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="content">
+
+			<div id="mon_noi_bat" class="clearfix">
+				<h2>MÓN NỔI BẬT</h2>
+
+				<div class="menu_item_image ">
+					<a href="product/matcha_machiatio.html">
+						<img src="img/matcha_macchiato_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="product/tra_dau_cam_vai.html">
+						<img src="img/tra_dau_cam_vai_on_bg_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="product/tra_kim_quat.html">
+						<img src="img/tra_kim_quat_on_bg_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="product/tra_den_machiatio.html">
+						<img src="img/blacktea_macchiat_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="product/tra_dao_cam_sa.html">
+						<img src="img/tra_dao_cam_sa_on_bg_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="product/vnese_coffee_large.html">
+						<img src="img/vnese_coffee_large.jpg">
+					</a>
+				</div>
+			</div>
+
+			<div id="cafe" class="clearfix">
+				<h2>CÀ PHÊ</h2>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/americano_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/white_vnese_coffee_9968c1184d7f4634a9bb9fce7b5ff313_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/vnese_coffee_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/cfs_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/cappuccino_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/caramel_macchiato_b6f694f469794e12b04a91845f5fce2d_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/espresso_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/latte__1__large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="">
+						<img src="img/mocha_large.jpg">
+					</a>
+				</div>
+			</div>
+
+			<div id="trai_cay" class="clearfix">
+				<h2>THỨC UỐNG TRÁI CÂY</h2>
+
+				<div class="menu_item_image">
+					<a href="product/nuoc_ep_cam_tuoi.html">
+						<img src="img/fresh_orange_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="product/sinh_to_cam_xoai.html">
+						<img src="img/mango_smoothie_large.jpg">
+					</a>
+				</div>
+
+				<div class="menu_item_image">
+					<a href="product/sinh_to_viet_quat.html">
+						<img src="img/blueberry_smoothie_large.jpg">
+					</a>
+				</div>
+			</div>
+
+		</div>
 	</div>
 </body>
 

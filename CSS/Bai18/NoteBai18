@@ -1,0 +1,21 @@
+Thuộc tính Display làm thay đổi cách thức hiển thị của 1 phần tử
+
+Block chấp nhận thuộc tính width&height, inline thì không
+
+Block có chiều rộng mặc định 100%, inline thì có chiều rộng bằng nội dung bên trong
+
+Margin, padding khi áp dụng cho inline chỉ làm giãn khoảng cách theo chiều ngang, còn với block là cả 2 chiều
+
+Tham khảo các giá trị của thuộc tính display: http://www.w3schools.com/cssref/pr_class_display.asp
+
+Ví dụ sử dụng display: http://techmaster.vn/posts/33592/khoang-trang-bi-an-ben-duoi-the-img
+
+ 
+
+Chú ý
+
+- Để ẩn một phần tử ta cũng có thể dùng thuộc tính visibility: hidden; . Tuy nhiên thuộc tính này khác với display: none; ở chỗ nó chỉ làm chúng ta không nhìn thấy phần tử, nhưng nó vẫn chiếm chỗ trong layout còn display: none; thì làm phần tử biến mất hẳn khỏi layout.
+
+- Thông thường để căn chỉnh 1 phần tử ra giữa theo chiều ngang với inline (text, image) thì ta dùng text-align: center cho phần tử cha của nó, còn với block thì ta dùng margin: auto 
+
+- Để căn chỉnh 1 phần tử ra giữa theo chiều dọc thì có thể tham khảo https://techmaster.vn/posts/34106/giai-quyet-nhung-van-de-hay-gap-trong-css

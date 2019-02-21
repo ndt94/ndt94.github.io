@@ -1,0 +1,13 @@
+Chú ý
+
+- Tra cứu jQuery APIs tại đây: http://api.jquery.com/
+
+- Khi sử dụng jQuery, mảng kết quả trả về chính là các element trong javascript, và chúng ta có thể tương tác với các phần tử trong mảng như với javascript. Ví dụ 
+
+var p1 = $('.paragraph')[0].innerHTML;   // Lấy ra nội dung HTML của đoạn văn thứ 1
+
+hoặc biến 1 element trong javascript thành jquery bằng cách cho vào $( )
+
+var p2 = $($('.paragraph')[1]).html();   // Lấy nội dung HTML của đoạn văn thứ 2
+
+- Tham khảo, luyện tập thêm về jQuery tại https://www.freecodecamp.com/challenges/learn-how-script-tags-and-document-ready-work
