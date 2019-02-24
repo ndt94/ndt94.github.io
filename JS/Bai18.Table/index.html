@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <link rel="stylesheet" type="text/css" href="table.css">
+</head>
+
+<body>
+    <h1>Bảng thông tin mấy em Hàn xẻng idol</h1>
+    <div id="wrap">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')">Tên</th>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')">Quốc tịch</th>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')">Nhóm máu</th>
+                    <th>Ảnh</th>
+                </tr>
+
+                <tr class="item">
+                    <td>Jihyo</td>
+                    <td>Korean</td>
+                    <td>O</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/jihyo.jpg"
+                            alt="Jihyo"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Nayeon</td>
+                    <td>Korean</td>
+                    <td>A</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/nayeon.jpg"
+                            alt="Nayeon"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Jeongyeon</td>
+                    <td>Korean</td>
+                    <td>O</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/jeongyeon.jpg"
+                            alt="Jeongyeon"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Momo</td>
+                    <td>Japanese</td>
+                    <td>A</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/momo.jpg"
+                            alt="Momo"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Sana</td>
+                    <td>Japanese</td>
+                    <td>B</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/sana.jpg"
+                            alt="Sana"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Mina</td>
+                    <td>Japanese</td>
+                    <td>A</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/mina.jpg"
+                            alt="Mina"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Dahyun</td>
+                    <td>Korean</td>
+                    <td>O</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/dahyun.jpg"
+                            alt="Dahyun"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Chaeyoung</td>
+                    <td>Korean</td>
+                    <td>B</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/chaeyoung.jpg"
+                            alt="Chaeyoung"></td>
+                </tr>
+
+                <tr class="item">
+                    <td>Tzuyu</td>
+                    <td>Taiwanese</td>
+                    <td>A</td>
+                    <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/tzuyu.jpg"
+                            alt="Tzuyu"></td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <script src='script.js'></script>
+</body>
+
+</html>
