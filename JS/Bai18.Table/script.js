@@ -1,8 +1,137 @@
-function sortTable() {
-    // obj = $('.idol').text();
-    // console.log(obj);
-    // arr = Array.from(obj);
-    // console.log(arr);
-    obj = $('.idol').text().split();
-    console.log(obj);
+function sortTableByName() {
+    test = data.sort(function (a, b) {
+        var nameA = a.name.toUpperCase(); // bỏ qua hoa thường
+        var nameB = b.name.toUpperCase(); // bỏ qua hoa thường
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+
+        // name trùng nhau
+        return 0;
+    });
+    renderContent(test);
+}
+
+function sortTableByNation() {
+    test = data.sort(function (a, b) {
+        var nameA = a.nation.toUpperCase(); // bỏ qua hoa thường
+        var nameB = b.nation.toUpperCase(); // bỏ qua hoa thường
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+
+        // name trùng nhau
+        return 0;
+    });
+    renderContent(test);
+}
+
+function sortTableByBlood() {
+    test = data.sort(function (a, b) {
+        var nameA = a.blood.toUpperCase(); // bỏ qua hoa thường
+        var nameB = b.blood.toUpperCase(); // bỏ qua hoa thường
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+
+        // name trùng nhau
+        return 0;
+    });
+    renderContent(test);
+}
+
+$(function () {
+    renderContent(data);
+})
+
+data = [
+    {
+        name: 'Jihyo',
+        nation: 'Korean',
+        blood: 'O',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/jihyo.jpg" alt="Jihyo">',
+    },
+
+    {
+        name: 'Nayeon',
+        nation: 'Korean',
+        blood: 'A',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/nayeon.jpg" alt="Nayeon">',
+    },
+
+    {
+        name: 'Jeongyeon',
+        nation: 'Korean',
+        blood: 'O',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/jeongyeon.jpg" alt="Jeongyeon">',
+    },
+
+    {
+        name: 'Momo',
+        nation: 'Japanese',
+        blood: 'A',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/momo.jpg" alt="Momo">',
+    },
+
+    {
+        name: 'Sana',
+        nation: 'Japanese',
+        blood: 'B',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/sana.jpg" alt="Sana">',
+    },
+
+    {
+        name: 'Mina',
+        nation: 'Japanese',
+        blood: 'A',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/mina.jpg" alt="Mina">',
+    },
+
+    {
+        name: 'Dahyun',
+        nation: 'Korean',
+        blood: 'O',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/dahyun.jpg" alt="Dahyun">',
+    },
+
+    {
+        name: 'Chaeyoung',
+        nation: 'Korean',
+        blood: 'B',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/chaeyoung.jpg" alt="Chaeyoung">',
+    },
+
+    {
+        name: 'Tzuyu',
+        nation: 'Taiwanese',
+        blood: 'A',
+        image: '<img style="display:block;" width="100%" height="70%" class="picture" src="img/tzuyu.jpg" alt="Tzuyu">',
+    }
+]
+
+
+function renderContent(data) {
+    var htmlContent = '';
+
+    for (let i = 0; i < data.length; i++) {
+        htmlContent += '<tr>';
+
+        htmlContent += '<td>' + data[i].name + '</td>';
+        htmlContent += '<td>' + data[i].nation + '</td>';
+        htmlContent += '<td>' + data[i].blood + '</td>';
+        htmlContent += '<td>' + data[i].image + '</td>';
+
+        htmlContent += '</tr>';
+    }
+
+    $('#myTable tbody').html(htmlContent);
 }

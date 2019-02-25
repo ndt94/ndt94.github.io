@@ -14,15 +14,22 @@
     <div id="wrap">
         <table id="myTable">
             <thead>
-                <tr>
+                <!-- <tr>
                     <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')">Tên</th>
                     <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')">Quốc tịch</th>
                     <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')">Nhóm máu</th>
                     <th>Ảnh</th>
+                </tr> -->
+
+                <tr>
+                    <th id="name" onclick="sortTableByName()">Tên</th>
+                    <th id="nation" onclick="sortTableByNation()">Quốc tịch</th>
+                    <th id="blood" onclick="sortTableByBlood()">Nhóm máu</th>
+                    <th id="image">Ảnh</th>
                 </tr>
 
-                <tr class="item">
-                    <td>Jihyo</td>
+                <!-- <tr class="item">
+                    <td class="idol">Jihyo</td>
                     <td>Korean</td>
                     <td>O</td>
                     <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/jihyo.jpg"
@@ -30,7 +37,7 @@
                 </tr>
 
                 <tr class="item">
-                    <td>Nayeon</td>
+                    <td class="idol">Nayeon</td>
                     <td>Korean</td>
                     <td>A</td>
                     <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/nayeon.jpg"
@@ -91,8 +98,10 @@
                     <td>A</td>
                     <td><img style="display:block;" width="100%" height="70%" class="picture" src="img/tzuyu.jpg"
                             alt="Tzuyu"></td>
-                </tr>
+                </tr> -->
             </thead>
+
+            <tbody></tbody>
         </table>
     </div>
 
