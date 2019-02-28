@@ -7,7 +7,9 @@ body {
     background: #B2AD98;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid grey;
     border-collapse: collapse;
     padding: 1vw;
@@ -21,30 +23,18 @@ table {
     margin: auto;
 }
 
-.icon{
+.icon {
     position: relative;
     width: 1vw;
     left: 10%;
 }
-/* table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
 
-th, td {
-    padding: 15px;
-}
-
-table {
-    border-spacing: 5px;
-} */
-
-tr:hover td{
+tr:hover td {
     background: #434144;
     color: #D6D1B8;
 }
 
-.picture{
+.picture {
     max-width: 17vw;
 }
 

@@ -1,58 +1,3 @@
-function sortTableByName() {
-    test = data.sort(function (a, b) {
-        var nameA = a.name.toUpperCase(); // bỏ qua hoa thường
-        var nameB = b.name.toUpperCase(); // bỏ qua hoa thường
-        if (nameA < nameB) {
-            return -1;
-        }
-        if (nameA > nameB) {
-            return 1;
-        }
-
-        // name trùng nhau
-        return 0;
-    });
-    renderContent(test);
-}
-
-function sortTableByNation() {
-    test = data.sort(function (a, b) {
-        var nameA = a.nation.toUpperCase(); // bỏ qua hoa thường
-        var nameB = b.nation.toUpperCase(); // bỏ qua hoa thường
-        if (nameA < nameB) {
-            return -1;
-        }
-        if (nameA > nameB) {
-            return 1;
-        }
-
-        // name trùng nhau
-        return 0;
-    });
-    renderContent(test);
-}
-
-function sortTableByBlood() {
-    test = data.sort(function (a, b) {
-        var nameA = a.blood.toUpperCase(); // bỏ qua hoa thường
-        var nameB = b.blood.toUpperCase(); // bỏ qua hoa thường
-        if (nameA < nameB) {
-            return -1;
-        }
-        if (nameA > nameB) {
-            return 1;
-        }
-
-        // name trùng nhau
-        return 0;
-    });
-    renderContent(test);
-}
-
-$(function () {
-    renderContent(data);
-})
-
 data = [
     {
         name: 'Jihyo',
@@ -118,36 +63,117 @@ data = [
     }
 ]
 
-// copy1= JSON.parse(JSON.stringify(data));
-// copy2= JSON.parse(JSON.stringify(data));
 
-// asc = copy1.sort(function (a, b) {
-//     var nameA = a.name.toUpperCase(); // bỏ qua hoa thường
-//     var nameB = b.name.toUpperCase(); // bỏ qua hoa thường
-//     if (nameA < nameB) {
-//         return -1;
-//     }
-//     if (nameA > nameB) {
-//         return 1;
-//     }
+$(function () {
+    renderContent(data);
+})
 
-//     // name trùng nhau
-//     return 0;
-// });
+click = 0;
 
-// desc = copy2.sort(function (a, b) {
-//     var nameA = a.name.toUpperCase(); // bỏ qua hoa thường
-//     var nameB = b.name.toUpperCase(); // bỏ qua hoa thường
-//     if (nameA < nameB) {
-//         return 1;
-//     }
-//     if (nameA > nameB) {
-//         return -1;
-//     }
+function sortTableByName() {
+    click++;
+    if (click % 2 !== 0) {
+        asc = data.sort(function (a, b) {
+            var nameA = a.name.toUpperCase(); // bỏ qua hoa thường
+            var nameB = b.name.toUpperCase(); // bỏ qua hoa thường
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
 
-//     // name trùng nhau
-//     return 0;
-// });
+            // name trùng nhau
+            return 0;
+        });
+        renderContent(asc);
+    } else {
+        desc = data.sort(function (a, b) {
+            var nameA = a.name.toUpperCase(); // bỏ qua hoa thường
+            var nameB = b.name.toUpperCase(); // bỏ qua hoa thường
+            if (nameA < nameB) {
+                return 1;
+            }
+            if (nameA > nameB) {
+                return -1;
+            }
+
+            // name trùng nhau
+            return 0;
+        });
+        renderContent(desc);
+    }
+}
+
+function sortTableByNation() {
+    click++;
+    if (click % 2 !== 0) {
+        asc = data.sort(function (a, b) {
+            var nameA = a.nation.toUpperCase(); // bỏ qua hoa thường
+            var nameB = b.nation.toUpperCase(); // bỏ qua hoa thường
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+
+            // name trùng nhau
+            return 0;
+        });
+        renderContent(asc);
+    } else {
+        desc = data.sort(function (a, b) {
+            var nameA = a.nation.toUpperCase(); // bỏ qua hoa thường
+            var nameB = b.nation.toUpperCase(); // bỏ qua hoa thường
+            if (nameA < nameB) {
+                return 1;
+            }
+            if (nameA > nameB) {
+                return -1;
+            }
+
+            // name trùng nhau
+            return 0;
+        });
+        renderContent(desc);
+    }
+}
+
+function sortTableByBlood() {
+    click++;
+    if (click % 2 !== 0) {
+        asc = data.sort(function (a, b) {
+            var nameA = a.blood.toUpperCase(); // bỏ qua hoa thường
+            var nameB = b.blood.toUpperCase(); // bỏ qua hoa thường
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+
+            // name trùng nhau
+            return 0;
+        });
+        renderContent(asc);
+    } else {
+        desc = data.sort(function (a, b) {
+            var nameA = a.blood.toUpperCase(); // bỏ qua hoa thường
+            var nameB = b.blood.toUpperCase(); // bỏ qua hoa thường
+            if (nameA < nameB) {
+                return 1;
+            }
+            if (nameA > nameB) {
+                return -1;
+            }
+
+            // name trùng nhau
+            return 0;
+        });
+        renderContent(desc);
+    }
+}
 
 function renderContent(data) {
     var htmlContent = '';
@@ -166,36 +192,33 @@ function renderContent(data) {
     $('#myTable tbody').html(htmlContent);
 }
 
-click = 0;
-$('#name').on("click",function () {
-    click++;
-    $('#icon2').attr('src',"img/sort-arrows-couple-pointing-up-and-down.png");
-    $('#icon3').attr('src',"img/sort-arrows-couple-pointing-up-and-down.png");
-    if(click%2 !==0){
-        $('#icon1').attr('src',"img/down.png")
-    }else{
-        $('#icon1').attr('src',"img/up.png")
+
+$('#name').on("click", function () {
+    $('#icon2').attr('src', "img/sort-arrows-couple-pointing-up-and-down.png");
+    $('#icon3').attr('src', "img/sort-arrows-couple-pointing-up-and-down.png");
+    if (click % 2 !== 0) {
+        $('#icon1').attr('src', "img/down.png")
+    } else {
+        $('#icon1').attr('src', "img/up.png")
     }
 });
 
-$('#nation').on("click",function () {
-    click++;
-    $('#icon1').attr('src',"img/sort-arrows-couple-pointing-up-and-down.png");
-    $('#icon3').attr('src',"img/sort-arrows-couple-pointing-up-and-down.png");
-    if(click%2 !==0){
-        $('#icon2').attr('src',"img/down.png")
-    }else{
-        $('#icon2').attr('src',"img/up.png")
+$('#nation').on("click", function () {
+    $('#icon1').attr('src', "img/sort-arrows-couple-pointing-up-and-down.png");
+    $('#icon3').attr('src', "img/sort-arrows-couple-pointing-up-and-down.png");
+    if (click % 2 !== 0) {
+        $('#icon2').attr('src', "img/down.png")
+    } else {
+        $('#icon2').attr('src', "img/up.png")
     }
 });
 
-$('#blood').on("click",function () {
-    click++;
-    $('#icon2').attr('src',"img/sort-arrows-couple-pointing-up-and-down.png");
-    $('#icon1').attr('src',"img/sort-arrows-couple-pointing-up-and-down.png");
-    if(click%2 !==0){
-        $('#icon3').attr('src',"img/down.png")
-    }else{
-        $('#icon3').attr('src',"img/up.png")
+$('#blood').on("click", function () {
+    $('#icon2').attr('src', "img/sort-arrows-couple-pointing-up-and-down.png");
+    $('#icon1').attr('src', "img/sort-arrows-couple-pointing-up-and-down.png");
+    if (click % 2 !== 0) {
+        $('#icon3').attr('src', "img/down.png")
+    } else {
+        $('#icon3').attr('src', "img/up.png")
     }
 });
