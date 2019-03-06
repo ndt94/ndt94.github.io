@@ -1,0 +1,14 @@
+.breadcrumb > li + li:before {
+    content: "| " !important;
+}
+nav {
+    float: right;
+    padding: 10px;
+}
+
+.bottom {
+    height: 60px;
+}
+/* .breadcrumb-item + .breadcrumb-item::before {
+    content: "| " !important; 
+  }  */
