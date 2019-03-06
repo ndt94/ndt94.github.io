@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.div1 {
+    height: 30px;
+}
+
+.div2 {
+    float: left;
+    padding: 0 20px;
+}
+
+.div3 {
+    float: left;
+    width: 60%;
+    padding-right: 20px;
+}
+
+.div4 {
+    float: left;
+    width: 40%;
+}
+
+.div5 {
+    float: left;
+    width: 50%;
+    padding: 0px 15px 15px;
+}
+
+.image {
+    width: 100%;
+}
+
+@media screen and (max-width : 992px) {
+    .div3 {width: 100%; padding:0 0 20px 0;}
+    .div4 {width: 100%; padding-right: 18px;}
+    .div5 {padding-left: 0px;}
+}

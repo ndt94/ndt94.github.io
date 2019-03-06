@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.div1 {
+    height: 30px;
+}
+
+.div2 {
+    margin-top: -7.5px;
+    float: left;
+    padding: 0 calc(20% - 7.5px);
+}
+
+.div3 {
+    float: left;
+    width: 33.33%;
+    padding: 7.5px;
+}
+
+.image {
+    width: 100%;
+}
+
+@media screen and (max-width : 768px) {
+    .div3 {width: 100%}
+}
