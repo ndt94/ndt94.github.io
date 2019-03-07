@@ -1,9 +1,7 @@
-.navbar, .navbar-light, .bg-light {
-    float: right;
-}
-.image {
-    float: left;
-}
 .bottom {
     height: 60px;
+}
+@media screen and (max-width : 992px) {
+    .float-left {display: none;}
+    .float-right {float: left !important;}
 }
