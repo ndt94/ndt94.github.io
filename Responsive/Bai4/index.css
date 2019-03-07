@@ -1,14 +1,9 @@
-.breadcrumb > li + li:before {
-    content: "| " !important;
-}
-nav {
+.navbar, .navbar-light, .bg-light {
     float: right;
-    padding: 10px;
 }
-
+.image {
+    float: left;
+}
 .bottom {
     height: 60px;
 }
-/* .breadcrumb-item + .breadcrumb-item::before {
-    content: "| " !important; 
-  }  */

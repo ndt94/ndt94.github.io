@@ -13,14 +13,35 @@
 
 <body>
     <div class="top">
-        <div class="top-left"></div>
+        <div class="top-left">
+            <!-- Just an image -->
+            <nav class="navbar navbar-light bg-light top-left">
+                <a class="navbar-brand" href="#">
+                    <img class="image" src="img/600px-Hazard_X.svg.png" width="30" height="30" alt="">
+                </a>
+            </nav>
+        </div>
         <!-- <div class="top-right"></div> -->
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Menu 1</a></li>
-                <li class="breadcrumb-item"><a href="#">Menu 2</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Menu 3</li>
-            </ol>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Menu 1<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu 3</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
     <div class="bottom"></div>
