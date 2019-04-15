@@ -1,0 +1,19 @@
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Home-v2.4" transform="translate(-1198.000000, -1955.000000)">
+                            <g id="SECTION-1" transform="translate(405.000000, 1810.000000)">
+                                <g id="VIDEO" transform="translate(570.000000, 0.000000)">
+                                    <circle id="Oval" stroke-opacity="0.341457201" stroke="#FFFFFF" stroke-width="2"
+                                        fill="#2F5BEA" cx="271" cy="193" r="47"></circle>
+                                    <g id="triangle-right-17" transform="translate(263.000000, 177.000000)"
+                                        fill="#FFFFFF">
+                                        <path
+                                            d="M1.0945,0.133923456 C0.8855,-0.0198173026 0.6084375,-0.043469727 0.37675,0.0747923948 C0.14575,0.193054517 0,0.433057058 0,0.695320704 L0,31.3043405 C0,31.5666041 0.14575,31.8066066 0.37675,31.9248688 C0.474375,31.9749563 0.581625,32 0.6875,32 C0.8311875,32 0.9741875,31.9547821 1.0945,31.8657377 L21.7195,16.5612278 C21.8961875,16.4297482 22,16.2210503 22,15.9998306 C22,15.7786108 21.8961875,15.569913 21.7195,15.4384333 L1.0945,0.133923456 Z"
+                                            id="Path"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>

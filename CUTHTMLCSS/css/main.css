@@ -1,0 +1,41 @@
+#header {
+    background-image: url('../img/Path12+13.svg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    margin-left: 385px;
+    margin-right: 385px;
+}
+
+/* .video {
+    background-image: url('../img/playbutton.svg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+/* .test {
+    background-image: url('../img/playbutton.png');
+    height: 150%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.testimonial {
+    background-color: #151C32;
+}
+
+#cta {
+    background-image: url('../img/cta-bg.svg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
