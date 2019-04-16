@@ -7,10 +7,17 @@
 }
 
 .navbar {
-    margin-left: 385px;
-    margin-right: 385px;
+    margin-left: 370px;
+    margin-right: 370px;
 }
 
+.navbar-brand {
+    /* margin-right: 504px; */
+}
+
+.nav-item {
+    margin-right: 75.5px;
+}
 /* .video {
     background-image: url('../img/playbutton.svg');
     height: 100%;
@@ -32,10 +39,26 @@
 }
 
 #cta {
-    background-image: url('../img/cta-bg.svg');
+    background-image: url('../img/group2.svg');
     height: 50vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.input-group {
+    max-width: 523px;
+}
+
+.feature {
+    background-image: url('../img/BG.png');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.test {
+    background-color: white;
 }
 
