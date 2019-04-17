@@ -33,7 +33,32 @@
     background-position: center;
     background-repeat: no-repeat;
 } */
+.why {
+    margin-top: 124px;
+    margin-bottom: 111px;
+}
 
+.section1 {
+    margin-bottom: 134px;
+}
+
+.cta1 {
+    background: #2F5BEA;
+    margin-bottom: 84px;
+}
+
+.feature {
+    background-image: url('../img/BG.png');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+
+.section2 {
+    margin-bottom: 137px;
+}
 .testimonial {
     background-color: #151C32;
 }
@@ -44,19 +69,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 127px;
 }
 
 .input-group {
     max-width: 523px;
 }
 
-.feature {
-    background-image: url('../img/BG.png');
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 
 .test {
     background-color: white;
@@ -71,9 +91,7 @@
     
 }
 
-#cta1 {
-    background: #2F5BEA;
-}
+
 
 #mobile {
     position: relative;
