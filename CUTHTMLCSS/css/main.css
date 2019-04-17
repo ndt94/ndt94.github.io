@@ -79,3 +79,13 @@
     position: relative;
     top: 80px;
 }
+
+.cta1-left {
+    padding-top: 150px;
+    color:white;
+}
+
+.cta1-right {
+    padding-top: 120px;
+    color:white;
+}
