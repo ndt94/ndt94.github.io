@@ -1,38 +1,70 @@
-#header {
+/* HEADER */
+
+.header {
 	background-image: url("../img/Path12+13.svg");
-	height: 100vh;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .navbar {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 95px;
+}
+
+.logo-header {
+	/* margin-right:11px; */
+	padding-right: 11px;
+}
+/* .navbar {
 	margin-left: 370px;
 	margin-right: 370px;
-}
-
-.navbar-brand {
-	/* margin-right: 504px; */
-}
+} */
 
 .nav-item {
-	margin-right: 75.5px;
+	margin-right: 45px;
 }
-/* .video {
-    background-image: url('../img/playbutton.svg');
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
 
-/* .test {
-    background-image: url('../img/playbutton.png');
-    height: 150%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+.navbar-button {
+	background: #2f5bea;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	font-family: Aileron-Bold;
+	font-size: 17px;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.header-h1 {
+	font-family: Aileron-Bold;
+	font-size: 48px;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 62px;
+	margin-bottom: 0px;
+}
+
+.header-content {
+	margin-top: 15px;
+	font-family: Aileron-SemiBold;
+	font-size: 18px;
+	color: #d2d2d2;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 34px;
+	margin-bottom: 30px;
+}
+.header-content p {
+	margin-bottom: 0px;
+}
+.button {
+	margin-bottom: 107px;
+}
 
 /* WHY SECTION */
 
@@ -450,13 +482,13 @@ span {
 }
 
 .footer-content-3 {
-  margin-top: 24px;
+	margin-top: 24px;
 	font-family: Aileron-Regular;
 	font-size: 16px;
 	color: #54565a;
 	letter-spacing: 0;
-  line-height: 30px;
-  margin-bottom: 33px;
+	line-height: 30px;
+	margin-bottom: 33px;
 }
 
 .footer-h4 {
