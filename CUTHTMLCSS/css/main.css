@@ -3,7 +3,25 @@ html {
     font-size: 16px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
     html {
         font-size: 10px;
     }
@@ -14,7 +32,7 @@ html {
     font-family: "Aileron-Bold";
     src: url("../fonts/aileron/aileron-bold-webfont.woff2") format("woff2"),
         /* Super Modern Browsers */
-            url("../fonts/aileron/aileron-bold-webfont.woff") format("woff"); /* Pretty Modern Browsers */
+            url("../fonts/aileron/aileron-bold-webfont.woff") format("woff") /* Pretty Modern Browsers */
 }
 
 @font-face {
@@ -30,14 +48,14 @@ html {
     font-family: "Aileron-Regular";
     src: url("../fonts/aileron/aileron-regular-webfont.woff2") format("woff2"),
         /* Super Modern Browsers */
-            url("../fonts/aileron/aileron-regular-webfont.woff") format("woff"); /* Pretty Modern Browsers */
+            url("../fonts/aileron/aileron-regular-webfont.woff") format("woff") /* Pretty Modern Browsers */
 }
 
 @font-face {
     font-family: "Aileron-SemiBold";
     src: url("../fonts/aileron/aileron-semibold-webfont.woff2") format("woff2"),
         /* Super Modern Browsers */
-            url("../fonts/aileron/aileron-semibold-webfont.woff") format("woff"); /* Pretty Modern Browsers */
+            url("../fonts/aileron/aileron-semibold-webfont.woff") format("woff") /* Pretty Modern Browsers */
 }
 
 /* HEADER */
@@ -54,17 +72,13 @@ html {
 .navbar {
     padding-left: 0px;
     padding-right: 0px;
-    margin-bottom: 95px;
+    margin-bottom: 5.9375rem;
 }
 
 .logo-header {
     /* margin-right:11px; */
     padding-right: 11px;
 }
-/* .navbar {
-	margin-left: 370px;
-	margin-right: 370px;
-} */
 
 .nav-item {
     margin-right: 45px;
@@ -92,30 +106,32 @@ html {
 }
 
 .header-content {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     font-family: Aileron-SemiBold;
     font-size: 1.125rem;
     color: #d2d2d2;
     letter-spacing: 0;
     text-align: center;
     line-height: 1.889;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
+
 .header-content p {
     margin-bottom: 0px;
 }
+
 .button {
-    margin-bottom: 107px;
+    margin-bottom: 6.6875rem;
 }
 
 /* WHY SECTION */
 
 .why {
-    margin-top: 124px;
-    margin-bottom: 111px;
+    margin-top: 7.75rem;
+    margin-bottom: 6.9375rem;
 }
 
-.title p {
+.why-title {
     font-family: Aileron-Bold;
     font-size: 1rem;
     color: #7e8085;
@@ -123,37 +139,37 @@ html {
     text-align: center;
 }
 
-.title h2 {
+.why-h2 {
     font-family: Aileron-Bold;
     font-size: 2.125rem;
     color: #2c2e30;
     letter-spacing: 0;
     text-align: center;
     line-height: 1.352;
-    margin-top: 13px;
-    margin-bottom: 86px;
+    margin-top: 0.8125rem;
+    margin-bottom: 5.375rem;
 }
 
 .clearfix p {
-    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
 }
 
-.criteria {
+.why-criteria {
     font-family: Aileron-Bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #2c2e30;
     letter-spacing: 0;
 }
 
 span {
     font-family: Aileron-SemiBold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #2f5bea;
     letter-spacing: 0;
-    line-height: 28px;
+    line-height: 1.75;
 }
 
-.why1 .content {
+.why-content {
     font-family: Aileron-Regular;
     font-size: 1rem;
     color: #54565a;
@@ -164,7 +180,7 @@ span {
 /* SECTION1 */
 
 .section1 {
-    margin-bottom: 134px;
+    margin-bottom: 8.375rem;
 }
 
 .section1-title {
@@ -172,8 +188,8 @@ span {
     font-size: 1rem;
     color: #7e8085;
     letter-spacing: 0;
-    margin-top: 29px;
-    margin-bottom: 13px;
+    margin-top: 1.8125rem;
+    margin-bottom: 0.8125rem;
 }
 
 .section1-h2 {
@@ -191,7 +207,7 @@ span {
     color: #54565a;
     letter-spacing: 0;
     line-height: 1.75;
-    margin-bottom: 44px;
+    margin-bottom: 2.75rem;
 }
 
 /* CTA1 */
@@ -203,16 +219,16 @@ span {
 
 #mobile {
     position: relative;
-    top: 120px;
+    top: 7.5rem;
 }
 
 .cta1-left {
-    padding-top: 214px;
+    padding-top: 13.375rem;
     color: white;
 }
 
 .cta1-right {
-    padding-top: 244px;
+    padding-top: 15.25rem;
     color: white;
 }
 
@@ -250,15 +266,15 @@ span {
 
 .feature {
     background-image: url("../img/BG.png");
-    height: 84.3vh;
+    height: 52.6875rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 252px;
+    margin-bottom: 15.75rem;
 }
 
 .feature-title {
-    padding-top: 242px;
+    padding-top: 15.125rem;
     font-family: Aileron-Bold;
     font-size: 1rem;
     color: #7e8085;
@@ -268,7 +284,7 @@ span {
 }
 
 .feature-h2 {
-    margin-top: 13px;
+    margin-top: 0.8125rem;
     font-family: Aileron-Bold;
     font-size: 2.125rem;
     color: #2c2e30;
@@ -288,17 +304,36 @@ span {
   background: #ffffff;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
   border-radius: 5px; */
-    background: #ffffff;
+
+    /* background: #ffffff;
     box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
     border-radius: 5px;
     margin-top: 90px;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 15px; */
+
+    /* position: relative;
+    background: #ffffff;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    top: 5.625rem;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem; */
+
+    position: relative;
+    top: 5.625rem;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    width: 25.6875rem;
+    height: 31.5rem;
+    background: #ffffff;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
 }
 
 .feature-icon {
-    margin-top: 56px;
-    margin-bottom: 37px;
+    padding-top: 3.5rem;
+    padding-bottom: 2.3125rem;
 }
 
 .feature-criteria {
@@ -307,7 +342,7 @@ span {
     letter-spacing: 0;
     text-align: center;
     line-height: 1.4167;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .feature-content {
@@ -317,17 +352,18 @@ span {
     letter-spacing: 0;
     text-align: center;
     line-height: 1.75;
-    margin-bottom: 43px;
+    margin-bottom: 2.6875rem;
 }
 
 .feature-btn {
-    margin-bottom: 54px;
+    margin-bottom: 3.375rem;
 }
 
 /* SECTION2 */
 
 .section2 {
-    margin-bottom: 137px;
+    margin-top: 16.75rem;
+    margin-bottom: 8.5625rem;
 }
 
 .section2-title {
@@ -340,7 +376,7 @@ span {
 }
 
 .section2-h2 {
-    margin-top: 13px;
+    margin-top: 0.8125rem;
     font-family: Aileron-Bold;
     font-size: 2.125rem;
     color: #2c2e30;
@@ -351,7 +387,7 @@ span {
 }
 
 .section2-block {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .section2-criteria {
@@ -359,7 +395,7 @@ span {
     font-size: 1.5rem;
     color: #2c2e30;
     letter-spacing: 0;
-    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
 }
 
 .section2-content {
@@ -368,12 +404,8 @@ span {
     color: #54565a;
     letter-spacing: 0;
     line-height: 1.75;
-    margin-bottom: 38px;
+    margin-bottom: 2.375rem;
 }
-
-/* .img-left {
-  height: 65.1vh;
-} */
 
 /* TESTIMONIAL */
 
@@ -387,12 +419,12 @@ span {
     color: #7e8085;
     letter-spacing: 0;
     text-align: center;
-    padding-top: 123px;
+    padding-top: 7.6875rem;
     margin-bottom: 0px;
 }
 
 .testi-h2 {
-    margin-top: 13px;
+    margin-top: 0.8125rem;
     font-family: Aileron-Bold;
     font-size: 2.125rem;
     color: #ffffff;
@@ -403,7 +435,7 @@ span {
 }
 
 .testi-block {
-    margin-top: 123px;
+    margin-top: 7.6875rem;
 }
 
 .testi-block-1 {
@@ -412,8 +444,8 @@ span {
     color: #c9cdd5;
     letter-spacing: 0;
     line-height: 1.714;
-    margin-bottom: 31px;
-    padding-top: 22px;
+    margin-bottom: 1.9375rem;
+    padding-top: 1.375rem;
 }
 
 .testi-block-2 {
@@ -421,7 +453,7 @@ span {
     font-size: 1.3125rem;
     color: #ffffff;
     letter-spacing: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .testi-block-3 {
@@ -429,26 +461,26 @@ span {
     font-size: 1rem;
     color: #7e8085;
     letter-spacing: 0;
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
 }
 
 .testi-img-1 {
-    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
 }
 
 .testi-img-2 {
-    padding-bottom: 143px;
+    padding-bottom: 8.9375rem;
 }
 
 /* CTA  */
 
 .cta {
     background-image: url("../img/cta-bg.png");
-    height: 60vh;
+    height: 37.5rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 127px;
+    margin-bottom: 7.9375rem;
 }
 
 .cta-h2 {
@@ -457,8 +489,8 @@ span {
     color: #ffffff;
     letter-spacing: 0;
     text-align: center;
-    padding-top: 175px;
-    margin-bottom: 14px;
+    padding-top: 10.9375rem;
+    margin-bottom: 0.875rem;
 }
 
 .cta-content {
@@ -472,11 +504,11 @@ span {
 }
 
 .input-group {
-    margin-top: 47px;
+    margin-top: 2.9375rem;
     max-width: 523px;
     max-height: 75px;
     /* height: 75px; */
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
 .cta-content-1 {
@@ -502,7 +534,7 @@ span {
 /* FOOTER */
 
 .logo-footer {
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
 }
 
 .footer-content-1 {
@@ -511,7 +543,7 @@ span {
     color: #54565a;
     letter-spacing: 0;
     line-height: 1.6875;
-    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
 }
 
 .footer-content-2 {
@@ -524,13 +556,13 @@ span {
 }
 
 .footer-content-3 {
-    margin-top: 24px;
+    margin-top: 1.5rem;
     font-family: Aileron-Regular;
     font-size: 1rem;
     color: #54565a;
     letter-spacing: 0;
     line-height: 1.875;
-    margin-bottom: 33px;
+    margin-bottom: 2.0625rem;
 }
 
 .footer-h4 {
