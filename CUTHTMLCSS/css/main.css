@@ -239,6 +239,13 @@ span {
 	color: white;
 }
 
+@media (max-width: 768px) {
+	.cta1-right {
+		padding-top: 10rem;
+		padding-bottom: 7rem;
+	}
+}
+
 .cta1-title {
 	font-family: Aileron-Bold;
 	font-size: 1rem;
@@ -267,6 +274,11 @@ span {
 	font-size: 1.3125rem;
 	color: #ffffff;
 	letter-spacing: 0;
+}
+
+.cta1-icon {
+	position: relative;
+	left: -20px;
 }
 
 /* FEATURE */
@@ -462,6 +474,10 @@ span {
 
 .testi-img-2 {
 	padding-bottom: 8.9375rem;
+}
+
+.testi-logo {
+	padding-bottom: 1rem;
 }
 
 /* CTA  */
