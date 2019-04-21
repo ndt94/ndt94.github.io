@@ -10,19 +10,19 @@ html {
 	.feature-block {
 		width: 25.6875rem;
 		height: 31.5rem;
-    }
+	}
 }
 
 @media (min-width: 992px) {
 	html {
 		font-size: 14px;
-    }
+	}
 }
 
 @media (min-width: 1200px) {
 	html {
 		font-size: 16px;
-    }
+	}
 }
 
 @media (max-width: 768px) {
@@ -348,8 +348,8 @@ span {
 }
 
 @media (max-width: 768px) {
-    .feature-content {
-        margin-bottom: 1rem;
+	.feature-content {
+		margin-bottom: 1rem;
 	}
 }
 
@@ -366,8 +366,8 @@ span {
 
 @media (max-width: 425px) {
 	.section2 {
-        margin-top: 20rem;
-    }
+		margin-top: 20rem;
+	}
 }
 
 .section2-title {
@@ -472,12 +472,25 @@ span {
 	margin-bottom: 1.6875rem;
 }
 
-.testi-img-2 {
+/* .testi-img-2 {
 	padding-bottom: 8.9375rem;
-}
+} */
 
 .testi-logo {
 	padding-bottom: 1rem;
+}
+
+.carousel-indicators li {
+	background-color: #2f5bea;
+	border-radius: 8px;
+	width: 16.5rem;
+	height: 0.5625rem;
+}
+
+.carousel-indicators {
+	position: relative;
+	margin-top: 1.6875rem;
+	margin-bottom: 8.9375rem;
 }
 
 /* CTA  */
@@ -577,4 +590,41 @@ span {
 	font-size: 1.125rem;
 	color: #2c2e30;
 	letter-spacing: 0;
+}
+
+.footer-2 {
+	margin-top: 6.9375rem;
+	background: #ffffff;
+	border: 1px solid #e7eaee;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.footer-2-left {
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+}
+
+.footer-2-img {
+	padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+	.footer-2-img {
+		max-width: 17%;
+	}
+}
+
+@media (min-width: 768px) {
+	.footer-2-img {
+		max-width: 10%;
+	}
+}
+
+.footer2-span {
+	font-family: Aileron-Bold;
+	font-size: 0.875rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	margin-right: 1rem;
 }
