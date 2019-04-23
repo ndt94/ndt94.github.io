@@ -3,6 +3,31 @@
 html {
 	font-size: 16px;
 }
+
+@media (min-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 10px;
+	}
+}
+
 /* FONTS */
 @font-face {
 	font-family: "SFUIDisplay-Medium";
@@ -94,10 +119,9 @@ html {
 	margin-bottom: 0px;
 }
 
-.header-logo {
-	/* margin-top: 10.34375rem; */
+/* .header-logo {
 	margin-left: 4.1875rem;
-}
+} */
 
 /* ABOUT */
 
@@ -139,15 +163,23 @@ html {
 	letter-spacing: 0;
 }
 
-/* .vl {
-	border-left: 5px solid #5ca1f1;
+/* .v2 {
+	border-right: 5px solid #5ca1f1;
 	height: 107px;
-	position: absolute;
-	left: 50%;
-	margin-left: -3px;
-	top: 0;
+	position: relative;
 	opacity: 0.4;
+	top: 32px;
 } */
+
+.v2 {
+	border-left: 5px solid #5ca1f1;
+	height: 6.6875rem;
+	position: absolute;
+	opacity: 0.4;
+	left: 50%;
+	margin-top: 2rem;
+	margin-left: -0.25rem;
+}
 
 /* .grid-divider {
 	overflow-x: hidden;
@@ -176,6 +208,10 @@ html {
 	/* margin-left: 16.625rem; */
 }
 
+.mywork-right {
+	/* margin-left: 5.5625rem; */
+}
+
 .mywork-title {
 	padding-top: 7.375rem;
 	padding-left: 2.3125rem;
@@ -183,10 +219,35 @@ html {
 	font-size: 3.4375rem;
 	color: #333333;
 	letter-spacing: 0;
+	margin-bottom: 3.375rem;
 }
 
-.mywork-right {
-	/* margin-left: 5.5625rem; */
+.hl {
+	border-top: 4px solid #5a9dea;
+	width: 6.9375rem;
+	margin-left: 15.5rem;
+}
+
+.mywork-subtitle {
+	font-family: SFUIDisplay-Semibold;
+	font-size: 1.8125rem;
+	color: #383838;
+	letter-spacing: 0;
+	margin-bottom: 0px;
+}
+
+.mywork-content {
+	margin-top: 1.875rem;
+	font-family: SFUIDisplay-Regular;
+	font-size: 1rem;
+	color: #848484;
+	letter-spacing: 0;
+	line-height: 1.625rem;
+	margin-bottom: 0px;
+}
+
+#mywork-Carousel > .carousel-indicators {
+	position: relative;
 }
 
 /* TESTIMONIAL */
@@ -263,7 +324,7 @@ html {
 	height: 0.125rem;
 }
 
-.carousel-indicators {
+#myCarousel > .carousel-indicators {
 	position: relative;
 	margin-top: -6.25rem;
 	margin-bottom: 8.25rem;
@@ -274,11 +335,18 @@ html {
 .contact {
 	margin-bottom: 11rem;
 }
+
 .contact-title {
 	font-family: SFUIDisplay-Semibold;
 	font-size: 3.4375rem;
 	color: #333333;
 	letter-spacing: 0;
+}
+
+.contact > .hl {
+	border-top: 4px solid #5a9dea;
+	width: 6.9375rem;
+	margin-left: 7.1875rem;
 }
 
 .contact-content {
@@ -315,12 +383,12 @@ html {
 	padding-top: 1.84375rem;
 	padding-bottom: 3.125rem;
 }
+
 .footer-name {
 	font-family: STIXGeneral-Bold;
 	font-size: 1.625rem;
 	color: #ffffff;
 	letter-spacing: 0;
-	/* margin-right: 1.875rem; */
 }
 
 .footer-slash {
@@ -328,7 +396,6 @@ html {
 	font-size: 1.375rem;
 	color: #ffffff;
 	letter-spacing: 0;
-	/* margin-right: 1.875rem; */
 }
 
 .footer-hotline {
@@ -336,7 +403,13 @@ html {
 	font-size: 1.125rem;
 	color: #ffffff;
 	letter-spacing: 0;
-	/* margin-right: 37.5rem; */
+}
+
+.footer-info {
+	font-family: SFUIDisplay-Medium;
+	font-size: 1.375rem;
+	color: #ffffff;
+	letter-spacing: 0;
 }
 
 .footer-design {
