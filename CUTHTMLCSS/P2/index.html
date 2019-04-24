@@ -15,21 +15,24 @@
     <!-- HEADER -->
     <header class="container-fluid header">
         <div class="container">
-            <nav class="navbar navbar-expand-xl navbar-dark">
-                <a class="navbar-brand" href="#">Alexandra</a>
-                <span class="header-slash">/</span>
-                <span class="header-hotline">Hotline- 8800 1781 1</span>
+            <nav class="navbar navbar-expand-md navbar-expand-sm navbar-dark">
+                <div class="">
+                    <a class="navbar-brand" href="#">Alexandra</a>
+                    <span class="header-slash">/</span>
+                    <span class="header-hotline">Hotline- 8800 1781 1</span>
+                </div>
+
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id=mainNav>
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto ml-auto align-items-center">
                         <li class="nav-item active">
-                            <a class="footer-info nav-link" href="#">Work</a>
+                            <a class="footer-info nav-link pr-4" href="#">Work</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="footer-info nav-link" href="#">About</a>
+                            <a class="footer-info nav-link pr-4" href="#">About</a>
                         </li>
 
                         <li class="nav-item">
@@ -40,13 +43,12 @@
             </nav>
 
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-9 header-left">
                     <p class="header-quote">"</p>
-                    <p class="header-title">I'm a designer, and for me, things.</p>
-                    <p class="header-title">are always evolving, and such</p>
-                    <p class="header-title"> evolution is necessary.</p>
+                    <p class="header-title">I'm a designer, and for me, things are always evolving, and such evolution
+                        is necessary.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 header-right text-center">
                     <img src="img/Alien.png" class="img-fluid header-logo" alt="alien-logo">
                 </div>
 
@@ -65,7 +67,7 @@
             </div>
 
             <div class="col-md-1">
-                <div class="v2"></div>
+                <div class="vl"></div>
             </div>
 
             <div class="col-md-6 about-detail">
@@ -83,7 +85,7 @@
     <!-- MY WORK -->
 
     <section class="container-fluid mywork">
-        <div class="container">
+        <div class="container mywork-block">
             <p class="mywork-title">See my work</p>
             <div class="hl d-inline-block"></div>
             <div id="mywork-Carousel" class="carousel slide" data-ride="carousel">
@@ -156,18 +158,6 @@
                     <li data-target="#mywork-Carousel" data-slide-to="2"></li>
                 </ol>
             </div>
-            <!-- <div class="mywork-left">
-                <p>I really like to look professional but also have personal flare.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad min tation
-                    ullamcorper suscipit lobortis nisl</p>
-            </div> -->
-
-
-            <!-- <div class="mywork-right">
-                <img src="img/Mockups.png" class="float-right img-fluid" alt="mockup">
-            </div> -->
-
         </div>
     </section>
 
@@ -227,10 +217,10 @@
     <section class="container contact">
         <p class="contact-title">Contacts</p>
         <div class="hl d-inline-block"></div>
-        <p class="contact-content">I really like to look professional</p>
-        <span class="contact-content">but also have personal flare.</span>
+        <p class="contact-content">I really like to look professional but</p>
+        <span class="contact-content">also have personal flare.</span>
         <div class="btn-group contact-button" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-lg btn-primary">Let's talk</button>
+            <button type="button" class="btn btn-lg btn-primary text-centered">Let's talk</button>
         </div>
     </section>
 
