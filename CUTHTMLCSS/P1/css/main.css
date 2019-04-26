@@ -1,481 +1,481 @@
 /* GENERAL */
 html {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 @media (min-width: 768px) {
-    html {
-        font-size: 12px;
-    }
-    .feature-block {
-        width: 25.6875rem;
-        height: 31.5rem;
-    }
+	html {
+		font-size: 12px;
+	}
+	.feature-block {
+		width: 25.6875rem;
+		height: 31.5rem;
+	}
 }
 
 @media (min-width: 992px) {
-    html {
-        font-size: 14px;
-    }
+	html {
+		font-size: 14px;
+	}
 }
 
 @media (min-width: 1200px) {
-    html {
-        font-size: 16px;
-    }
+	html {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 768px) {
-    html {
-        font-size: 10px;
-    }
-    .column-xs {
-        margin-bottom: 2rem;
-    }
+	html {
+		font-size: 10px;
+	}
+	.column-xs {
+		margin-bottom: 2rem;
+	}
 }
 
 /* FONTS */
 @font-face {
-    font-family: "Aileron-Bold";
-    src: url("../fonts/aileron/aileron-bold-webfont.woff2") format("woff2"),
-        /* Super Modern Browsers */
-            url("../fonts/aileron/aileron-bold-webfont.woff") format("woff"); /* Pretty Modern Browsers */
+	font-family: "Aileron-Bold";
+	src: url("../fonts/aileron/aileron-bold-webfont.woff2") format("woff2"),
+		/* Super Modern Browsers */
+			url("../fonts/aileron/aileron-bold-webfont.woff") format("woff"); /* Pretty Modern Browsers */
 }
 
 @font-face {
-    font-family: "Aileron-LightItalic";
-    src: url("../fonts/aileron/aileron-lightitalic-webfont.woff2")
-            format("woff2"),
-        /* Super Modern Browsers */
-            url("../fonts/aileron/aileron-lightitalic-webfont.woff")
-            format("woff"); /* Pretty Modern Browsers */
+	font-family: "Aileron-LightItalic";
+	src: url("../fonts/aileron/aileron-lightitalic-webfont.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("../fonts/aileron/aileron-lightitalic-webfont.woff")
+			format("woff"); /* Pretty Modern Browsers */
 }
 
 @font-face {
-    font-family: "Aileron-Regular";
-    src: url("../fonts/aileron/aileron-regular-webfont.woff2") format("woff2"),
-        /* Super Modern Browsers */
-            url("../fonts/aileron/aileron-regular-webfont.woff") format("woff"); /* Pretty Modern Browsers */
+	font-family: "Aileron-Regular";
+	src: url("../fonts/aileron/aileron-regular-webfont.woff2") format("woff2"),
+		/* Super Modern Browsers */
+			url("../fonts/aileron/aileron-regular-webfont.woff") format("woff"); /* Pretty Modern Browsers */
 }
 
 @font-face {
-    font-family: "Aileron-SemiBold";
-    src: url("../fonts/aileron/aileron-semibold-webfont.woff2") format("woff2"),
-        /* Super Modern Browsers */
-            url("../fonts/aileron/aileron-semibold-webfont.woff") format("woff"); /* Pretty Modern Browsers */
+	font-family: "Aileron-SemiBold";
+	src: url("../fonts/aileron/aileron-semibold-webfont.woff2") format("woff2"),
+		/* Super Modern Browsers */
+			url("../fonts/aileron/aileron-semibold-webfont.woff") format("woff"); /* Pretty Modern Browsers */
 }
 
 /* HEADER */
 
 .header {
-    background-image: url("../img/Path12+13.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-left: 0px;
-    padding-right: 0px;
+	background-image: url("../img/Path12+13.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .navbar {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-bottom: 5.9375rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 5.9375rem;
 }
 
 .logo-header {
-    /* margin-right:11px; */
-    padding-right: 11px;
+	/* margin-right:11px; */
+	padding-right: 11px;
 }
 
 .nav-item {
-    margin-right: 45px;
+	margin-right: 45px;
 }
 
 @media (max-width: 1024px) {
-    .nav-item {
-        margin-right: 0px;
-    }
+	.nav-item {
+		margin-right: 0px;
+	}
 }
 
 .navbar-button {
-    background: #2f5bea;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    font-family: Aileron-Bold;
-    font-size: 1.0625rem;
-    color: #ffffff;
-    letter-spacing: 0;
-    text-align: center;
+	background: #2f5bea;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	font-family: Aileron-Bold;
+	font-size: 1.0625rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
 }
 
 .header-h1 {
-    font-family: Aileron-Bold;
-    font-size: 3rem;
-    color: #ffffff;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.291;
-    margin-bottom: 0px;
+	font-family: Aileron-Bold;
+	font-size: 3rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.291;
+	margin-bottom: 0px;
 }
 
 .header-content {
-    margin-top: 0.9375rem;
-    font-family: Aileron-SemiBold;
-    font-size: 1.125rem;
-    color: #d2d2d2;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.889;
-    margin-bottom: 1.875rem;
+	margin-top: 0.9375rem;
+	font-family: Aileron-SemiBold;
+	font-size: 1.125rem;
+	color: #d2d2d2;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.889;
+	margin-bottom: 1.875rem;
 }
 
 .header-content p {
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .button {
-    margin-bottom: 6.6875rem;
+	margin-bottom: 6.6875rem;
 }
 
 /* WHY SECTION */
 
 .why {
-    margin-top: 7.75rem;
-    margin-bottom: 6.9375rem;
+	margin-top: 7.75rem;
+	margin-bottom: 6.9375rem;
 }
 
 .why-title {
-    font-family: Aileron-Bold;
-    font-size: 1rem;
-    color: #7e8085;
-    letter-spacing: 0;
-    text-align: center;
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	text-align: center;
 }
 
 .why-h2 {
-    font-family: Aileron-Bold;
-    font-size: 2.125rem;
-    color: #2c2e30;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.352;
-    margin-top: 0.8125rem;
-    margin-bottom: 5.375rem;
+	font-family: Aileron-Bold;
+	font-size: 2.125rem;
+	color: #2c2e30;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.352;
+	margin-top: 0.8125rem;
+	margin-bottom: 5.375rem;
 }
 
 .clearfix p {
-    margin-bottom: 1.4375rem;
+	margin-bottom: 1.4375rem;
 }
 
 .why-criteria {
-    font-family: Aileron-Bold;
-    font-size: 1.5rem;
-    color: #2c2e30;
-    letter-spacing: 0;
+	font-family: Aileron-Bold;
+	font-size: 1.5rem;
+	color: #2c2e30;
+	letter-spacing: 0;
 }
 
 span {
-    font-family: Aileron-SemiBold;
-    font-size: 1rem;
-    color: #2f5bea;
-    letter-spacing: 0;
-    line-height: 1.75;
+	font-family: Aileron-SemiBold;
+	font-size: 1rem;
+	color: #2f5bea;
+	letter-spacing: 0;
+	line-height: 1.75;
 }
 
 .why-content {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #54565a;
-    letter-spacing: 0;
-    line-height: 1.75;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #54565a;
+	letter-spacing: 0;
+	line-height: 1.75;
 }
 
 /* SECTION1 */
 
 .section1 {
-    margin-bottom: 8.375rem;
+	margin-bottom: 8.375rem;
 }
 
 .section1-title {
-    font-family: Aileron-Bold;
-    font-size: 1rem;
-    color: #7e8085;
-    letter-spacing: 0;
-    margin-top: 1.8125rem;
-    margin-bottom: 0.8125rem;
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	margin-top: 1.8125rem;
+	margin-bottom: 0.8125rem;
 }
 
 .section1-h2 {
-    font-family: Aileron-Bold;
-    font-size: 2.125rem;
-    color: #2c2e30;
-    letter-spacing: 0;
-    line-height: 1.352;
-    margin-bottom: 22px;
+	font-family: Aileron-Bold;
+	font-size: 2.125rem;
+	color: #2c2e30;
+	letter-spacing: 0;
+	line-height: 1.352;
+	margin-bottom: 22px;
 }
 
 .section1-content {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #54565a;
-    letter-spacing: 0;
-    line-height: 1.75;
-    margin-bottom: 2.75rem;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #54565a;
+	letter-spacing: 0;
+	line-height: 1.75;
+	margin-bottom: 2.75rem;
 }
 
 /* CTA1 */
 
 .cta1 {
-    background: #2f5bea;
-    /* margin-bottom: 84px; */
+	background: #2f5bea;
+	/* margin-bottom: 84px; */
 }
 
 #mobile {
-    position: relative;
-    top: 7.5rem;
+	position: relative;
+	top: 7.5rem;
 }
 
 .cta1-left {
-    padding-top: 13.375rem;
-    color: white;
+	padding-top: 13.375rem;
+	color: white;
 }
 
 .cta1-right {
-    padding-top: 15.25rem;
-    color: white;
+	padding-top: 15.25rem;
+	color: white;
 }
 
 @media (max-width: 768px) {
-    .cta1-right {
-        padding-top: 10rem;
-        padding-bottom: 7rem;
-    }
+	.cta1-right {
+		padding-top: 10rem;
+		padding-bottom: 7rem;
+	}
 }
 
 .cta1-title {
-    font-family: Aileron-Bold;
-    font-size: 1rem;
-    color: #d2d2d2;
-    letter-spacing: 0;
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #d2d2d2;
+	letter-spacing: 0;
 }
 
 .cta1-h2 {
-    font-family: Aileron-Bold;
-    font-size: 2.125rem;
-    color: #ffffff;
-    letter-spacing: 0;
-    line-height: 1.352;
+	font-family: Aileron-Bold;
+	font-size: 2.125rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	line-height: 1.352;
 }
 
 .cta1-content {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #d2d2d2;
-    letter-spacing: 0;
-    line-height: 1.75;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #d2d2d2;
+	letter-spacing: 0;
+	line-height: 1.75;
 }
 
 .cta1-right-p {
-    font-family: Aileron-Bold;
-    font-size: 1.3125rem;
-    color: #ffffff;
-    letter-spacing: 0;
+	font-family: Aileron-Bold;
+	font-size: 1.3125rem;
+	color: #ffffff;
+	letter-spacing: 0;
 }
 
 .cta1-icon {
-    position: relative;
-    left: -20px;
+	position: relative;
+	left: -20px;
 }
 
 /* FEATURE */
 
 .feature {
-    background-image: url("../img/BG.png");
-    height: 52.6875rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 15.75rem;
+	background-image: url("../img/BG.png");
+	height: 52.6875rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 15.75rem;
 }
 
 .feature-title {
-    padding-top: 15.125rem;
-    font-family: Aileron-Bold;
-    font-size: 1rem;
-    color: #7e8085;
-    letter-spacing: 0;
-    text-align: center;
-    margin-bottom: 0;
+	padding-top: 15.125rem;
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	text-align: center;
+	margin-bottom: 0;
 }
 
 .feature-h2 {
-    margin-top: 0.8125rem;
-    font-family: Aileron-Bold;
-    font-size: 2.125rem;
-    color: #2c2e30;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.352;
-    margin-bottom: 0;
+	margin-top: 0.8125rem;
+	font-family: Aileron-Bold;
+	font-size: 2.125rem;
+	color: #2c2e30;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.352;
+	margin-bottom: 0;
 }
 
 .feature-block {
-    position: relative;
-    top: 5.625rem;
-    margin-left: 0.9375rem;
-    margin-right: 0.9375rem;
-    background: #ffffff;
-    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
-    border-radius: 5px;
+	position: relative;
+	top: 5.625rem;
+	margin-left: 0.9375rem;
+	margin-right: 0.9375rem;
+	background: #ffffff;
+	box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+	border-radius: 5px;
 }
 
 .feature-icon {
-    padding-top: 3.5rem;
-    padding-bottom: 2.3125rem;
+	padding-top: 3.5rem;
+	padding-bottom: 2.3125rem;
 }
 
 .feature-criteria {
-    font-family: Aileron-Bold;
-    font-size: 1.5rem;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.4167;
-    margin-bottom: 0.75rem;
+	font-family: Aileron-Bold;
+	font-size: 1.5rem;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.4167;
+	margin-bottom: 0.75rem;
 }
 
 .feature-content {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #54565a;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.75;
-    margin-bottom: 2.6875rem;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #54565a;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.75;
+	margin-bottom: 2.6875rem;
 }
 
 @media (max-width: 768px) {
-    .feature-content {
-        margin-bottom: 1rem;
-    }
+	.feature-content {
+		margin-bottom: 1rem;
+	}
 }
 
 .feature-btn {
-    margin-bottom: 3.375rem;
+	margin-bottom: 3.375rem;
 }
 
 /* SECTION2 */
 
 .section2 {
-    margin-top: 16.75rem;
-    margin-bottom: 8.5625rem;
+	margin-top: 16.75rem;
+	margin-bottom: 8.5625rem;
 }
 
 @media (max-width: 425px) {
-    .section2 {
-        margin-top: 20rem;
-    }
+	.section2 {
+		margin-top: 20rem;
+	}
 }
 
 .section2-title {
-    font-family: Aileron-Bold;
-    font-size: 1rem;
-    color: #7e8085;
-    letter-spacing: 0;
-    text-align: center;
-    margin-bottom: 0px;
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	text-align: center;
+	margin-bottom: 0px;
 }
 
 .section2-h2 {
-    margin-top: 0.8125rem;
-    font-family: Aileron-Bold;
-    font-size: 2.125rem;
-    color: #2c2e30;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.352;
-    margin-bottom: 0px;
+	margin-top: 0.8125rem;
+	font-family: Aileron-Bold;
+	font-size: 2.125rem;
+	color: #2c2e30;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.352;
+	margin-bottom: 0px;
 }
 
 .section2-block {
-    margin-top: 6.25rem;
+	margin-top: 6.25rem;
 }
 
 .section2-criteria {
-    font-family: Aileron-Bold;
-    font-size: 1.5rem;
-    color: #2c2e30;
-    letter-spacing: 0;
-    margin-bottom: 1.4375rem;
+	font-family: Aileron-Bold;
+	font-size: 1.5rem;
+	color: #2c2e30;
+	letter-spacing: 0;
+	margin-bottom: 1.4375rem;
 }
 
 .section2-content {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #54565a;
-    letter-spacing: 0;
-    line-height: 1.75;
-    margin-bottom: 2.375rem;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #54565a;
+	letter-spacing: 0;
+	line-height: 1.75;
+	margin-bottom: 2.375rem;
 }
 
 /* TESTIMONIAL */
 
 .testimonial {
-    background-color: #151c32;
+	background-color: #151c32;
 }
 
 .testi-title {
-    font-family: Aileron-Bold;
-    font-size: 1rem;
-    color: #7e8085;
-    letter-spacing: 0;
-    text-align: center;
-    padding-top: 7.6875rem;
-    margin-bottom: 0px;
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	text-align: center;
+	padding-top: 7.6875rem;
+	margin-bottom: 0px;
 }
 
 .testi-h2 {
-    margin-top: 0.8125rem;
-    font-family: Aileron-Bold;
-    font-size: 2.125rem;
-    color: #ffffff;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.352;
-    margin-bottom: 0px;
+	margin-top: 0.8125rem;
+	font-family: Aileron-Bold;
+	font-size: 2.125rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.352;
+	margin-bottom: 0px;
 }
 
 .testi-block {
-    margin-top: 7.6875rem;
+	margin-top: 7.6875rem;
 }
 
 .testi-block-1 {
-    font-family: Aileron-LightItalic;
-    font-size: 1.75rem;
-    color: #c9cdd5;
-    letter-spacing: 0;
-    line-height: 1.714;
-    margin-bottom: 1.9375rem;
-    padding-top: 1.375rem;
+	font-family: Aileron-LightItalic;
+	font-size: 1.75rem;
+	color: #c9cdd5;
+	letter-spacing: 0;
+	line-height: 1.714;
+	margin-bottom: 1.9375rem;
+	padding-top: 1.375rem;
 }
 
 .testi-block-2 {
-    font-family: Aileron-Bold;
-    font-size: 1.3125rem;
-    color: #ffffff;
-    letter-spacing: 0;
-    margin-bottom: 0.5rem;
+	font-family: Aileron-Bold;
+	font-size: 1.3125rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	margin-bottom: 0.5rem;
 }
 
 .testi-block-3 {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #7e8085;
-    letter-spacing: 0;
-    margin-bottom: 1.625rem;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	margin-bottom: 1.625rem;
 }
 
 .testi-img-1 {
-    margin-bottom: 1.6875rem;
+	margin-bottom: 1.6875rem;
 }
 
 /* .testi-img-2 {
@@ -483,160 +483,160 @@ span {
 } */
 
 .testi-logo {
-    padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 .carousel-indicators li {
-    background-color: #2f5bea;
-    border-radius: 8px;
-    width: 16.5rem;
-    height: 0.5625rem;
+	background-color: #2f5bea;
+	border-radius: 8px;
+	width: 16.5rem;
+	height: 0.5625rem;
 }
 
 .carousel-indicators {
-    position: relative;
-    margin-top: 1.6875rem;
-    margin-bottom: 8.9375rem;
+	position: relative;
+	margin-top: 1.6875rem;
+	margin-bottom: 8.9375rem;
 }
 
 /* CTA  */
 
 .cta {
-    background-image: url("../img/cta-bg.png");
-    height: 37.5rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 7.9375rem;
+	background-image: url("../img/cta-bg.png");
+	height: 37.5rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 7.9375rem;
 }
 
 .cta-h2 {
-    font-family: Aileron-Bold;
-    font-size: 2.125rem;
-    color: #ffffff;
-    letter-spacing: 0;
-    text-align: center;
-    padding-top: 10.9375rem;
-    margin-bottom: 0.875rem;
+	font-family: Aileron-Bold;
+	font-size: 2.125rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+	padding-top: 10.9375rem;
+	margin-bottom: 0.875rem;
 }
 
 .cta-content {
-    font-family: Aileron-SemiBold;
-    font-size: 1.125rem;
-    color: #d2d2d2;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 1.889;
-    margin-bottom: 0px;
+	font-family: Aileron-SemiBold;
+	font-size: 1.125rem;
+	color: #d2d2d2;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 1.889;
+	margin-bottom: 0px;
 }
 
 .input-group {
-    margin-top: 2.9375rem;
-    max-width: 523px;
-    max-height: 75px;
-    margin-bottom: 0.875rem;
+	margin-top: 2.9375rem;
+	max-width: 523px;
+	max-height: 75px;
+	margin-bottom: 0.875rem;
 }
 
 .cta-content-1 {
-    font-family: Aileron-Regular;
-    font-size: 0.875rem;
-    color: #d2d2d2;
-    letter-spacing: 0;
-    text-align: center;
-    margin-bottom: 0px;
+	font-family: Aileron-Regular;
+	font-size: 0.875rem;
+	color: #d2d2d2;
+	letter-spacing: 0;
+	text-align: center;
+	margin-bottom: 0px;
 }
 
 .btn {
-    background: #ffffff;
-    border-radius: 5px;
-    font-family: Aileron-Bold;
-    font-size: 1rem;
-    color: #2f5bea;
-    letter-spacing: 0;
-    text-align: center;
-    border: 1px solid #e7eaee;
+	background: #ffffff;
+	border-radius: 5px;
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #2f5bea;
+	letter-spacing: 0;
+	text-align: center;
+	border: 1px solid #e7eaee;
 }
 
 /* FOOTER */
 
 .logo-footer {
-    margin-bottom: 1.625rem;
+	margin-bottom: 1.625rem;
 }
 
 .footer-content-1 {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #54565a;
-    letter-spacing: 0;
-    line-height: 1.6875;
-    margin-bottom: 1.6875rem;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #54565a;
+	letter-spacing: 0;
+	line-height: 1.6875;
+	margin-bottom: 1.6875rem;
 }
 
 .footer-content-2 {
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #54565a;
-    letter-spacing: 0;
-    line-height: 2.4375;
-    margin-bottom: 0px;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #54565a;
+	letter-spacing: 0;
+	line-height: 2.4375;
+	margin-bottom: 0px;
 }
 
 .footer-content-3 {
-    margin-top: 1.5rem;
-    font-family: Aileron-Regular;
-    font-size: 1rem;
-    color: #54565a;
-    letter-spacing: 0;
-    line-height: 1.875;
-    margin-bottom: 2.0625rem;
+	margin-top: 1.5rem;
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	color: #54565a;
+	letter-spacing: 0;
+	line-height: 1.875;
+	margin-bottom: 2.0625rem;
 }
 
 .footer-h4 {
-    font-family: Aileron-Bold;
-    font-size: 1.125rem;
-    color: #2c2e30;
-    letter-spacing: 0;
+	font-family: Aileron-Bold;
+	font-size: 1.125rem;
+	color: #2c2e30;
+	letter-spacing: 0;
 }
 
 .footer-2 {
-    margin-top: 6.9375rem;
-    background: #ffffff;
-    border: 1px solid #e7eaee;
-    padding-left: 0px;
-    padding-right: 0px;
+	margin-top: 6.9375rem;
+	background: #ffffff;
+	border: 1px solid #e7eaee;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 @media (max-width: 768px) {
-    .footer-2 {
-        margin-top: 3rem;
-    }
+	.footer-2 {
+		margin-top: 3rem;
+	}
 }
 
 .footer-2-left {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
 }
 
 .footer-2-img {
-    padding-top: 0.5rem;
+	padding-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
-    .footer-2-img {
-        max-width: 17%;
-    }
+	.footer-2-img {
+		max-width: 17%;
+	}
 }
 
 @media (min-width: 768px) {
-    .footer-2-img {
-        max-width: 10%;
-    }
+	.footer-2-img {
+		max-width: 10%;
+	}
 }
 
 .footer2-span {
-    font-family: Aileron-Bold;
-    font-size: 0.875rem;
-    color: #7e8085;
-    letter-spacing: 0;
-    margin-right: 1rem;
+	font-family: Aileron-Bold;
+	font-size: 0.875rem;
+	color: #7e8085;
+	letter-spacing: 0;
+	margin-right: 1rem;
 }
