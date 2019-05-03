@@ -1,0 +1,10 @@
+.navbar {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.nav-link {
+	font-family: Roboto-Regular;
+	font-size: 1.25rem;
+	color: #ffffff;
+	letter-spacing: 0;
+}

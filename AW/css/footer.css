@@ -1,0 +1,59 @@
+/* FOOTER */
+
+.footer {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.5) 100%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		url('../img/Footer-Background-Image2.png') no-repeat center;
+	background-size: cover;
+	padding-top: 3.125rem;
+	padding-bottom: 3.125rem;
+}
+
+.footer-title {
+	font-family: Roboto-Regular;
+	font-size: 1.25rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.footer-content {
+	font-family: Roboto-Regular;
+	font-size: 1rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+@media (min-width: 576px) {
+	.footer-title,
+	.footer-content {
+		text-align: left;
+	}
+}
+
+.footer-btn {
+	border: 2px solid #30a8ff;
+	border-radius: 10px;
+	font-family: Roboto-Regular;
+	font-size: 1rem;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.wrapper-btn {
+	text-align: center;
+}
+
+@media (min-width: 576px) {
+	.wrapper-btn {
+		text-align: left;
+	}
+}
+
+i {
+	margin-left: 1rem;
+}

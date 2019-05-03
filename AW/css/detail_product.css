@@ -1,0 +1,43 @@
+.header,
+.detail,
+.related-product {
+	margin-bottom: 6.25rem;
+}
+
+.detail {
+	border-bottom: 2px solid #9b9b9b;
+}
+.inside-row {
+	margin-top: 3.125rem;
+}
+
+.inside-row > .col-md-3 {
+	display: none;
+}
+
+@media (min-width: 576px) {
+	.inside-row > .col-md-3 {
+		display: block;
+	}
+}
+
+.detail-right-title {
+	font-family: Roboto-Bold;
+	font-size: 1.375rem;
+	color: #000000;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.detail-right-price {
+	font-family: Roboto-Italic;
+	font-size: 1.875rem;
+	color: #000000;
+}
+
+.detail-right-content {
+	font-family: Roboto-Regular;
+	font-size: 1rem;
+	color: #000000;
+	letter-spacing: 0;
+}
