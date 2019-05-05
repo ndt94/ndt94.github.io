@@ -1,0 +1,20 @@
+/* LAYOUT STYLES */
+.header {
+	margin-bottom: 3.125rem;
+}
+
+/* IMAGE GALLERY */
+.image-gallery {
+	margin-bottom: 3.125rem;
+}
+.image-gallery-title {
+	font-family: Roboto-Bold;
+	font-size: 1.875rem;
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 3.125rem;
+}
+.col-md-4 img {
+	margin-bottom: 3.125rem;
+}

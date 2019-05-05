@@ -1,0 +1,89 @@
+/* LAYOUT STYLES */
+.header,
+.about {
+	margin-bottom: 3.125rem;
+}
+
+/* ABOUT STORY */
+.about-story-title {
+	font-family: Roboto-Bold;
+	font-size: 1.875rem;
+	color: #000000;
+	text-align: left;
+}
+
+.about-story-content {
+	font-family: Roboto-Regular;
+	font-size: 1.375rem;
+	color: #000000;
+}
+
+.about-story-end {
+	font-family: Roboto-Bold;
+	font-size: 1.375rem;
+	color: #000000;
+}
+.about-story > .col-md-6 {
+	margin-bottom: 1rem;
+}
+
+/* ABOUT MOTTO */
+.about-motto-title {
+	font-family: Roboto-Bold;
+	font-size: 1.875rem;
+	color: #000000;
+	text-align: center;
+}
+
+.hl {
+	border-bottom: 2px solid black;
+}
+
+.about-motto-criteria {
+	font-family: Roboto-Bold;
+	font-size: 1.375rem;
+	color: #000000;
+	margin-top: 1rem;
+}
+
+.about-motto-content {
+	font-family: Roboto-Regular;
+	font-size: 1.375rem;
+	color: #000000;
+}
+
+/* IMAGE BG */
+.img-bg-1 {
+	background-image: url('../img/about/Vintage-Watch-Shop-Home-Banner-09-20-18.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 28.8125rem;
+}
+
+.img-bg-2 {
+	background-image: url('../img/about/why-buy-promo-hd-2_2048x.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 25.25rem;
+}
+
+/* @media (max-width: 576px) {
+	.img-bg-1,
+	.img-bg-2 {
+		width: 100%;
+	}
+} */
+
+/* ABOUT CONTACT */
+.about-contact p {
+	font-family: Roboto-Bold;
+	font-size: 1.375rem;
+	color: #000000;
+	text-align: center;
+}
+
+.about-contact {
+	padding-top: 1rem;
+}
