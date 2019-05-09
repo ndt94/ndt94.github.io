@@ -29,3 +29,18 @@ function includeHTML() {
 		}
 	}
 }
+
+// price = ['20.000.000', '30.000.000', '20.000.000'];
+
+// function test() {
+// 	var div = document.getElementById('test');
+
+// 	var html = '';
+// 	html += price[1];
+
+// 	div.innerHTML = html;
+// }
+// test();
+
+localStorage.setItem('name', 'test');
+document.getElementById('test').innerHTML = localStorage.getItem('name');

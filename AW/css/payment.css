@@ -1,0 +1,16 @@
+.success {
+	background: #4a90e2;
+}
+
+.success p {
+	font-family: Roboto-Regular;
+	font-size: 1rem;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+span {
+	color: #000000;
+	text-decoration: underline;
+}
