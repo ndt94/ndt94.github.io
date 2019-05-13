@@ -1,0 +1,32 @@
+/* LAYOUT STYLE */
+.header,
+.blog {
+	margin-bottom: 3.125rem;
+}
+
+/* BLOG */
+.blog-heading {
+	font-family: Roboto-Bold;
+	font-size: 1.875rem;
+	color: #000000;
+}
+
+.blog-title {
+	font-family: Roboto-Bold;
+	font-size: 1.875rem;
+	color: #000000;
+	margin-top: 1.25rem;
+	margin-bottom: 0;
+}
+
+.blog-author {
+	font-family: Roboto-Regular;
+	font-size: 1.375rem;
+	color: #000000;
+	margin-bottom: 1.25rem;
+}
+
+#blog2,
+#blog3 {
+	display: none;
+}
