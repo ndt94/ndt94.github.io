@@ -97,7 +97,7 @@ let watches = [
 			'<img src="img/index/Omega-Geneve-Dynamic-12-04-18-1-450x300.png" class="img-fluid" alt="omega_geneve">'
 	}
 ];
-
+localStorage.setItem('watches', JSON.stringify(watches));
 // THREE FUNCTION TO RENDER INDEX PAGE
 function renderContentRow1() {
 	let htmlContent = '';
@@ -108,7 +108,7 @@ function renderContentRow1() {
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price}</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
-			<button type="button" class="products-btn products-btn-more btn btn-primary">Xem thêm</button>
+			<a id="product_${i}" href="detail_product.html" class="products-btn products-btn-more btn btn-primary" onclick="transferId(${i})">Xem thêm</a>
 		</div>
 	`;
 		$('.row1').html(htmlContent);
@@ -124,7 +124,7 @@ function renderContentRow2() {
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price}</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
-			<button type="button" class="products-btn products-btn-more btn btn-primary">Xem thêm</button>
+			<a id="product_${i}" href="detail_product.html" class="products-btn products-btn-more btn btn-primary" onclick="transferId(${i})">Xem thêm</a>
 		</div>
 	`;
 		$('.row2').html(htmlContent);
@@ -140,7 +140,7 @@ function renderContentRow3() {
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price}</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
-			<button type="button" class="products-btn products-btn-more btn btn-primary">Xem thêm</button>
+			<a id="product_${i}" href="detail_product.html" class="products-btn products-btn-more btn btn-primary" onclick="transferId(${i})">Xem thêm</a>
 		</div>
 	`;
 		$('.row3').html(htmlContent);
@@ -148,16 +148,24 @@ function renderContentRow3() {
 }
 
 // FUNCTION TO RENDER CART ITEM
-let empty_arr = [];
-console.log(empty_arr);
+// let empty_arr = [];
+// console.log(empty_arr);
 
-function pushInfoById(id) {
-	empty_arr.push(watches[id]);
-	localStorage.setItem('info', JSON.stringify(empty_arr));
+// function pushInfoById(id) {
+// 	empty_arr.push(watches[id]);
+// 	localStorage.setItem('info', JSON.stringify(empty_arr));
+// }
+
+// test = JSON.parse(localStorage.getItem('info'));
+// console.log(test);
+// console.log(empty_arr);
+
+// function renderContentById() {}
+
+// TRANSFER ID TO DETAIL_PRODUCT PAGE FOR RENDERING
+function transferId(id) {
+	productId = $('#product_' + id)
+		.attr('id')
+		.slice(-1);
+	localStorage.setItem('productId', productId);
 }
-
-test = JSON.parse(localStorage.getItem('info'));
-console.log(test);
-console.log(empty_arr);
-
-function renderContentById() {}
