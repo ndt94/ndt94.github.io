@@ -107,7 +107,7 @@ function renderContentRow1() {
 			${watches[i].image}
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price}</p>
-			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="renderContentById(${i})">Mua ngay</a>
+			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
 			<button type="button" class="products-btn products-btn-more btn btn-primary">Xem thêm</button>
 		</div>
 	`;
@@ -123,7 +123,7 @@ function renderContentRow2() {
 			${watches[i].image}
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price}</p>
-			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="renderContentById(${i})">Mua ngay</a>
+			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
 			<button type="button" class="products-btn products-btn-more btn btn-primary">Xem thêm</button>
 		</div>
 	`;
@@ -139,7 +139,7 @@ function renderContentRow3() {
 			${watches[i].image}
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price}</p>
-			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="renderContentById(${i})">Mua ngay</a>
+			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
 			<button type="button" class="products-btn products-btn-more btn btn-primary">Xem thêm</button>
 		</div>
 	`;
@@ -149,18 +149,15 @@ function renderContentRow3() {
 
 // FUNCTION TO RENDER CART ITEM
 let empty_arr = [];
-localStorage.setItem('watches', JSON.stringify(watches));
-info = JSON.parse(localStorage.getItem('watches'));
-console.log(info);
-
 console.log(empty_arr);
 
-function pushProductInfo() {
-	for (var i = 0; i < 9; i++) {
-		$('#product' + i).on('click', function() {
-			empty_arr.push(info[i]);
-		});
-	}
+function pushInfoById(id) {
+	empty_arr.push(watches[id]);
+	localStorage.setItem('info', JSON.stringify(empty_arr));
 }
+
+test = JSON.parse(localStorage.getItem('info'));
+console.log(test);
+console.log(empty_arr);
 
 function renderContentById() {}
