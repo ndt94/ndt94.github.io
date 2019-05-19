@@ -1,0 +1,43 @@
+.cart-title {
+	font-family: Roboto-Bold;
+	font-size: 1.3125rem;
+	color: #000000;
+	letter-spacing: 0;
+}
+
+.cart-content {
+	font-family: Roboto-Regular;
+	font-size: 1rem;
+	color: #000000;
+	letter-spacing: 0;
+	margin-top: 1rem;
+}
+
+.fa-minus {
+	margin-right: 1rem;
+	margin-left: 0;
+}
+
+.inline-p {
+	display: inline-block;
+}
+
+@media (min-width: 576px) {
+	.inline-btn {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.cart .col-md-1 {
+		display: none;
+	}
+}
+
+.test {
+	transform: translateX(-5%);
+}
+
+.test .cart-title {
+	text-transform: uppercase;
+}

@@ -38,63 +38,72 @@ let watches = [
 		name: 'CARTIER TANK LOUIS',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/VACHERON-CONSTANTIN-22-03-14-19-1-850x566.png" class="img-fluid" alt="cartier_tank_louis">'
+			'<img src="img/index/VACHERON-CONSTANTIN-22-03-14-19-1-850x566.png" class="img-fluid" alt="cartier_tank_louis">',
+		quantity: 1
 	},
 	{
 		id: 1,
 		name: 'VACHERON CONSTANTIN 222',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/AP-Rolyal-Oak-03-12-19-1-450x300.png" class="img-fluid" alt="vacheron">'
+			'<img src="img/index/AP-Rolyal-Oak-03-12-19-1-450x300.png" class="img-fluid" alt="vacheron">',
+		quantity: 1
 	},
 	{
 		id: 2,
 		name: 'AUDEMARS PIGUET ROYAL OAK 14790',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/CARTIER-MUST-DE-TANK-02-16-19-1-450x300.png" class="img-fluid" alt="audemars">'
+			'<img src="img/index/CARTIER-MUST-DE-TANK-02-16-19-1-450x300.png" class="img-fluid" alt="audemars">',
+		quantity: 1
 	},
 	{
 		id: 3,
 		name: 'CARTIER “STEPPED” TANK',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/CARTIER-TANK-BLUE-01-29-19-1-450x300.png" class="img-fluid" alt="cartier_stepped_tank">'
+			'<img src="img/index/CARTIER-TANK-BLUE-01-29-19-1-450x300.png" class="img-fluid" alt="cartier_stepped_tank">',
+		quantity: 1
 	},
 	{
 		id: 4,
 		name: 'OMEGA SPEEDMASTER CO-AXIAL',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/OMEGA-SPEEDMASTER-COAXIAL-CHRONO-02-16-19-1-450x300.png" class="img-fluid" alt="omega">'
+			'<img src="img/index/OMEGA-SPEEDMASTER-COAXIAL-CHRONO-02-16-19-1-450x300.png" class="img-fluid" alt="omega">',
+		quantity: 1
 	},
 	{
 		id: 5,
 		name: 'ROLEX DAY DATE REF. 1803',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/ROLEX-DATEJUST-1801-YG-02-16-19-1-450x300.png" class="img-fluid" alt="rolex_1803">'
+			'<img src="img/index/ROLEX-DATEJUST-1801-YG-02-16-19-1-450x300.png" class="img-fluid" alt="rolex_1803">',
+		quantity: 1
 	},
 	{
 		id: 6,
 		name: 'UNIVERSAL GENEVE POLEROUTER',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/UNIVERSAL-GENEVE-GOLD-12-25-18-1-450x300.png" class="img-fluid" alt="universal_geneve">'
+			'<img src="img/index/UNIVERSAL-GENEVE-GOLD-12-25-18-1-450x300.png" class="img-fluid" alt="universal_geneve">',
+		quantity: 1
 	},
 	{
 		id: 7,
 		name: 'OMEGA SUVERAN',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/OMEGA-PATINA-01-02-19-1-450x300.png" class="img-fluid" alt="omega_patina">'
+			'<img src="img/index/OMEGA-PATINA-01-02-19-1-450x300.png" class="img-fluid" alt="omega_patina">',
+		quantity: 1
 	},
 	{
 		id: 8,
 		name: 'OMEGA GENEVE DYNAMIC',
 		price: '20.000.000',
 		image:
-			'<img src="img/index/Omega-Geneve-Dynamic-12-04-18-1-450x300.png" class="img-fluid" alt="omega_geneve">'
+			'<img src="img/index/Omega-Geneve-Dynamic-12-04-18-1-450x300.png" class="img-fluid" alt="omega_geneve">',
+		quantity: 1
 	}
 ];
 localStorage.setItem('watches', JSON.stringify(watches));
