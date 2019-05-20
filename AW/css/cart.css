@@ -1,3 +1,13 @@
+/* LAYOUT STYLES */
+.cart {
+	/* margin-top: 7rem; */
+	margin-bottom: 3.125rem;
+}
+
+/* CART */
+.cart-head {
+	margin-bottom: 5rem;
+}
 .cart-title {
 	font-family: Roboto-Bold;
 	font-size: 1.3125rem;
@@ -34,10 +44,32 @@
 	}
 }
 
-.test {
+.cart-title-bold {
 	transform: translateX(-5%);
 }
 
-.test .cart-title {
+.cart-title-bold .cart-title {
 	text-transform: uppercase;
+}
+
+.fa-chevron-left {
+	transform: translateY(70%);
+}
+
+.cart .row {
+	border-bottom: 1px solid #979797;
+}
+
+@media (min-width: 576px) {
+	.cart > div:nth-child(n + 3) > *:not(:last-child) > :first-child {
+		visibility: hidden;
+	}
+}
+
+.cart > div:nth-child(n + 3) > *:last-child {
+	margin-top: 2.5rem;
+}
+
+.fa-trash {
+	transform: translateX(-50%);
 }

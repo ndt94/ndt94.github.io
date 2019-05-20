@@ -1,6 +1,10 @@
 itemsArray = JSON.parse(localStorage.getItem('item'));
 console.log(itemsArray, typeof itemsArray);
 
+let quantity = localStorage.getItem('quantity')
+	? JSON.parse(localStorage.getItem('quantity'))
+	: 1;
+
 function renderContent() {
 	let htmlContent = '';
 	itemsArray.forEach(function(item, index) {
@@ -24,12 +28,17 @@ function renderContent() {
 				<p class="cart-content"><i class="fas fa-minus"></i>${
 					item.quantity
 				}<i class="fas fa-plus"></i></p>
+				<button id="minus" onclick="decreaseQuantity()" type="button" class="btn btn-light"><i
+				class="fas fa-minus"></i></button>
+				<span id="quantity${index}" class="cart-content">${quantity}</span>
+				<button id="plus" onclick="increaseQuantity(${index})" type="button" class="btn btn-light"><i
+				class="fas fa-plus"></i></button>
 			</div>
 
 			<div class="col-md-2">
 				<p class="cart-title">Tổng</p>
 				<p class="cart-content">${formatNumber(
-					parseInt(item.price.replace(/\./g, '')) * item.quantity
+					parseInt(item.price.replace(/\./g, '')) * quantity
 				)}</p>
 			</div>
 
@@ -54,4 +63,12 @@ function removeFromCart(id) {
 
 function formatNumber(num) {
 	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+}
+
+function increaseQuantity(id) {
+	quantity += 1;
+	$('#quantity' + id).html(quantity);
+	localStorage.setItem('quantity', JSON.stringify(quantity));
+	$('.row' + id).remove();
+	renderContent();
 }
