@@ -78,13 +78,26 @@
 
     <section class="container total">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-6">
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-md-3">
                 <p id="test">Tạm tính</p>
+                <p>Coupon</p>
                 <p>Thành tiền</p>
             </div>
+            <div class="col-md-3">
+                <p id="subtotal"></p>
+                <input id="coupon" type="text" class="form-control" placeholder="Coupon" required="" autofocus="">
+                <p id="total"></p>
+            </div>
             <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <button type="button" class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button>
+            </div>
         </div>
     </section>
 
@@ -105,6 +118,8 @@
     <script>
         includeHTML();
         renderContent();
+        $('#subtotal').html(formatNumber(subtotal()));
+        $('#total').html(total());
     </script>
 </body>
 

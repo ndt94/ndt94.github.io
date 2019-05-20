@@ -1,5 +1,6 @@
 /* LAYOUT STYLES */
-.cart {
+.cart,
+.total {
 	/* margin-top: 7rem; */
 	margin-bottom: 3.125rem;
 }
@@ -70,6 +71,16 @@
 	margin-top: 2.5rem;
 }
 
-.fa-trash {
+.fa-trash,
+.fa-plus {
 	transform: translateX(-50%);
+}
+
+.fa-minus {
+	transform: translateX(50%);
+}
+
+.payment-btn {
+	background: #4a90e2;
+	border-radius: 25px;
 }

@@ -1,6 +1,7 @@
 itemsArray = JSON.parse(localStorage.getItem('item'));
 console.log(itemsArray, typeof itemsArray);
 
+// FUNCTION TO RENDER ITEM FROM CART
 function renderContent() {
 	let htmlContent = '';
 	itemsArray.forEach(function(item, index) {
@@ -21,15 +22,12 @@ function renderContent() {
 
 			<div class="col-md-3">
 				<p class="cart-title">Số lượng</p>
-				<p class="cart-content"><i class="fas fa-minus"></i>${
-					item.quantity
-				}<i class="fas fa-plus"></i></p>
-				<button id="minus" onclick="decreaseQuantity()" type="button" class="btn btn-light"><i
+				<button id="minus" onclick="decreaseQuantity(${index})" type="button" class="btn btn-sm btn-light"><i
 				class="fas fa-minus"></i></button>
 				<span id="quantity${index}" class="cart-content">${JSON.parse(
 			localStorage.getItem('quantity' + index)
 		) || 1}</span>
-				<button id="plus" onclick="increaseQuantity(${index})" type="button" class="btn btn-light"><i
+				<button id="plus" onclick="increaseQuantity(${index})" type="button" class="btn btn-sm btn-light"><i
 				class="fas fa-plus"></i></button>
 			</div>
 
@@ -52,6 +50,7 @@ function renderContent() {
 	});
 }
 
+// FUNCTION TO REMOVE ITEM FROM CART
 function removeFromCart(id) {
 	$('.cart .row' + id).remove();
 	index = itemsArray.indexOf(itemsArray[id]);
@@ -61,14 +60,17 @@ function removeFromCart(id) {
 	localStorage.setItem('item', JSON.stringify(itemsArray));
 }
 
+// FUNCTION TO FORMAT PRICE FROM NUMBER TO STRING
 function formatNumber(num) {
 	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 }
 
+// FUNCTION TO FORMAT PRICE FROM STRING TO NUMBER
 function formatString(string) {
 	return parseInt(string.replace(/\./g, ''));
 }
 
+// FUNCTION FOR INCREASING QUANTITY
 function increaseQuantity(id) {
 	let quantity = localStorage.getItem('quantity' + id)
 		? JSON.parse(localStorage.getItem('quantity' + id))
@@ -81,10 +83,30 @@ function increaseQuantity(id) {
 			parseInt(itemsArray[id].price.replace(/\./g, '')) * quantity
 		)
 	);
+	$('#subtotal').html(formatNumber(subtotal()));
+	$('#total').html(total());
 }
 
-sub_total_arr = [];
+// FUNCTION FOR DECREASING QUANTITY
+function decreaseQuantity(id) {
+	let quantity = localStorage.getItem('quantity' + id)
+		? JSON.parse(localStorage.getItem('quantity' + id))
+		: 1;
+	quantity -= 1;
+	$('#quantity' + id).html(quantity);
+	localStorage.setItem('quantity' + id, JSON.stringify(quantity));
+	$('#total' + id).html(
+		formatNumber(
+			parseInt(itemsArray[id].price.replace(/\./g, '')) * quantity
+		)
+	);
+	$('#subtotal').html(formatNumber(subtotal()));
+	$('#total').html(total());
+}
+
+// FUNCTION TO CALCULATE SUBTOTAL PRICE
 function subtotal() {
+	sub_total_arr = [];
 	for (var i = 0; i < itemsArray.length; i++) {
 		sub_total_arr.push(formatString($('#total' + i).text()));
 	}
@@ -93,4 +115,25 @@ function subtotal() {
 	}, 0);
 }
 
-// $('#test').html(formatNumber(subtotal()))
+// FUNCTION TO CALCULATE TOTAL PRICE
+function total() {
+	let total;
+	if ($('#coupon').val() === 'DEPTRAI') {
+		total = formatNumber(subtotal() * 0.9);
+	}
+	if ($('#coupon').val() === 'XINHGAI') {
+		total = formatNumber(subtotal() * 0.85);
+	}
+	if ($('#coupon').val() === 'CHONGDAY') {
+		total = formatNumber(subtotal() * 0.7);
+	}
+	if ($('#coupon').val() === '') {
+		total = formatNumber(subtotal());
+	}
+	return total;
+}
+
+// RERENDER TOTAL AFTER ENTER COUPON
+$(window).click(function(e) {
+	$('#total').html(total());
+});
