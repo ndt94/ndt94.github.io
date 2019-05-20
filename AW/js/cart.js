@@ -1,10 +1,6 @@
 itemsArray = JSON.parse(localStorage.getItem('item'));
 console.log(itemsArray, typeof itemsArray);
 
-let quantity = localStorage.getItem('quantity')
-	? JSON.parse(localStorage.getItem('quantity'))
-	: 1;
-
 function renderContent() {
 	let htmlContent = '';
 	itemsArray.forEach(function(item, index) {
@@ -30,16 +26,20 @@ function renderContent() {
 				}<i class="fas fa-plus"></i></p>
 				<button id="minus" onclick="decreaseQuantity()" type="button" class="btn btn-light"><i
 				class="fas fa-minus"></i></button>
-				<span id="quantity${index}" class="cart-content">${quantity}</span>
+				<span id="quantity${index}" class="cart-content">${JSON.parse(
+			localStorage.getItem('quantity' + index)
+		) || 1}</span>
 				<button id="plus" onclick="increaseQuantity(${index})" type="button" class="btn btn-light"><i
 				class="fas fa-plus"></i></button>
 			</div>
 
 			<div class="col-md-2">
 				<p class="cart-title">Tổng</p>
-				<p class="cart-content">${formatNumber(
-					parseInt(item.price.replace(/\./g, '')) * quantity
-				)}</p>
+				<p id="total${index}" class="cart-content total_price">${formatNumber(
+			parseInt(item.price.replace(/\./g, '')) *
+				(JSON.parse(localStorage.getItem('quantity' + index)) ||
+					item.quantity)
+		)}</p>
 			</div>
 
 			<div class="col-md-1">
@@ -53,7 +53,7 @@ function renderContent() {
 }
 
 function removeFromCart(id) {
-	$('.cart .row' + id).empty();
+	$('.cart .row' + id).remove();
 	index = itemsArray.indexOf(itemsArray[id]);
 	if (index > -1) {
 		itemsArray.splice(index, 1);
@@ -65,10 +65,32 @@ function formatNumber(num) {
 	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 }
 
+function formatString(string) {
+	return parseInt(string.replace(/\./g, ''));
+}
+
 function increaseQuantity(id) {
+	let quantity = localStorage.getItem('quantity' + id)
+		? JSON.parse(localStorage.getItem('quantity' + id))
+		: 1;
 	quantity += 1;
 	$('#quantity' + id).html(quantity);
-	localStorage.setItem('quantity', JSON.stringify(quantity));
-	$('.row' + id).remove();
-	renderContent();
+	localStorage.setItem('quantity' + id, JSON.stringify(quantity));
+	$('#total' + id).html(
+		formatNumber(
+			parseInt(itemsArray[id].price.replace(/\./g, '')) * quantity
+		)
+	);
 }
+
+sub_total_arr = [];
+function subtotal() {
+	for (var i = 0; i < itemsArray.length; i++) {
+		sub_total_arr.push(formatString($('#total' + i).text()));
+	}
+	return sub_total_arr.reduce(function(a, b) {
+		return a + b;
+	}, 0);
+}
+
+// $('#test').html(formatNumber(subtotal()))
