@@ -43,63 +43,81 @@
     <section class="container cart">
         <div class="cart-head text-center">
             <div class="d-inline-flex float-left">
-                <i class="fas fa-chevron-left"></i>
+                <a href="index.html"><i class="fas fa-chevron-left"></i></a>
             </div>
 
             <div class="d-inline-flex cart-title-bold">
                 <p class="cart-title">Giỏ hàng của bạn</p>
             </div>
         </div>
-
-        <!-- <div class="row">
-            <div class="col-md-3">
-                <p>Sản phẩm</p>
-                <img src="img/index/OMEGA-PATINA-01-02-19-1-450x300.png" class="img-fluid">
-                <p>Cartier tank</p>
-            </div>
-            <div class="col-md-3">
-                <p>Giá</p>
-                <p id='test'></p>
-            </div>
-            <div class="col-md-3">
-                <p>Số lượng</p>
-                <p>1</p>
-            </div>
-            <div class="col-md-2">
-                <p>Tổng</p>
-                <p>20.000.000</p>
-            </div>
-            <div class="col-md-1">
-                <button onclick="removeFromCart()" type="button" class="btn btn-light"><i
-                        class="fas fa-trash"></i></button>
-            </div>
-        </div> -->
     </section>
 
     <section class="container total">
-        <div class="row">
-            <div class="col-md-6">
-            </div>
+        <div class="row subtotal">
+            <div class="col-md-6"></div>
             <div class="col-md-3">
-                <p id="test">Tạm tính</p>
-                <p>Coupon</p>
-                <p>Thành tiền</p>
+                <p class="total-content">Tạm tính</p>
             </div>
-            <div class="col-md-3">
-                <p id="subtotal"></p>
-                <input id="coupon" type="text" class="form-control" placeholder="Coupon" required="" autofocus="">
-                <p id="total"></p>
+            <div class="col-md-2">
+                <p id="subtotal" class="total-content"></p>
             </div>
             <div class="col-md-1"></div>
         </div>
 
-        <div class="row">
+        <div class="row coupon">
+            <div class="col-md-6"></div>
+            <div class="col-md-3">
+                <p class="total-content">Coupon</p>
+            </div>
+            <div class="col-md-2">
+                <div class="input-group input-group-sm mb-3">
+                    <input id="coupon" type="text" class="form-control text-center" placeholder="Coupon" required=""
+                        autofocus="">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row total_price">
+            <div class="col-md-6"></div>
+            <div class="col-md-3">
+                <p class="total-content total-content-bold">Thành tiền</p>
+            </div>
+            <div class="col-md-2">
+                <p id="total" class="total-content total-content-bold"></p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row payment-button">
             <div class="col-md-6"></div>
             <div class="col-md-6">
-                <button type="button" class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button>
+                <button type="button" onclick="location.href = '/payment.html'"
+                    class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button>
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalConfirmRemoveItemFromCart"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Xóa sản phẩm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc muốn xoá sản phẩm này?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="modal" class="btn btn-primary" data-dismiss="modal">Xóa sản phẩm</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer w3-include-html="footer.html"></footer>
 

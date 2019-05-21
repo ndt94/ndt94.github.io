@@ -9,8 +9,7 @@ function renderContent() {
         <div class="row row${index} text-center">
 			<div class="col-md-3">
 				<p class="cart-title inline-p">Sản phẩm</p>
-				<button onclick="removeFromCart(${index})" type="button" class="float-right inline-btn btn btn-light"><i
-				class="fas fa-trash"></i></button>
+				<button onclick="removeFromCart(${index})" type="button" class="float-right inline-btn btn btn-light" data-toggle="modal" data-target="#myModal"><i class="fas fa-trash"></i></button>
 				${item.image}
 				<p class="cart-content">${item.name}</p>
 			</div>
@@ -20,7 +19,7 @@ function renderContent() {
 				<p class="cart-content">${item.price}</p>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 mb-3">
 				<p class="cart-title">Số lượng</p>
 				<button id="minus" onclick="decreaseQuantity(${index})" type="button" class="btn btn-sm btn-light"><i
 				class="fas fa-minus"></i></button>
@@ -41,8 +40,7 @@ function renderContent() {
 			</div>
 
 			<div class="col-md-1">
-				<button onclick="removeFromCart(${index})" type="button" class="btn btn-light"><i
-				class="fas fa-trash"></i></button>
+				<button onclick="removeFromCart(${index})" type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal"><i class="fas fa-trash"></i></button>
             </div>
         </div>
 		`;
@@ -52,12 +50,16 @@ function renderContent() {
 
 // FUNCTION TO REMOVE ITEM FROM CART
 function removeFromCart(id) {
-	$('.cart .row' + id).remove();
-	index = itemsArray.indexOf(itemsArray[id]);
-	if (index > -1) {
-		itemsArray.splice(index, 1);
-	}
-	localStorage.setItem('item', JSON.stringify(itemsArray));
+	$('#modal').click(function() {
+		$('.cart .row' + id).remove();
+		index = itemsArray.indexOf(itemsArray[id]);
+		if (index > -1) {
+			itemsArray.splice(index, 1);
+		}
+		localStorage.setItem('item', JSON.stringify(itemsArray));
+		$('#subtotal').html(formatNumber(subtotal()));
+		$('#total').html(total());
+	});
 }
 
 // FUNCTION TO FORMAT PRICE FROM NUMBER TO STRING
