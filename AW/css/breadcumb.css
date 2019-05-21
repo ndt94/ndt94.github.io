@@ -1,15 +1,11 @@
-/* breadcrumb */
 .breadcrumb {
 	background-color: white;
 }
 .breadcrumb-arrow {
 	min-height: 36px;
-	/*     padding: 0; */
 	line-height: 36px;
 	list-style: none;
 	overflow: auto;
-	/*    background-color: #e6e9ed*/
-	/*background: linear-gradient(to right, #eaeaea 0%,#ffffff 100%);*/
 }
 
 .breadcrumb-arrow li:first-child a {
@@ -22,7 +18,6 @@
 .breadcrumb-arrow li a,
 .breadcrumb-arrow li span {
 	display: inline-block;
-	/*vertical-align: top;*/
 }
 
 .breadcrumb-arrow li:not(:first-child) {
@@ -51,10 +46,10 @@
 
 .breadcrumb-arrow li a {
 	position: relative;
-	color: #fff;
+	color: black;
 	text-decoration: none;
-	background-color: #343a40;
-	border: 1px solid #343a40;
+	background-color: #edeff0;
+	border: 1px solid #edeff0;
 }
 
 .breadcrumb-arrow li:first-child a {
@@ -75,7 +70,7 @@
 .breadcrumb-arrow li a:before {
 	right: -10px;
 	z-index: 3;
-	border-left-color: #343a40;
+	border-left-color: #edeff0;
 	border-left-style: solid;
 	border-left-width: 10px;
 }
@@ -89,12 +84,12 @@
 .breadcrumb-arrow li a:focus,
 .breadcrumb-arrow li a:hover {
 	background-color: #40474e;
-	border: 1px solid #40474e;
+	/* border: 1px solid #40474e; */
 }
 
 .breadcrumb-arrow li a:focus:before,
 .breadcrumb-arrow li a:hover:before {
-	border-left-color: #40474e;
+	/* border-left-color: #40474e; */
 }
 
 .breadcrumb-arrow li a:active {
