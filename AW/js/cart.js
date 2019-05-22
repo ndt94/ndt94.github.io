@@ -139,3 +139,12 @@ function total() {
 $(window).click(function(e) {
 	$('#total').html(total());
 });
+
+// Transfer Total, Subtotal value to confirm page
+function transferTotal() {
+	arr = [];
+	arr.push($('#subtotal').text());
+	arr.push($('#coupon').val());
+	arr.push($('#total').text());
+	localStorage.setItem('total', JSON.stringify(arr));
+}
