@@ -1,12 +1,13 @@
 /* LAYOUT */
 .header,
 .payment-info {
-	margin-bottom: 3.125rem;
+	margin-bottom: 3.4rem;
 }
 
 .steps {
 	margin-bottom: 6.25rem;
 }
+
 /* PAYMENT INFO */
 .payment-info-title {
 	font-family: Roboto-Bold;
@@ -16,6 +17,35 @@
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 1.25rem;
+}
+
+input[type='radio'] {
+	margin-right: 1rem;
+	transform: translateY(20%);
+}
+
+@media (min-width: 768px) {
+	input[type='radio'] {
+		transform: translateY(0%);
+	}
+}
+
+@media (min-width: 1440px) {
+	.payment-type {
+		transform: translateX(23%);
+	}
+}
+
+@media (width: 768px) {
+	.payment-type {
+		transform: translateX(17%);
+	}
+}
+
+@media (width: 1024px) {
+	.payment-type {
+		transform: translateX(22%);
+	}
 }
 
 /* FORM */
@@ -88,4 +118,13 @@
 	padding-bottom: calc(var(--input-padding-y) / 3);
 	font-size: 12px;
 	color: blue;
+}
+
+/* PAYMENT BUTTON */
+.payment-button {
+	margin-top: 3.125rem;
+}
+.payment-btn {
+	background: #4a90e2;
+	border-radius: 25px;
 }

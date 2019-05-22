@@ -46,31 +46,57 @@
                 <p class="payment-info-title">Địa chỉ giao hàng</p>
                 <form class="form-signin">
                     <div class="form-label-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"
-                            required="" autofocus="">
-                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="text" class="form-control" id="name" placeholder="Họ tên" required="" autofocus="">
+                        <label for="name">Họ tên</label>
                         <!-- <small id="emailHelp" class="form-text text-muted">Chúng tôi không chia sẻ email của bạn với bất
                             kỳ ai!</small> -->
                     </div>
 
                     <div class="form-label-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
-                            required="" autofocus="">
-                        <label for="exampleInputPassword1">Password</label>
+                        <input type="text" class="form-control" id="address" placeholder="Địa chỉ" required=""
+                            autofocus="">
+                        <label for="address">Địa chỉ</label>
                     </div>
 
                     <div class="form-label-group">
-                        <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Số điện thoại"
-                            required="" autofocus="">
-                        <label for="exampleInputPassword2">Số điện thoại</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" required=""
+                            autofocus="">
+                        <label for="phone">Số điện thoại</label>
                     </div>
                 </form>
             </div>
 
             <div class="col-md-6">
                 <p class="payment-info-title">Phương thức thanh toán</p>
+                <div class="payment-type">
+                    <input id="national" type="radio" name="payment" value="national"
+                        aria-label="Radio button for payment type">
+                    <label for="national">Chuyển khoản ngân hàng nội địa<i class="far fa-credit-card"></i></label><br>
+
+                    <input id="international" type="radio" name="payment" value="national"
+                        aria-label="Radio button for payment type">
+                    <label for="international">Thẻ quốc tế Visa, Master, JCB<i class="fab fa-cc-visa"></i></label><br>
+
+                    <input id="purse" type="radio" name="payment" value="national"
+                        aria-label="Radio button for payment type">
+                    <label for="purse">Ví điện tử<i class="fab fa-btc"></i></label><br>
+                    <!-- <input type="radio" name="payment" value="national" aria-label="Radio button for payment type">
+                    Chuyển
+                    khoản ngân hàng nội địa<i class="far fa-credit-card"></i><br> -->
+                    <!-- <input type="radio" name="payment" value="international" aria-label="Radio button for payment type">
+                    Thẻ
+                    quốc tế Visa, Master, JCB<i class="fab fa-cc-visa"></i><br>
+                    <input type="radio" name="payment" value="purse" aria-label="Radio button for payment type"> Ví điện
+                    tử<i class="fab fa-btc"></i><br><br> -->
+                </div>
             </div>
         </div>
+
+        <div class="payment-button text-center">
+            <a href="confirm.html" onclick="paymentInfo()" class="payment-btn btn-lg btn btn-primary">Tiếp tục thanh
+                toán</a>
+        </div>
+
     </section>
 
     <footer w3-include-html="footer.html"></footer>
@@ -86,6 +112,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/payment.js"></script>
     <script>
         includeHTML();
     </script>
