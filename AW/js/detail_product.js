@@ -73,7 +73,12 @@ function renderProductContent(id) {
     <p class="detail-right-title">${watches[id].name}</p>
     <p class="detail-right-price">${
 		watches[id].price
-	}<i class="fas fa-cart-plus"></i></p>
+	}<a href="#/" onclick="pushInfoById(${id}), showAlert()"><i id="addtocart" class="fas fa-cart-plus"></i></a></p>
+    <div class="d-none alert alert-success .alert-dismissible fade show" role="alert">
+        Đã thêm vào giỏ hàng
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    <a href="cart.html" class="detail-right-btn btn btn-primary btn-block" onclick="pushInfoById(${id})">Mua ngay</a>
     <p class="detail-right-title">FROM THE CURATOR</p>
     <p class="detail-right-content">When it comes to dress watches, it doesn’t
         get much more classic than the Cartier Tank.
@@ -100,7 +105,7 @@ function renderProductContent(id) {
 function renderProduct(id) {
 	let htmlContent = '';
 	htmlContent = `
-    <div class="col-md-9 carousel slide detail-left" id="myCarousel" data-ride="carousel">
+    <div class="col-md-8 carousel slide detail-left" id="myCarousel" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 ${images[id][0]}
@@ -145,7 +150,18 @@ function renderProduct(id) {
         </div>
     </div>
 
-    <div class="col-md-3 detail-right"></div>
+    <div class="col-md-4 detail-right"></div>
     `;
 	$('.detail > .row').append(htmlContent);
+}
+
+function showAlert() {
+	$('#addtocart').on('click', function() {
+		$('.alert').removeClass('d-none');
+		$('.alert').addClass('d-block');
+		setTimeout(function() {
+			$('.alert').removeClass('d-block');
+			$('.alert').addClass('d-none');
+		}, 2000);
+	});
 }

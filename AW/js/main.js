@@ -185,7 +185,7 @@ function containObject(array, object) {
 			arr.push(1);
 		}
 	}
-	console.log(arr);
+	// console.log(arr);
 	if (arr.includes(1)) {
 		return true;
 	}
