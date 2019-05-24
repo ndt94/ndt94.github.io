@@ -8,6 +8,16 @@
 	margin-bottom: 6.25rem;
 }
 
+.col-md-6 {
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+	.col-md-6 {
+		margin-bottom: 3.125rem;
+	}
+}
+
 /* PAYMENT INFO */
 .payment-info-title {
 	font-family: Roboto-Bold;
@@ -17,6 +27,20 @@
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 1.25rem;
+}
+
+.payment-info-title--hidden {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.payment-info-content {
+	font-family: Roboto-Regular;
+	font-size: 1rem;
+	color: #000000;
+	letter-spacing: 0;
+	text-align: left;
+	margin-bottom: 0;
 }
 
 input[type='radio'] {
@@ -45,6 +69,91 @@ input[type='radio'] {
 @media (width: 1024px) {
 	.payment-type {
 		transform: translateX(22%);
+	}
+}
+
+/* CSS FOR INPUT FOR CARD INFO */
+@media (width: 320px) {
+	.payment-type > .mb-3 input {
+		width: 69%;
+		margin-bottom: 1rem;
+	}
+	.payment-type .mb-3 {
+		transform: translateX(9%);
+	}
+	.alert4,
+	.alert5,
+	.alert6,
+	.alert7 {
+		width: 69%;
+		transform: translateX(15%);
+	}
+}
+
+@media (width: 375px) {
+	.payment-type .mb-3 input {
+		width: 57%;
+		margin-bottom: 1rem;
+	}
+	.payment-type .mb-3 {
+		transform: translateX(8%);
+	}
+	.alert4,
+	.alert5,
+	.alert6,
+	.alert7 {
+		width: 57%;
+		transform: translateX(15%);
+	}
+}
+
+@media (width: 425px) {
+	.payment-type .mb-3 input {
+		width: 50%;
+		margin-bottom: 1rem;
+	}
+	.payment-type .mb-3 {
+		transform: translateX(7%);
+	}
+	.alert4,
+	.alert5,
+	.alert6,
+	.alert7 {
+		width: 50%;
+		transform: translateX(15%);
+	}
+}
+
+@media (width: 768px) {
+	.payment-type .mb-3 input {
+		width: 70%;
+		margin-bottom: 1rem;
+	}
+	.payment-type .mb-3 {
+		transform: translateX(8%);
+	}
+	.alert4,
+	.alert5,
+	.alert6,
+	.alert7 {
+		width: 70%;
+		transform: translateX(13%);
+	}
+}
+
+@media (min-width: 1024px) {
+	.payment-type .mb-3 input {
+		width: 70%;
+		margin-bottom: 1rem;
+	}
+	.payment-type .mb-3 {
+		transform: translateX(7%);
+	}
+	.alert4,
+	.alert5,
+	.alert6,
+	.alert7 {
+		width: 70%;
 	}
 }
 
@@ -121,12 +230,10 @@ input[type='radio'] {
 }
 
 /* PAYMENT BUTTON */
-.payment-button {
-	margin-top: 3.125rem;
-}
 .payment-btn {
 	background: #4a90e2;
 	border-radius: 25px;
+	text-transform: uppercase;
 }
 
 .alert {

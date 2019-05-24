@@ -48,8 +48,6 @@
                     <div class="form-label-group">
                         <input type="text" class="form-control" id="name" placeholder="Họ tên" required="" autofocus="">
                         <label for="name">Họ tên</label>
-                        <!-- <small id="emailHelp" class="form-text text-muted">Chúng tôi không chia sẻ email của bạn với bất
-                            kỳ ai!</small> -->
                         <div class="d-none alert alert1 alert-danger" role="alert"></div>
                     </div>
 
@@ -75,30 +73,44 @@
                     <input id="national" type="radio" name="payment" value="national"
                         aria-label="Radio button for payment type">
                     <label for="national">Chuyển khoản ngân hàng nội địa<i class="far fa-credit-card"></i></label><br>
+                    <div id="account_info" class="d-none mb-3">
+                        <p class="payment-info-title payment-info-title--hidden">Thông tin chuyển khoản:</p>
+                        <p class="payment-info-content">STK: 0451000254711</p>
+                        <p class="payment-info-content">Chủ tài khoản: Nguyễn Đức Trung</p>
+                        <p class="payment-info-content">Vietcombank Chi nhánh Chương Dương</p>
+                    </div>
 
                     <input id="international" type="radio" name="payment" value="national"
                         aria-label="Radio button for payment type">
                     <label for="international">Thẻ quốc tế Visa, Master, JCB<i class="fab fa-cc-visa"></i></label><br>
+                    <div id="card_info" class="d-none mb-3">
+                        <input type="text" class="form-control" id="card-number" placeholder="Số thẻ" required=""
+                            autofocus="">
+                        <div class="d-none alert alert5 alert-danger" role="alert"></div>
+
+                        <input type="text" class="form-control" id="card-holder" placeholder="Tên chủ thẻ" required=""
+                            autofocus="">
+                        <div class="d-none alert alert6 alert-danger" role="alert"></div>
+
+                        <input type="text" class="form-control" id="exp-date" placeholder="Ngày hết hạn" required=""
+                            autofocus="">
+                        <div class="d-none alert alert7 alert-danger" role="alert"></div>
+                    </div>
 
                     <input id="purse" type="radio" name="payment" value="national"
                         aria-label="Radio button for payment type">
                     <label for="purse">Ví điện tử<i class="fab fa-btc"></i></label><br>
-                    <!-- <input type="radio" name="payment" value="national" aria-label="Radio button for payment type">
-                    Chuyển
-                    khoản ngân hàng nội địa<i class="far fa-credit-card"></i><br> -->
-                    <!-- <input type="radio" name="payment" value="international" aria-label="Radio button for payment type">
-                    Thẻ
-                    quốc tế Visa, Master, JCB<i class="fab fa-cc-visa"></i><br>
-                    <input type="radio" name="payment" value="purse" aria-label="Radio button for payment type"> Ví điện
-                    tử<i class="fab fa-btc"></i><br><br> -->
+                    <div id="payment_method" class="d-none alert alert4 alert-danger .alert-dismissible fade show"
+                        role="alert">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="payment-button text-center">
             <a href="confirm.html" onclick="paymentInfo()" class="payment-btn btn-lg btn btn-primary">Tiếp
-                tục thanh
-                toán</a>
+                tục thanh toán</a>
         </div>
 
     </section>
