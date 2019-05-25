@@ -2,12 +2,12 @@ watches = JSON.parse(localStorage.getItem('watches'));
 console.log(watches);
 
 $(function() {
-	renderContent();
+	renderContent(watches);
 });
 
-function renderContent() {
+function renderContent(arr) {
 	let htmlContent = '';
-	watches.forEach(function(item, index) {
+	arr.forEach(function(item, index) {
 		htmlContent += `
         <div class="col-md-4 text-center">
             ${item.image}
@@ -19,4 +19,46 @@ function renderContent() {
         `;
 	});
 	$('.products .col-md-9 .row').html(htmlContent);
+}
+
+function renderContentByType1() {
+	watch = [];
+	if ($('#watch').prop('checked')) {
+		watches.forEach(function(item, index) {
+			if (item.type === 'watch') {
+				watch.push(item);
+			}
+		});
+		renderContent(watch);
+	} else {
+		renderContent(watches);
+	}
+}
+
+function renderContentByType2() {
+	watch = [];
+	if ($('#pocket_watch').prop('checked')) {
+		watches.forEach(function(item, index) {
+			if (item.type === 'pocket_watch') {
+				watch.push(item);
+			}
+		});
+		renderContent(watch);
+	} else {
+		renderContent(watches);
+	}
+}
+
+function renderContentByType3() {
+	watch = [];
+	if ($('#other').prop('checked')) {
+		watches.forEach(function(item, index) {
+			if (item.type === 'other') {
+				watch.push(item);
+			}
+		});
+		renderContent(watch);
+	} else {
+		renderContent(watches);
+	}
 }

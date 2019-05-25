@@ -39,7 +39,9 @@ let watches = [
 		price: '20.000.000',
 		image:
 			'<img src="img/index/VACHERON-CONSTANTIN-22-03-14-19-1-850x566.png" class="img-fluid" alt="cartier_tank_louis">',
-		quantity: 1
+		quantity: 1,
+		type: 'watch',
+		year: '1970'
 	},
 	{
 		id: 1,
@@ -47,7 +49,9 @@ let watches = [
 		price: '22.000.000',
 		image:
 			'<img src="img/index/AP-Rolyal-Oak-03-12-19-1-450x300.png" class="img-fluid" alt="vacheron">',
-		quantity: 1
+		quantity: 1,
+		type: 'watch',
+		year: '1970'
 	},
 	{
 		id: 2,
@@ -55,7 +59,9 @@ let watches = [
 		price: '25.000.000',
 		image:
 			'<img src="img/index/CARTIER-MUST-DE-TANK-02-16-19-1-450x300.png" class="img-fluid" alt="audemars">',
-		quantity: 1
+		quantity: 1,
+		type: 'watch',
+		year: '1970'
 	},
 	{
 		id: 3,
@@ -63,7 +69,9 @@ let watches = [
 		price: '27.000.000',
 		image:
 			'<img src="img/index/CARTIER-TANK-BLUE-01-29-19-1-450x300.png" class="img-fluid" alt="cartier_stepped_tank">',
-		quantity: 1
+		quantity: 1,
+		type: 'watch',
+		year: '1970'
 	},
 	{
 		id: 4,
@@ -71,7 +79,9 @@ let watches = [
 		price: '30.000.000',
 		image:
 			'<img src="img/index/OMEGA-SPEEDMASTER-COAXIAL-CHRONO-02-16-19-1-450x300.png" class="img-fluid" alt="omega">',
-		quantity: 1
+		quantity: 1,
+		type: 'watch',
+		year: '1970'
 	},
 	{
 		id: 5,
@@ -79,7 +89,9 @@ let watches = [
 		price: '20.000.000',
 		image:
 			'<img src="img/index/ROLEX-DATEJUST-1801-YG-02-16-19-1-450x300.png" class="img-fluid" alt="rolex_1803">',
-		quantity: 1
+		quantity: 1,
+		type: 'watch',
+		year: '1970'
 	},
 	{
 		id: 6,
@@ -87,7 +99,9 @@ let watches = [
 		price: '32.000.000',
 		image:
 			'<img src="img/index/UNIVERSAL-GENEVE-GOLD-12-25-18-1-450x300.png" class="img-fluid" alt="universal_geneve">',
-		quantity: 1
+		quantity: 1,
+		type: 'watch',
+		year: '1970'
 	},
 	{
 		id: 7,
@@ -95,7 +109,9 @@ let watches = [
 		price: '18.000.000',
 		image:
 			'<img src="img/index/OMEGA-PATINA-01-02-19-1-450x300.png" class="img-fluid" alt="omega_patina">',
-		quantity: 1
+		quantity: 1,
+		type: 'pocket_watch',
+		year: '1970'
 	},
 	{
 		id: 8,
@@ -103,7 +119,9 @@ let watches = [
 		price: '40.000.000',
 		image:
 			'<img src="img/index/Omega-Geneve-Dynamic-12-04-18-1-450x300.png" class="img-fluid" alt="omega_geneve">',
-		quantity: 1
+		quantity: 1,
+		type: 'other',
+		year: '1970'
 	}
 ];
 localStorage.setItem('watches', JSON.stringify(watches));

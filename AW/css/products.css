@@ -7,7 +7,7 @@
 /* PRODUCTS-LEFT */
 .products-title {
 	font-family: Roboto-Regular;
-	font-size: 1.375rem;
+	font-size: 1.25rem;
 	color: #000000;
 	letter-spacing: 0;
 	text-align: center;
@@ -20,6 +20,17 @@
 @media (min-width: 768px) {
 	.products-title {
 		text-align: left;
+	}
+}
+
+input {
+	margin-right: 1rem;
+	transform: translateY(10%);
+}
+
+@media (width: 1920px) {
+	input {
+		transform: translateY(-12%);
 	}
 }
 
