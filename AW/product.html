@@ -29,30 +29,41 @@
 
                 <div>
                     <p class="products-title">Giá</p>
-                    <label for="customRange3">Example range</label>
+                    <input onclick="renderContentByPrice1()" id="20m" type="radio" name="price" value="20m"
+                        aria-label="Radio button for watch Price">
+                    <label onclick="renderContentByPrice1()" for="20m">&lt; 20.000.000</label><br>
+
+                    <input onclick="renderContentByPrice2()" id="20plus" type="radio" name="price" value="20plus"
+                        aria-label="Radio button for watch Price">
+                    <label onclick="renderContentByPrice2()" for="20plus">20.000.000 - 30.000.000</label><br>
+
+                    <input onclick="renderContentByPrice3()" id="30plus" type="radio" name="price" value="30plus"
+                        aria-label="Radio button for watch Price">
+                    <label onclick="renderContentByPrice3()" for="30plus">&gt; 30.000.000</label><br>
+                    <!-- <label for="customRange3">Example range</label>
                     <input type="range" class="custom-range" value="0" min="0" max="1000" step="5" id="customRange3"
                         oninput="test.value = customRange3.value">
-                    <output name="ageOutputName" id="test">0</output>
+                    <output name="ageOutputName" id="test">0</output> -->
                 </div>
 
                 <div>
                     <p class=" products-title">Năm sản xuất</p>
-                    <input id="1960" type="checkbox" name="1960" value="1960"
-                        aria-label="Checkbox button for watch year">
-                    <label for="1960">&lt;1960</label><br>
+                    <input onclick="renderContentByYear('1960')" id="1960" type="radio" name="year" value="1960"
+                        aria-label="Radio button for watch year">
+                    <label onclick="renderContentByYear('1960')" for="1960">&lt; 1960</label><br>
 
-                    <input id="1970" type="checkbox" name="1970" value="1970"
-                        aria-label="Checkbox button for watch year">
-                    <label for="1970">1960-1979</label><br>
+                    <input onclick="renderContentByYear2()" id="1970" type="radio" name="year" value="1970"
+                        aria-label="Radio button for watch year">
+                    <label onclick="renderContentByYear2()" for="1970">1960 - 1979</label><br>
 
-                    <input id="1980" type="checkbox" name="1980" value="1980"
-                        aria-label="Checkbox button for watch year">
-                    <label for="1980">1980-1999</label><br>
+                    <input onclick="renderContentByYear3()" id="1980" type="radio" name="year" value="1980"
+                        aria-label="Radio button for watch year">
+                    <label onclick="renderContentByYear3()" for="1980">1980 - 1999</label><br>
                 </div>
 
                 <div>
                     <p class="products-title">Loại đồng hồ</p>
-                    <input onclick="renderContentByType1()" id="watch" type="radio" name="type" value="watch"
+                    <!-- <input onclick="renderContentByType1()" id="watch" type="radio" name="type" value="watch"
                         aria-label="Radio button for watch type">
                     <label onclick="renderContentByType1()" for="watch">Đồng hồ đeo tay</label><br>
 
@@ -62,7 +73,19 @@
 
                     <input onclick="renderContentByType3()" id="other" type="radio" name="type" value="other"
                         aria-label="Radio button for watch type">
-                    <label onclick="renderContentByType3()" for="other">Khác</label><br>
+                    <label onclick="renderContentByType3()" for="other">Khác</label><br> -->
+
+                    <input onclick="renderContentByType('watch')" id="watch" type="radio" name="type" value="watch"
+                        aria-label="Radio button for watch type">
+                    <label onclick="renderContentByType('watch')" for="watch">Đồng hồ đeo tay</label><br>
+
+                    <input onclick="renderContentByType('pocket_watch')" id="pocket_watch" type="radio" name="type"
+                        value="pocket_watch" aria-label="Radio button for watch type">
+                    <label onclick="renderContentByType('pocket_watch')" for="pocket_watch">Đồng hồ để túi</label><br>
+
+                    <input onclick="renderContentByType('other')" id="other" type="radio" name="type" value="other"
+                        aria-label="Radio button for watch type">
+                    <label onclick="renderContentByType('other')" for="other">Khác</label><br>
                 </div>
             </div>
             <div class="col-md-9">
