@@ -1,8 +1,11 @@
 watches = JSON.parse(localStorage.getItem('watches'));
-console.log(watches);
 
+// FUNCTION WHEN LOAD PAGE
 $(function() {
     renderContent(watches);
+    sortByPriceAsc();
+    sortByPriceDesc();
+    sortByPriceNormal();
 });
 
 // FUNCTION TO FORMAT PRICE FROM STRING TO NUMBER
@@ -10,6 +13,7 @@ function formatString(string) {
     return parseInt(string.replace(/\./g, ''));
 }
 
+// FUNCTION TO RENDER CONTENT ON PRODUCTS RIGHT PART
 function renderContent(arr) {
     let htmlContent = '';
     arr.forEach(function(item, index) {
@@ -129,4 +133,48 @@ function renderContentByPrice3() {
     } else {
         renderContent(watches);
     }
+}
+
+// FUNCTION TO SORT ITEM BY PRICE
+clone_watches = JSON.parse(JSON.stringify(watches));
+function sortByPriceAsc() {
+    $('.custom-select').change(function() {
+        if (
+            $(this)
+                .children('option:selected')
+                .val() === 'low'
+        ) {
+            clone_watches.sort((a, b) =>
+                formatString(a.price) > formatString(b.price) ? 1 : -1
+            );
+            renderContent(clone_watches);
+        }
+    });
+}
+
+function sortByPriceDesc() {
+    $('.custom-select').change(function() {
+        if (
+            $(this)
+                .children('option:selected')
+                .val() === 'high'
+        ) {
+            clone_watches.sort((a, b) =>
+                formatString(a.price) < formatString(b.price) ? 1 : -1
+            );
+            renderContent(clone_watches);
+        }
+    });
+}
+
+function sortByPriceNormal() {
+    $('.custom-select').change(function() {
+        if (
+            $(this)
+                .children('option:selected')
+                .val() === 'normal'
+        ) {
+            renderContent(watches);
+        }
+    });
 }
