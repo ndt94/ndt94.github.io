@@ -65,6 +65,7 @@ images = [
 $(function() {
 	renderProduct(productId);
 	renderProductContent(productId);
+	addName(productId);
 });
 
 function renderProductContent(id) {
@@ -164,4 +165,9 @@ function showAlert() {
 			$('.alert').addClass('d-none');
 		}, 2000);
 	});
+}
+
+function addName(id) {
+	htmlContent = `${watches[id].name}`;
+	$('.breadcrumb li.active').html(htmlContent);
 }

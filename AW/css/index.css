@@ -1,13 +1,13 @@
 /* LAYOUT STYLES */
 .header,
-.popular-product,
-#header {
+.popular-product {
 	margin-bottom: 3.125rem;
 }
 
 /* CAROUSEL HEADER */
 #header {
 	height: 100vh;
+	margin-bottom: 3.125rem;
 }
 
 .carousel-item-1 {
@@ -47,6 +47,15 @@
 	height: 100vh;
 }
 
+@media (max-width: 768px) {
+	#header,
+	.carousel-item-1,
+	.carousel-item-2,
+	.carousel-item-3 {
+		height: 120vh;
+	}
+}
+
 .navbar-dark .navbar-nav .nav-link {
 	color: rgba(255, 255, 255, 1);
 }
@@ -54,21 +63,44 @@
 .carousel-control-prev,
 .carousel-control-next {
 	height: 300px !important;
-	top: 30% !important;
+	top: 35% !important;
 }
 
 @media (max-width: 425px) {
 	.carousel-control-prev,
 	.carousel-control-next {
-		top: 10% !important;
+		height: 100px !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.carousel-control-prev,
+	.carousel-control-next {
+		top: 25% !important;
+	}
+}
+
+@media (width: 1024px) {
+	.carousel-control-next-icon,
+	.carousel-control-prev-icon {
+		position: absolute;
+	}
+
+	.carousel-control-next-icon {
+		right: 10%;
+	}
+
+	.carousel-control-prev-icon {
+		left: 10%;
 	}
 }
 
 h5 {
 	text-transform: uppercase;
+	color: white;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (width: 1024px) {
 	.carousel-caption {
 		right: -15% !important;
 		left: -15% !important;
