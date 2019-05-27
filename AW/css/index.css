@@ -1,7 +1,78 @@
 /* LAYOUT STYLES */
 .header,
-.popular-product {
+.popular-product,
+#header {
 	margin-bottom: 3.125rem;
+}
+
+/* CAROUSEL HEADER */
+#header {
+	height: 100vh;
+}
+
+.carousel-item-1 {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.5) 100%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		url('../img/index/heroimage.png') no-repeat center;
+	background-size: cover;
+	padding-top: 3.125rem;
+	padding-bottom: 3.125rem;
+	height: 100vh;
+}
+
+.carousel-item-2 {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.5) 100%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		url('../img/index/WATCHES_2048x2048.jpg') no-repeat center;
+	background-size: cover;
+	padding-top: 3.125rem;
+	padding-bottom: 3.125rem;
+	height: 100vh;
+}
+
+.carousel-item-3 {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.5) 100%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		url('../img/index/Stainless-steel-vintage-wrist-watch_2560x1600.jpg')
+			no-repeat center;
+	background-size: cover;
+	padding-top: 3.125rem;
+	padding-bottom: 3.125rem;
+	height: 100vh;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	height: 300px !important;
+	top: 30% !important;
+}
+
+@media (max-width: 425px) {
+	.carousel-control-prev,
+	.carousel-control-next {
+		top: 10% !important;
+	}
+}
+
+h5 {
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.carousel-caption {
+		right: -15% !important;
+		left: -15% !important;
+	}
 }
 
 /* POPULAR PRODUCT */
@@ -102,6 +173,7 @@
 .policy-img {
 	margin-bottom: 1rem;
 }
+
 .policy-title {
 	font-family: Roboto-Bold;
 	font-size: 1rem;
@@ -117,4 +189,49 @@
 	color: #000000;
 	letter-spacing: 0;
 	text-align: center;
+}
+
+/* BACK TO TOP BUTTON */
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 50px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: black; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+	background-color: #4a90e2; /* Add a dark-grey background on hover */
+}
+
+.fa-arrow-circle-up {
+	transform: translateX(-40%);
+}
+
+#myCart {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 120px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: black; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px 2px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+}
+
+#myCart:hover {
+	background-color: #4a90e2; /* Add a dark-grey background on hover */
 }
