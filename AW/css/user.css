@@ -1,17 +1,20 @@
-/* * {
-	box-sizing: border-box;
-} */
-
 .user {
 	font-family: 'Roboto', sans-serif;
 	/* background: #f6f5f7; */
 	background: url('../img/user/bg-img-about.jpg') no-repeat center;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 200vh;
 	/* margin: -20px 0 50px; */
+}
+
+@media (min-width: 768px) {
+	.user {
+		height: 1080px;
+	}
 }
 
 h1 {
@@ -224,4 +227,26 @@ button.ghost {
 
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
+}
+
+/* MOBILE */
+#login,
+#signup {
+	display: none;
+}
+
+@media (max-width: 425px) {
+	.overlay-container {
+		width: 0%;
+	}
+
+	.sign-in-container,
+	.sign-up-container {
+		width: 100%;
+	}
+
+	#login,
+	#signup {
+		display: block;
+	}
 }
