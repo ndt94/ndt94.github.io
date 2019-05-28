@@ -25,9 +25,16 @@ function topFunction() {
 // FUNCTION TO ADD TOTAL CART ITEM NEXT TO CART ICON IN INDEX PAGE
 function cartItem() {
 	itemsArray = JSON.parse(localStorage.getItem('item'));
-	htmlContent = `<i class="fas fa-shopping-cart"> (${itemsArray.length ||
-		0})</i>`;
-	$('.fa-shopping-cart')
-		.parent()
-		.html(htmlContent);
+	if (itemsArray !== null) {
+		htmlContent = `<i class="fas fa-shopping-cart"> (${itemsArray.length ||
+			0}) </i>`;
+		$('.fa-shopping-cart')
+			.parent()
+			.html(htmlContent);
+	} else {
+		htmlContent = `<i class="fas fa-shopping-cart"> (0) </i>`;
+		$('.fa-shopping-cart')
+			.parent()
+			.html(htmlContent);
+	}
 }

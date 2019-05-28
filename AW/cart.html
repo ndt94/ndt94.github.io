@@ -19,8 +19,10 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header w3-include-html="header.html"></header>
 
+    <!-- STEPS -->
     <section class="container steps">
         <div class="step-indicator">
             <div class="step step1 active">
@@ -40,6 +42,7 @@
         </div>
     </section>
 
+    <!-- CART -->
     <section class="container cart">
         <div class="cart-head text-center">
             <div class="d-inline-flex float-left">
@@ -52,6 +55,7 @@
         </div>
     </section>
 
+    <!-- TOTAL -->
     <section class="container total">
         <div class="row subtotal">
             <div class="col-md-6"></div>
@@ -73,6 +77,7 @@
                 <div class="input-group input-group-sm mb-3">
                     <input id="coupon" type="text" class="form-control text-center" placeholder="Coupon" required=""
                         autofocus="">
+                    <div class="d-none alert alert1 alert-danger" role="alert"></div>
                 </div>
             </div>
             <div class="col-md-1"></div>
@@ -98,6 +103,7 @@
         </div>
     </section>
 
+    <!-- MODAL FOR DELETING ITEM FROM CART -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalConfirmRemoveItemFromCart"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -119,6 +125,7 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer w3-include-html="footer.html"></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

@@ -1,5 +1,4 @@
 itemsArray = JSON.parse(localStorage.getItem('item'));
-console.log(itemsArray, typeof itemsArray);
 
 // FUNCTION TO RENDER ITEM FROM CART
 function renderContent() {
@@ -137,7 +136,18 @@ function total() {
 
 // RERENDER TOTAL AFTER ENTER COUPON
 $(window).click(function(e) {
-	$('#total').html(total());
+	coupon = ['', 'DEPTRAI', 'XINHGAI', 'CHONGDAY'];
+	if (coupon.includes($('#coupon').val())) {
+		$('#total').html(total());
+	} else {
+		$('.alert1').text('Coupon không hợp lệ');
+		$('.alert1').removeClass('d-none');
+		$('.alert1').addClass('d-block');
+		setTimeout(function() {
+			$('.alert1').removeClass('d-block');
+			$('.alert1').addClass('d-none');
+		}, 2000);
+	}
 });
 
 // Transfer Total, Subtotal value to confirm page
