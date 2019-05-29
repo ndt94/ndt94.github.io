@@ -1,6 +1,7 @@
 /* LAYOUT STYLES */
 .header,
-.about {
+.about,
+.about-story {
 	margin-bottom: 3.125rem;
 }
 
@@ -23,14 +24,25 @@
 	font-size: 1.375rem;
 	color: #000000;
 }
+
 .about-story > .col-md-6 {
 	margin-bottom: 1rem;
+}
+
+.about-img {
+	margin-top: 3.125rem;
+}
+
+@media (width: 768px) {
+	.about-img {
+		margin-top: 9.125rem;
+	}
 }
 
 /* ABOUT MOTTO */
 .about-motto-title {
 	font-family: Roboto-Bold;
-	font-size: 1.875rem;
+	font-size: 3rem;
 	color: #000000;
 	text-align: center;
 }
@@ -69,12 +81,12 @@
 	height: 25.25rem;
 }
 
-/* @media (max-width: 576px) {
+@media (max-width: 425px) {
 	.img-bg-1,
 	.img-bg-2 {
-		width: 100%;
+		height: 150px;
 	}
-} */
+}
 
 /* ABOUT CONTACT */
 .about-contact p {

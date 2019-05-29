@@ -82,6 +82,13 @@
 	}
 }
 
+@media (width: 1920px) {
+	.carousel-control-prev,
+	.carousel-control-next {
+		top: 35% !important;
+	}
+}
+
 @media (width: 1024px) {
 	.carousel-control-next-icon,
 	.carousel-control-prev-icon {
@@ -208,12 +215,17 @@ h5 {
 	background-size: cover;
 	padding-top: 3.125rem;
 	padding-bottom: 3.125rem;
-	/* height: 15.5rem; */
 }
 
 @media (min-width: 576px) {
 	.media {
 		height: 20rem;
+	}
+}
+
+@media (max-width: 425px) {
+	.media {
+		height: 150px;
 	}
 }
 
