@@ -15,7 +15,8 @@
 			rgba(0, 0, 0, 0.5) 100%,
 			rgba(0, 0, 0, 0.5) 100%
 		),
-		url('../img/index/heroimage.png') no-repeat center;
+		url('../img/index/Buying-Guide-10-Best-Watches-of-2018-under-2000-euros-Monochrome-Watches.jpg')
+			no-repeat center;
 	background-size: cover;
 	padding-top: 3.125rem;
 	padding-bottom: 3.125rem;
@@ -52,7 +53,7 @@
 	.carousel-item-1,
 	.carousel-item-2,
 	.carousel-item-3 {
-		height: 120vh;
+		height: 370px;
 	}
 }
 
@@ -76,6 +77,7 @@
 @media (min-width: 768px) {
 	.carousel-control-prev,
 	.carousel-control-next {
+		height: 200px !important;
 		top: 25% !important;
 	}
 }
@@ -104,6 +106,54 @@ h5 {
 	.carousel-caption {
 		right: -15% !important;
 		left: -15% !important;
+	}
+}
+
+@media (width: 1440px) {
+	.carousel-caption {
+		left: 10% !important;
+	}
+}
+
+@media (max-width: 425px) {
+	.caption {
+		width: 80%;
+	}
+
+	.caption > h5 {
+		font-size: 0.75rem;
+	}
+
+	.caption > p {
+		font-size: 0.75rem;
+	}
+
+	.caption {
+		margin-top: 70px;
+	}
+}
+
+@media (width: 768px) {
+	.caption {
+		margin-top: 100px;
+	}
+
+	.caption {
+		width: 80%;
+	}
+
+	.caption > h5 {
+		font-size: 1rem;
+	}
+
+	.caption > p {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.caption {
+		display: none;
 	}
 }
 

@@ -18,8 +18,10 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header w3-include-html="header.html"></header>
 
+    <!-- PRODUCTS -->
     <section class="products container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -81,9 +83,9 @@
             </div>
 
             <div class="col-md-9">
-                <div class="d-inline-flex">
-                    <button class="btn btn-primary select-left" type="submit">Lọc SP</button>
-                    <select class="select-right text-center custom-select custom-select-sm mb-3">
+                <div id="inline" style="height: 50px">
+                    <button class="select-left d-inline btn btn-primary float-left" type="submit">Lọc SP</button>
+                    <select class="d-inline text-center custom-select custom-select-sm mb-3 select-right float-right">
                         <option value="normal" selected>Sắp xếp</option>
                         <option value="low">Giá thấp đến cao</option>
                         <option value="high">Giá cao đến thấp</option>
@@ -147,6 +149,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer w3-include-html="footer.html"></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
