@@ -80,25 +80,13 @@ function renderProductContent(id) {
         <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     <a href="cart.html" class="detail-right-btn btn btn-primary btn-block" onclick="pushInfoById(${id})">Mua ngay</a>
-    <p class="detail-right-title">FROM THE CURATOR</p>
-    <p class="detail-right-content">When it comes to dress watches, it doesn’t
-        get much more classic than the Cartier Tank.
-        Its iconic shape, incredible proportions,
-        and clean aesthetic help to make it truly the
-        stuff of legends. Naturally, a Tank wouldn’t be
-        complete without its legendary sapphire
-        capped crown,a nice pop of color on
-        an otherwise understated watch.
-
-        And of course, it comes complete with a
-        certificate of authenticity and appraisal
-        and is shipped carefully and
-        fully insured via UPS expedited service.</p>
-    <p class="detail-right-title">NUTS & BOLTS</p>
-    <p class="detail-right-content">Maker: Cartier</p>
+    <p class="detail-right-title">THÔNG TIN SẢN PHẨM</p>
+    <p class="detail-right-content">Khi nói đến đồng hồ đeo tay, không có gì cổ điển hơn một chiếc Cartier Tank. Hình dạng biểu tượng của nó cùng với tỷ lệ đáng kinh ngạc, và bề ngoài đầy tính nghệ thuật giúp cho nó thực sự trở thành một sản phẩm huyền thoại. Đương nhiên, một chiếc Tank sẽ không thể hoàn thành nếu như thiếu đi chiếc vương miện phủ sapphire huyền thoại. Và tất nhiên, nó đi kèm với một chứng chỉ xác thực và đã được thẩm định và được vận chuyển cẩn thận kèm bảo hiểm đầy đủ thông qua dịch vụ cấp tốc của UPS.</p>
+    <p class="detail-right-title">THÔNG SỐ KỸ THUẬT</p>
+    <p class="detail-right-content">Nhà sản xuất: Cartier</p>
     <p class="detail-right-content">Model: Must de Tank</p>
-    <p class="detail-right-content">Case Diameter: 23mm x 32mm</p>
-    <p class="detail-right-content">Lug Width: 16 millimeters</p>
+    <p class="detail-right-content">Kích cỡ mặt đồng hồ: 23mm x 32mm</p>
+    <p class="detail-right-content">Bề ngang dây: 16 millimeters</p>
 	`;
 	$('.detail-right').html(htmlContent);
 }
