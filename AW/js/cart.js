@@ -15,7 +15,7 @@ function renderContent() {
 
 			<div class="col-md-3">
 				<p class="cart-title">Giá</p>
-				<p class="cart-content">${item.price}</p>
+				<p class="cart-content">${item.price} đ</p>
 			</div>
 
 			<div class="col-md-3 mb-3">
@@ -35,7 +35,7 @@ function renderContent() {
 			parseInt(item.price.replace(/\./g, '')) *
 				(JSON.parse(localStorage.getItem('quantity' + index)) ||
 					item.quantity)
-		)}</p>
+		)} đ</p>
 			</div>
 
 			<div class="col-md-1">
@@ -56,8 +56,8 @@ function removeFromCart(id) {
 			itemsArray.splice(index, 1);
 		}
 		localStorage.setItem('item', JSON.stringify(itemsArray));
-		$('#subtotal').html(formatNumber(subtotal()));
-		$('#total').html(total());
+		$('#subtotal').html(formatNumber(subtotal()) + ' đ');
+		$('#total').html(total() + ' đ');
 	});
 }
 
@@ -82,10 +82,10 @@ function increaseQuantity(id) {
 	$('#total' + id).html(
 		formatNumber(
 			parseInt(itemsArray[id].price.replace(/\./g, '')) * quantity
-		)
+		) + ' đ'
 	);
-	$('#subtotal').html(formatNumber(subtotal()));
-	$('#total').html(total());
+	$('#subtotal').html(formatNumber(subtotal()) + ' đ');
+	$('#total').html(total() + ' đ');
 }
 
 // FUNCTION FOR DECREASING QUANTITY
@@ -99,10 +99,10 @@ function decreaseQuantity(id) {
 	$('#total' + id).html(
 		formatNumber(
 			parseInt(itemsArray[id].price.replace(/\./g, '')) * quantity
-		)
+		) + ' đ'
 	);
-	$('#subtotal').html(formatNumber(subtotal()));
-	$('#total').html(total());
+	$('#subtotal').html(formatNumber(subtotal()) + ' đ');
+	$('#total').html(total() + ' đ');
 }
 
 // FUNCTION TO CALCULATE SUBTOTAL PRICE

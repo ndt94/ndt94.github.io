@@ -137,7 +137,7 @@ function renderContentRow1() {
 		<div class="col-md-4 text-center">
 			${watches[i].image}
 			<p class="products-name">${watches[i].name}</p>
-			<p class="products-price">${watches[i].price}</p>
+			<p class="products-price">${watches[i].price} đ</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
 			<a id="product_${i}" href="detail_product.html" class="products-btn products-btn-more btn btn-primary" onclick="transferId(${i})">Xem thêm</a>
 		</div>
@@ -153,7 +153,7 @@ function renderContentRow2() {
 		<div class="col-md-4 text-center">
 			${watches[i].image}
 			<p class="products-name">${watches[i].name}</p>
-			<p class="products-price">${watches[i].price}</p>
+			<p class="products-price">${watches[i].price} đ</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
 			<a id="product_${i}" href="detail_product.html" class="products-btn products-btn-more btn btn-primary" onclick="transferId(${i})">Xem thêm</a>
 		</div>
@@ -169,7 +169,7 @@ function renderContentRow3() {
 		<div class="col-md-4 text-center">
 			${watches[i].image}
 			<p class="products-name">${watches[i].name}</p>
-			<p class="products-price">${watches[i].price}</p>
+			<p class="products-price">${watches[i].price} đ</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
 			<a id="product_${i}" href="detail_product.html" class="products-btn products-btn-more btn btn-primary" onclick="transferId(${i})">Xem thêm</a>
 		</div>

@@ -23,7 +23,7 @@ function renderContent(arr) {
             ${item.image}
 			<p class="products-name">${item.name}</p>
 			<p class="products-name">Year: ${item.year}</p>
-            <p class="products-price">${item.price}</p>
+            <p class="products-price">${item.price} đ</p>
             <a href="cart.html" class="products-btn products-btn-buy btn btn-sm btn-primary" onclick="pushInfoById(${index})">Mua ngay</a>
             <a id="product_${index}" href="detail_product.html" class="products-btn products-btn-more btn btn-sm btn-primary" onclick="transferId(${index})">Xem thêm</a>
         </div>

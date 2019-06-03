@@ -62,7 +62,7 @@ function renderCartContent() {
 
             <div class="col-md-6">
                 <p class="info-content info-content-bold">${item.name}</p>
-                <p class="info-content">${item.price} x ${JSON.parse(
+                <p class="info-content">${item.price + ' đ'} x ${JSON.parse(
 			localStorage.getItem('quantity' + index)
 		) || item.quantity}</p> 
             </div>

@@ -74,7 +74,7 @@ function renderProductContent(id) {
     <p class="detail-right-title">${watches[id].name}</p>
     <p class="detail-right-price">${
 		watches[id].price
-	}<a href="#/" onclick="pushInfoById(${id}), showAlert()"><i id="addtocart" class="fas fa-cart-plus"></i></a></p>
+	} đ<a href="#/" onclick="pushInfoById(${id}), showAlert()"><i id="addtocart" class="fas fa-cart-plus"></i></a></p>
     <div class="d-none alert alert-success .alert-dismissible fade show" role="alert">
         Đã thêm vào giỏ hàng
         <button type="button" class="close" data-dismiss="alert">&times;</button>

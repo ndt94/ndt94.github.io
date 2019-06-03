@@ -99,7 +99,10 @@
         <div class="row payment-button">
             <div class="col-md-6"></div>
             <div class="col-md-6">
-                <button type="button" onclick="location.href = '/AW/payment.html'; transferTotal()"
+                <!-- <button type="button" onclick="location.href = '/AW/payment.html'; transferTotal()"
+                    class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button> -->
+                <!-- FOR LOCAL TESTING -->
+                <button type="button" onclick="location.href = '/payment.html'; transferTotal()"
                     class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button>
             </div>
         </div>
@@ -145,8 +148,8 @@
     <script>
         includeHTML();
         renderContent();
-        $('#subtotal').html(formatNumber(subtotal()));
-        $('#total').html(total());
+        $('#subtotal').html(formatNumber(subtotal()) + ' đ');
+        $('#total').html(total() + ' đ');
     </script>
 </body>
 
