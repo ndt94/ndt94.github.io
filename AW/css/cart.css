@@ -10,14 +10,14 @@
 	margin-bottom: 5rem;
 }
 .cart-title {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.3125rem;
 	color: #000000;
 	letter-spacing: 0;
 }
 
 .cart-content {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	color: #000000;
 	letter-spacing: 0;
@@ -95,14 +95,14 @@
 
 /* TOTAL */
 .total-content {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	color: #000000;
 	letter-spacing: 0;
 	text-align: center;
 }
 .total-content-bold {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 768px) {

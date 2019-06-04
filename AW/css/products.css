@@ -6,7 +6,7 @@
 
 /* PRODUCTS-LEFT */
 .products-title {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.25rem;
 	color: #000000;
 	letter-spacing: 0;
@@ -14,7 +14,7 @@
 }
 
 .products-title-bold {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -65,7 +65,7 @@ input {
 
 /* PRODUCTS-RIGHT */
 .products-name {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	color: #000000;
 	letter-spacing: 0;
@@ -85,7 +85,7 @@ input {
 } */
 
 .products-price {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	color: #d0021b;
 	letter-spacing: 0;

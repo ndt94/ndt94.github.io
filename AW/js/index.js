@@ -26,13 +26,14 @@ function topFunction() {
 function cartItem() {
 	itemsArray = JSON.parse(localStorage.getItem('item'));
 	if (itemsArray !== null) {
-		htmlContent = `<i class="fas fa-shopping-cart"> (${itemsArray.length ||
-			0}) </i>`;
+		htmlContent = `<i class="fas fa-shopping-cart"> <span>(${
+			itemsArray.length
+		})</span> </i>`;
 		$('.fa-shopping-cart')
 			.parent()
 			.html(htmlContent);
 	} else {
-		htmlContent = `<i class="fas fa-shopping-cart"> (0) </i>`;
+		htmlContent = `<i class="fas fa-shopping-cart"> <span>(0)</span> </i>`;
 		$('.fa-shopping-cart')
 			.parent()
 			.html(htmlContent);
