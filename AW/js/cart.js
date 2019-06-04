@@ -89,20 +89,24 @@ function increaseQuantity(id) {
 }
 
 // FUNCTION FOR DECREASING QUANTITY
-function decreaseQuantity(id) {
+function decreaseQuantity(id, event) {
 	let quantity = localStorage.getItem('quantity' + id)
 		? JSON.parse(localStorage.getItem('quantity' + id))
 		: 1;
 	quantity -= 1;
-	$('#quantity' + id).html(quantity);
-	localStorage.setItem('quantity' + id, JSON.stringify(quantity));
-	$('#total' + id).html(
-		formatNumber(
-			parseInt(itemsArray[id].price.replace(/\./g, '')) * quantity
-		) + ' đ'
-	);
-	$('#subtotal').html(formatNumber(subtotal()) + ' đ');
-	$('#total').html(total() + ' đ');
+	if (quantity <= 0) {
+		event.preventDefault();
+	} else {
+		$('#quantity' + id).html(quantity);
+		localStorage.setItem('quantity' + id, JSON.stringify(quantity));
+		$('#total' + id).html(
+			formatNumber(
+				parseInt(itemsArray[id].price.replace(/\./g, '')) * quantity
+			) + ' đ'
+		);
+		$('#subtotal').html(formatNumber(subtotal()) + ' đ');
+		$('#total').html(total() + ' đ');
+	}
 }
 
 // FUNCTION TO CALCULATE SUBTOTAL PRICE

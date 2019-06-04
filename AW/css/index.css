@@ -310,6 +310,10 @@ h5 {
 	transform: translateX(-40%);
 }
 
+.fa-shopping-cart {
+	transform: translateX(10%);
+}
+
 #myCart {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
@@ -328,4 +332,9 @@ h5 {
 
 #myCart:hover {
 	background-color: #4a90e2; /* Add a dark-grey background on hover */
+}
+
+.fa-shopping-cart span {
+	display: inline-block;
+	transform: translate(-20%, -90%);
 }
