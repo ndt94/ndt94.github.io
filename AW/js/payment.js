@@ -12,6 +12,7 @@ function paymentInfo() {
 	if (isValid == false) {
 		$('.payment-btn').attr('href', 'javascript:void(0)');
 	} else {
+		$('.payment-btn').attr('href', 'confirm.html');
 		arr = [];
 		arr.push($('#name').val());
 		arr.push($('#address').val());
@@ -22,7 +23,6 @@ function paymentInfo() {
 				.text()
 		);
 		localStorage.setItem('payment', JSON.stringify(arr));
-		window.location.href = 'confirm.html';
 	}
 }
 
@@ -31,13 +31,21 @@ function validationInfo() {
 	if (
 		$('#name')
 			.val()
-			.match('^[a-zA-Z ]+$') == null
+			.trim() == ''
 	) {
+		htmlContent = `
+			Hãy điền thông tin này!!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
 		$('#name')
 			.siblings('div')
-			.text('Hãy điền đúng thông tin!');
+			.html(htmlContent);
 		isValid = false;
 		showAlert1();
+	} else {
+		isValid = true;
 	}
 
 	if (
@@ -45,32 +53,56 @@ function validationInfo() {
 			.val()
 			.trim() == ''
 	) {
+		htmlContent = `
+			Hãy điền đúng thông tin!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
 		$('#address')
 			.siblings('div')
-			.text('Hãy điền thông tin này!');
+			.html(htmlContent);
 		isValid = false;
 		showAlert2();
+	} else {
+		isValid = true;
 	}
 
 	if (
 		$('#phone')
 			.val()
-			.match('^[0]{1}[19]{1}[0-9]{8,9}$') == null
+			.trim() == ''
 	) {
+		htmlContent = `
+			Hãy điền đúng thông tin!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
 		$('#phone')
 			.siblings('div')
-			.text('Hãy điền đúng thông tin!');
+			.html(htmlContent);
 		isValid = false;
 		showAlert3();
+	} else {
+		isValid = true;
 	}
 	return isValid;
 }
 
 function validationPayment() {
 	if (!$('input:checked').val()) {
-		$('#payment_method').text('Hãy chọn phương thức thanh toán!');
+		htmlContent = `
+		Hãy chọn phương thức thanh toán!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
+		$('#payment_method').html(htmlContent);
 		isValid = false;
 		showAlert4();
+	} else {
+		isValid = true;
 	}
 
 	if (
@@ -81,7 +113,13 @@ function validationPayment() {
 				'^((67d{2})|(4d{3})|(5[1-5]d{2})|(6011))-?s?d{4}-?s?d{4}-?s?d{4}|3[4,7]d{13}$'
 			) == null
 	) {
-		$('.alert5').text('Hãy điền đúng thông tin!');
+		htmlContent = `
+		Hãy điền đúng thông tin!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
+		$('.alert5').html(htmlContent);
 		isValid = false;
 		showAlert5();
 	}
@@ -92,7 +130,13 @@ function validationPayment() {
 			.val()
 			.match('[A-Z ]+') == null
 	) {
-		$('.alert6').text('Hãy điền đúng thông tin!');
+		htmlContent = `
+		Hãy điền đúng thông tin!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
+		$('.alert6').html(htmlContent);
 		isValid = false;
 		showAlert6();
 	}
@@ -105,10 +149,17 @@ function validationPayment() {
 				'(((0[123456789]|10|11|12)([/])(([1][9][0-9][0-9])|([2][0-9][0-9][0-9]))))'
 			) == null
 	) {
-		$('.alert7').text('Hãy điền đúng thông tin!');
+		htmlContent = `
+		Hãy điền đúng thông tin!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
+		$('.alert7').html(htmlContent);
 		isValid = false;
 		showAlert7();
 	}
+	return isValid;
 }
 
 // SHOW ALERT WHEN INFO IS NOT SUBMITTED
@@ -116,10 +167,6 @@ function showAlert1() {
 	$('.payment-btn').on('click', function() {
 		$('.alert1').removeClass('d-none');
 		$('.alert1').addClass('d-block');
-		setTimeout(function() {
-			$('.alert1').removeClass('d-block');
-			$('.alert1').addClass('d-none');
-		}, 2000);
 	});
 }
 
@@ -127,10 +174,6 @@ function showAlert2() {
 	$('.payment-btn').on('click', function() {
 		$('.alert2').removeClass('d-none');
 		$('.alert2').addClass('d-block');
-		setTimeout(function() {
-			$('.alert2').removeClass('d-block');
-			$('.alert2').addClass('d-none');
-		}, 2000);
 	});
 }
 
@@ -138,10 +181,6 @@ function showAlert3() {
 	$('.payment-btn').on('click', function() {
 		$('.alert3').removeClass('d-none');
 		$('.alert3').addClass('d-block');
-		setTimeout(function() {
-			$('.alert3').removeClass('d-block');
-			$('.alert3').addClass('d-none');
-		}, 2000);
 	});
 }
 
@@ -149,10 +188,6 @@ function showAlert4() {
 	$('.payment-btn').on('click', function() {
 		$('.alert4').removeClass('d-none');
 		$('.alert4').addClass('d-block');
-		setTimeout(function() {
-			$('.alert4').removeClass('d-block');
-			$('.alert4').addClass('d-none');
-		}, 2000);
 	});
 }
 
@@ -160,10 +195,6 @@ function showAlert5() {
 	$('.payment-btn').on('click', function() {
 		$('.alert5').removeClass('d-none');
 		$('.alert5').addClass('d-block');
-		setTimeout(function() {
-			$('.alert5').removeClass('d-block');
-			$('.alert5').addClass('d-none');
-		}, 2000);
 	});
 }
 
@@ -171,10 +202,6 @@ function showAlert6() {
 	$('.payment-btn').on('click', function() {
 		$('.alert6').removeClass('d-none');
 		$('.alert6').addClass('d-block');
-		setTimeout(function() {
-			$('.alert6').removeClass('d-block');
-			$('.alert6').addClass('d-none');
-		}, 2000);
 	});
 }
 
@@ -182,16 +209,21 @@ function showAlert7() {
 	$('.payment-btn').on('click', function() {
 		$('.alert7').removeClass('d-none');
 		$('.alert7').addClass('d-block');
-		setTimeout(function() {
-			$('.alert7').removeClass('d-block');
-			$('.alert7').addClass('d-none');
-		}, 2000);
 	});
 }
 
 // SHOW PAYMENT INFO WHEN LABEL IS CLICK
 function show1() {
 	$('label[for="national"]').on('click', function() {
+		$('#account_info')
+			.removeClass('d-none')
+			.addClass('d-block');
+		$('#card_info')
+			.removeClass('d-block')
+			.addClass('d-none');
+	});
+
+	$('#national').on('click', function() {
 		$('#account_info')
 			.removeClass('d-none')
 			.addClass('d-block');
@@ -210,10 +242,28 @@ function show2() {
 			.removeClass('d-block')
 			.addClass('d-none');
 	});
+
+	$('#international').on('click', function() {
+		$('#card_info')
+			.removeClass('d-none')
+			.addClass('d-block');
+		$('#account_info')
+			.removeClass('d-block')
+			.addClass('d-none');
+	});
 }
 
 function show3() {
 	$('label[for="purse"]').on('click', function() {
+		$('#card_info')
+			.removeClass('d-block')
+			.addClass('d-none');
+		$('#account_info')
+			.removeClass('d-block')
+			.addClass('d-none');
+	});
+
+	$('#purse').on('click', function() {
 		$('#card_info')
 			.removeClass('d-block')
 			.addClass('d-none');

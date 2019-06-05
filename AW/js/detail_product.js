@@ -74,11 +74,8 @@ function renderProductContent(id) {
     <p class="detail-right-title">${watches[id].name}</p>
     <p class="detail-right-price">${
 		watches[id].price
-	} đ<a href="#/" onclick="pushInfoById(${id}), showAlert()"><i id="addtocart" class="fas fa-cart-plus"></i></a></p>
-    <div class="d-none alert alert-success .alert-dismissible fade show" role="alert">
-        Đã thêm vào giỏ hàng
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-    </div>
+	} đ <a href="#/" onclick="pushInfoById(${id}), showAlert()"><i id="addtocart" class="fas fa-cart-plus"></i></a></p>
+
     <a href="cart.html" class="detail-right-btn btn btn-primary btn-block" onclick="pushInfoById(${id})">Mua ngay</a>
     <p class="detail-right-title">THÔNG TIN SẢN PHẨM</p>
     <p class="detail-right-content">Khi nói đến đồng hồ đeo tay, không có gì cổ điển hơn một chiếc Cartier Tank. Hình dạng biểu tượng của nó cùng với tỷ lệ đáng kinh ngạc, và bề ngoài đầy tính nghệ thuật giúp cho nó thực sự trở thành một sản phẩm huyền thoại. Đương nhiên, một chiếc Tank sẽ không thể hoàn thành nếu như thiếu đi chiếc vương miện phủ sapphire huyền thoại. Và tất nhiên, nó đi kèm với một chứng chỉ xác thực và đã được thẩm định và được vận chuyển cẩn thận kèm bảo hiểm đầy đủ thông qua dịch vụ cấp tốc của UPS.</p>
@@ -144,14 +141,22 @@ function renderProduct(id) {
 	$('.detail > .row').append(htmlContent);
 }
 
+// function showAlert() {
+// 	$('#addtocart').on('click', function() {
+// 		$('.alert').removeClass('d-none');
+// 		$('.alert').addClass('d-block');
+// 		setTimeout(function() {
+// 			$('.alert').removeClass('d-block');
+// 			$('.alert').addClass('d-none');
+// 		}, 2000);
+// 	});
+// }
+
 function showAlert() {
 	$('#addtocart').on('click', function() {
-		$('.alert').removeClass('d-none');
-		$('.alert').addClass('d-block');
-		setTimeout(function() {
-			$('.alert').removeClass('d-block');
-			$('.alert').addClass('d-none');
-		}, 2000);
+		htmlContent =
+			'<div class="alert alert-success alert-dismissible fade show" role="alert">Đã thêm vào giỏ hàng<button type="button" class="close" data-dismiss="alert">&times;</button></div>';
+		$(htmlContent).insertAfter('.detail-right-price');
 	});
 }
 

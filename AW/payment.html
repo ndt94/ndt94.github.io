@@ -53,21 +53,29 @@
                     <div class="form-label-group">
                         <input type="text" class="form-control" id="name" placeholder="Họ tên" required="" autofocus="">
                         <label for="name">Họ tên</label>
-                        <div class="d-none alert alert1 alert-danger" role="alert"></div>
+                        <div class="d-none alert alert1 alert-danger alert-dismissible fade show" role="alert"></div>
                     </div>
 
                     <div class="form-label-group">
                         <input type="text" class="form-control" id="address" placeholder="Địa chỉ" required=""
                             autofocus="">
                         <label for="address">Địa chỉ</label>
-                        <div class="d-none alert alert2 alert-danger" role="alert"></div>
+                        <div class="d-none alert alert2 alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="form-label-group">
                         <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" required=""
                             autofocus="">
                         <label for="phone">Số điện thoại</label>
-                        <div class="d-none alert alert3 alert-danger" role="alert"></div>
+                        <div class="d-none alert alert3 alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -91,23 +99,35 @@
                     <div id="card_info" class="d-none mb-3">
                         <input type="text" class="form-control" id="card-number" placeholder="Số thẻ" required=""
                             autofocus="">
-                        <div class="d-none alert alert5 alert-danger" role="alert"></div>
+                        <div class="d-none alert alert5 alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
 
                         <input type="text" class="form-control" id="card-holder" placeholder="Tên chủ thẻ" required=""
                             autofocus="">
-                        <div class="d-none alert alert6 alert-danger" role="alert"></div>
+                        <div class="d-none alert alert6 alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
 
                         <input type="text" class="form-control" id="exp-date" placeholder="Ngày hết hạn" required=""
                             autofocus="">
-                        <div class="d-none alert alert7 alert-danger" role="alert"></div>
+                        <div class="d-none alert alert7 alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                     </div>
 
                     <input id="purse" type="radio" name="payment" value="national"
                         aria-label="Radio button for payment type">
                     <label for="purse">Ví điện tử<i class="fab fa-btc"></i></label><br>
-                    <div id="payment_method" class="d-none alert alert4 alert-danger .alert-dismissible fade show"
+                    <div id="payment_method" class="d-none alert alert4 alert-danger alert-dismissible fade show"
                         role="alert">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
                     </div>
                 </div>
             </div>
