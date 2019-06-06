@@ -130,7 +130,7 @@ function total() {
 		total = formatNumber(subtotal() * 0.85);
 	}
 	if ($('#coupon').val() === 'CHONGDAY') {
-		total = formatNumber(subtotal() * 0.7);
+		total = formatNumber(subtotal() * 0.8);
 	}
 	if ($('#coupon').val() === '') {
 		total = formatNumber(subtotal());
@@ -139,18 +139,35 @@ function total() {
 }
 
 // RERENDER TOTAL AFTER ENTER COUPON
-$(window).click(function(e) {
+// $(window).click(function(e) {
+// 	coupon = ['', 'DEPTRAI', 'XINHGAI', 'CHONGDAY'];
+// 	if (coupon.includes($('#coupon').val())) {
+// 		$('#total').html(total());
+// 	} else {
+// 		$('.alert1').text('Coupon không hợp lệ');
+// 		$('.alert1').removeClass('d-none');
+// 		$('.alert1').addClass('d-block');
+// 		setTimeout(function() {
+// 			$('.alert1').removeClass('d-block');
+// 			$('.alert1').addClass('d-none');
+// 		}, 2000);
+// 	}
+// });
+
+$('.btn-success').click(function(e) {
 	coupon = ['', 'DEPTRAI', 'XINHGAI', 'CHONGDAY'];
 	if (coupon.includes($('#coupon').val())) {
-		$('#total').html(total());
+		$('#total').html(total() + ' đ');
 	} else {
-		$('.alert1').text('Coupon không hợp lệ');
+		htmlContent = `
+			Không hợp lệ!!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		`;
+		$('.alert1').html(htmlContent);
 		$('.alert1').removeClass('d-none');
 		$('.alert1').addClass('d-block');
-		setTimeout(function() {
-			$('.alert1').removeClass('d-block');
-			$('.alert1').addClass('d-none');
-		}, 2000);
 	}
 });
 

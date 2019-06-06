@@ -19,8 +19,10 @@ function renderContent(arr) {
 	let htmlContent = '';
 	arr.forEach(function(item, index) {
 		htmlContent += `
-        <div class="col-md-4 text-center">
-            ${item.image}
+		<div class="col-md-4 text-center">
+			<a id="product_${index}" href="detail_product.html" onclick="transferId(${index})">${
+			item.image
+		}</a>
 			<p class="products-name">${item.name}</p>
 			<p class="products-name">Year: ${item.year}</p>
             <p class="products-price">${item.price} đ</p>

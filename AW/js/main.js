@@ -135,7 +135,9 @@ function renderContentRow1() {
 	for (var i = 0; i < 3; i++) {
 		htmlContent += `
 		<div class="col-md-4 text-center">
-			${watches[i].image}
+			<a id="product_${i}" href="detail_product.html" onclick="transferId(${i})">${
+			watches[i].image
+		}</a>
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price} đ</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
@@ -151,7 +153,9 @@ function renderContentRow2() {
 	for (var i = 3; i < 6; i++) {
 		htmlContent += `
 		<div class="col-md-4 text-center">
-			${watches[i].image}
+			<a id="product_${i}" href="detail_product.html" onclick="transferId(${i})">${
+			watches[i].image
+		}</a>
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price} đ</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>
@@ -167,7 +171,9 @@ function renderContentRow3() {
 	for (var i = 6; i < 9; i++) {
 		htmlContent += `
 		<div class="col-md-4 text-center">
-			${watches[i].image}
+			<a id="product_${i}" href="detail_product.html" onclick="transferId(${i})">${
+			watches[i].image
+		}</a>
 			<p class="products-name">${watches[i].name}</p>
 			<p class="products-price">${watches[i].price} đ</p>
 			<a id="product${i}" href="cart.html" class="products-btn products-btn-buy btn btn-primary" onclick="pushInfoById(${i})">Mua ngay</a>

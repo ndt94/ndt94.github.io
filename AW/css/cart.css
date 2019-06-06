@@ -132,3 +132,15 @@
 		margin-top: 3px;
 	}
 }
+
+.btn-success {
+	transform: translateY(-10%);
+}
+
+.fa-check {
+	transform: translateX(-50%);
+}
+
+.alert1 {
+	transform: translateX(1%);
+}
