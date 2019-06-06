@@ -135,6 +135,13 @@
 
 .btn-success {
 	transform: translateY(-10%);
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.btn-success {
+		display: inline-block;
+	}
 }
 
 .fa-check {
@@ -143,4 +150,18 @@
 
 .alert1 {
 	transform: translateX(1%);
+}
+
+#button-addon2 {
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+	#button-addon2 {
+		display: none;
+	}
+}
+
+.input-group-append {
+	transform: translateY(10%);
 }

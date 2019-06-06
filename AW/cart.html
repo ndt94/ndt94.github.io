@@ -79,6 +79,10 @@
                 <div class="input-group input-group-sm mb-3">
                     <input id="coupon" type="text" class="form-control text-center" placeholder="Coupon" required=""
                         autofocus="">
+                    <div class="input-group-append ml-3">
+                        <button class="btn btn-success" type="button" id="button-addon2"><i
+                                class="fas fa-check"></i></button>
+                    </div>
                     <div class="d-none mt-3 alert alert1 alert-danger" role="alert"></div>
                 </div>
             </div>
@@ -101,11 +105,11 @@
         <div class="row payment-button">
             <div class="col-md-6"></div>
             <div class="col-md-6">
-                <!-- <button type="button" onclick="location.href = '/AW/payment.html'; transferTotal()"
-                    class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button> -->
-                <!-- FOR LOCAL TESTING -->
-                <button type="button" onclick="location.href = '/payment.html'; transferTotal()"
+                <button type="button" onclick="location.href = '/AW/payment.html'; transferTotal()"
                     class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button>
+                <!-- FOR LOCAL TESTING -->
+                <!-- <button type="button" onclick="location.href = '/payment.html'; transferTotal()"
+                    class="payment-btn btn btn-primary btn-lg btn-block">Thanh toán</button> -->
             </div>
         </div>
     </section>
