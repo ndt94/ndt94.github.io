@@ -27,6 +27,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 1.25rem;
+	font-weight: 700;
 }
 
 .payment-info-title--hidden {

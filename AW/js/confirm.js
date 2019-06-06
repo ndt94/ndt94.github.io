@@ -44,7 +44,8 @@ function renderContent() {
                     <p class="info-content info-content-bold">Thành tiền</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="info-content info-content-bold">${total[2]}</p>
+                    <p class="info-content info-content-bold">${total[2] +
+						' đ'}</p>
                 </div>
             </div>
         </div>

@@ -9,11 +9,13 @@
 .cart-head {
 	margin-bottom: 5rem;
 }
+
 .cart-title {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3125rem;
 	color: #000000;
 	letter-spacing: 0;
+	font-weight: 700;
 }
 
 .cart-content {
@@ -101,8 +103,10 @@
 	letter-spacing: 0;
 	text-align: center;
 }
+
 .total-content-bold {
 	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
 
 @media (min-width: 768px) {

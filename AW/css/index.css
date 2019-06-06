@@ -172,7 +172,9 @@ h5 {
 	letter-spacing: 0;
 	text-align: center;
 	text-transform: uppercase;
+	font-weight: 700;
 }
+
 .products-name {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
@@ -186,6 +188,7 @@ h5 {
 	font-size: 0.75rem;
 	margin-top: 1.4rem;
 }
+
 .products-price {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
@@ -275,6 +278,7 @@ h5 {
 	letter-spacing: 0;
 	text-align: center;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .policy-content {
